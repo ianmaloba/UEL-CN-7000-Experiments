@@ -1,0 +1,17 @@
+INTERPRETATION INDEX
+====================
+
+No dissertation findings exist in the initial scaffold.
+
+When evidence is accepted, add one entry per result family:
+
+RESULT_ID: <stable run or aggregate id>
+FILES: <relative paths, space separated>
+RESEARCH_QUESTION: RQ1 | RQ2 | RQ3 | RQ4
+CLAIM: <one sentence limited to what the files support>
+LIMITATIONS: <sample, proxy, model, evaluator, or uncertainty limits>
+STATUS: pilot | accepted | rejected | superseded
+
+Do not write an interpretation before the associated manifest, metrics, and quality
+checks exist. A smoke test is labelled pilot and cannot be cited as a dissertation
+finding.
