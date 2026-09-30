@@ -1,0 +1,17 @@
+{
+  "protocol_version": "1.1",
+  "supersedes": "configs/calibration_v1.json",
+  "note": "MiniMax is excluded from future live runs after four documented HTTP 402 provider failures. Existing artefacts are retained.",
+  "taskset_path": "configs/pilot_tasks.json",
+  "replicates": 1,
+  "temperature": 0,
+  "top_p": 1,
+  "max_tokens": 350,
+  "models": [
+    {"provider": "openai", "model_id": "gpt-4.1-mini-2025-04-14"},
+    {"provider": "glm", "model_id": "glm-4.5-air"},
+    {"provider": "deepseek", "model_id": "deepseek-flash"},
+    {"provider": "xai", "model_id": "grok-4.20-0309-non-reasoning"},
+    {"provider": "mistral", "model_id": "codestral-2508"}
+  ]
+}

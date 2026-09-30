@@ -1,0 +1,2472 @@
+{
+  "budget_accounting_root": "results/raw",
+  "budget_holdback_usd": 0.25,
+  "budget_limit_per_provider_usd": 5.0,
+  "campaign_id": "model-variant-coverage-baseline-v2",
+  "cohort_note": "OpenAI excluded by study decision. Mistral IDs with incomplete HumanEval/0 pairs are retained in the original audit but excluded from this six-task continuation.",
+  "conditions": [
+    "baseline",
+    "shifted_baseline"
+  ],
+  "created_at_utc": "2026-09-29T12:28:42.497854+00:00",
+  "evaluation_mode": "docker_isolated",
+  "failure_policy": "provider/evaluator errors are infrastructure records; valid generated code failures remain outcomes and are never resampled until correct",
+  "max_attempts": 2,
+  "max_tokens": 256,
+  "models": [
+    {
+      "canonical_id": "glm-4.5",
+      "catalog_metadata": {
+        "created": 1753632000,
+        "id": "glm-4.5",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 4096,
+      "model_id": "glm-4.5",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 0.6,
+        "output": 2.2
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-4.5-air",
+      "catalog_metadata": {
+        "created": 1753632000,
+        "id": "glm-4.5-air",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 8192,
+      "model_id": "glm-4.5-air",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 0.2,
+        "output": 1.1
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-4.6",
+      "catalog_metadata": {
+        "created": 1759276800,
+        "id": "glm-4.6",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 1024,
+      "model_id": "glm-4.6",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 0.6,
+        "output": 2.2
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-4.7",
+      "catalog_metadata": {
+        "created": 1766332800,
+        "id": "glm-4.7",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 1024,
+      "model_id": "glm-4.7",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 0.6,
+        "output": 2.2
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5",
+      "catalog_metadata": {
+        "created": 1770739200,
+        "id": "glm-5",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 2048,
+      "model_id": "glm-5",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 1.0,
+        "output": 3.2
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5-turbo",
+      "catalog_metadata": {
+        "created": 1773504000,
+        "id": "glm-5-turbo",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 2048,
+      "model_id": "glm-5-turbo",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 10.0,
+        "output": 10.0
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.1",
+      "catalog_metadata": {
+        "created": 1774620000,
+        "id": "glm-5.1",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 2048,
+      "model_id": "glm-5.1",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 1.4,
+        "output": 4.4
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.2",
+      "catalog_metadata": {
+        "created": 1781625600,
+        "id": "glm-5.2",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 1024,
+      "model_id": "glm-5.2",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 1.4,
+        "output": 4.4
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.3",
+      "catalog_metadata": {
+        "created": 1786636800,
+        "id": "glm-5.3",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 4096,
+      "model_id": "glm-5.3",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 1.4,
+        "output": 4.4
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.3-flash",
+      "catalog_metadata": {
+        "created": 1786636800,
+        "id": "glm-5.3-flash",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 2048,
+      "model_id": "glm-5.3-flash",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 0.15,
+        "output": 0.5
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.3-flashx",
+      "catalog_metadata": {
+        "created": 1786636800,
+        "id": "glm-5.3-flashx",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "max_tokens": 2048,
+      "model_id": "glm-5.3-flashx",
+      "provider": "glm",
+      "rates_usd_per_million": {
+        "input": 0.37,
+        "output": 1.25
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "deepseek-flash",
+      "catalog_metadata": {
+        "id": "deepseek-flash",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "name": "DeepSeek-V4.1-Flash",
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "deepseek"
+      },
+      "max_tokens": 1024,
+      "model_id": "deepseek-flash",
+      "provider": "deepseek",
+      "rates_usd_per_million": {
+        "input": 0.3,
+        "output": 1.2
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "deepseek-v4-pro",
+      "catalog_metadata": {
+        "id": "deepseek-v4-pro",
+        "input_modalities": [
+          "text"
+        ],
+        "name": "DeepSeek-V4-Pro",
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "deepseek"
+      },
+      "max_tokens": 2048,
+      "model_id": "deepseek-v4-pro",
+      "provider": "deepseek",
+      "rates_usd_per_million": {
+        "input": 1.32,
+        "output": 3.96
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-non-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-non-reasoning-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-non-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-latest-non-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-experimental-beta-0304-non-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-experimental-beta-non-reasoning-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-0309-non-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-non-reasoning-gv2",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-0309-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-reasoning-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-0309",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-0309-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-0309",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-latest-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-beta-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-experimental-beta-0304-reasoning",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-experimental-beta-0304",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-experimental-beta-reasoning-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-experimental-beta-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.20-reasoning-gv2",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "max_tokens": 1024,
+      "model_id": "grok-4.20-multi-agent-0309",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "max_tokens": 1024,
+      "model_id": "grok-4.20-multi-agent",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "max_tokens": 1024,
+      "model_id": "grok-4.20-multi-agent-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "max_tokens": 1024,
+      "model_id": "grok-4.20-multi-agent-beta-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "max_tokens": 1024,
+      "model_id": "grok-4.20-multi-agent-experimental-beta-0304",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "max_tokens": 1024,
+      "model_id": "grok-4.20-multi-agent-experimental-beta-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "max_tokens": 1024,
+      "model_id": "grok-4.20-multi-agent-beta-0309",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.3",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.3-latest"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "capabilities": {
+          "default_reasoning_effort": "low",
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 25000,
+        "created": 1776384000,
+        "fingerprint": "fp_5bdbcb6cb6",
+        "id": "grok-4.3",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.3",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.3",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.3-latest"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "capabilities": {
+          "default_reasoning_effort": "low",
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 25000,
+        "created": 1776384000,
+        "fingerprint": "fp_5bdbcb6cb6",
+        "id": "grok-4.3",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.3-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.25,
+        "output": 2.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.5",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.5-latest",
+          "grok-build-latest"
+        ],
+        "cached_prompt_text_token_price": 3000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1782691200,
+        "fingerprint": "fp_f5259ea6a3",
+        "id": "grok-4.5",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.5",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 2.0,
+        "output": 6.0
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.5",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.5-latest",
+          "grok-build-latest"
+        ],
+        "cached_prompt_text_token_price": 3000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1782691200,
+        "fingerprint": "fp_f5259ea6a3",
+        "id": "grok-4.5",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.5-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 2.0,
+        "output": 6.0
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.5",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.5-latest",
+          "grok-build-latest"
+        ],
+        "cached_prompt_text_token_price": 3000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1782691200,
+        "fingerprint": "fp_f5259ea6a3",
+        "id": "grok-4.5",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "model_id": "grok-build-latest",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 2.0,
+        "output": 6.0
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.6",
+      "catalog_metadata": {
+        "aliases": [],
+        "cached_prompt_text_token_price": 5000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1785974400,
+        "fingerprint": "fp_43bc803bbe",
+        "id": "grok-4.6",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.6",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 2.0,
+        "output": 6.0
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.7",
+      "catalog_metadata": {
+        "aliases": [],
+        "cached_prompt_text_token_price": 5000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1788307200,
+        "fingerprint": "fp_d15d210ead",
+        "id": "grok-4.7",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "model_id": "grok-4.7",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 2.0,
+        "output": 6.0
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "model_id": "grok-build-0.1",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.0,
+        "output": 2.0
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "model_id": "grok-code-fast-1",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.0,
+        "output": 2.0
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "model_id": "grok-code-fast",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.0,
+        "output": 2.0
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "model_id": "grok-code-fast-1-0825",
+      "provider": "xai",
+      "rates_usd_per_million": {
+        "input": 1.0,
+        "output": 2.0
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "codestral-2508",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.3,
+        "output": 0.9
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "codestral-latest",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.3,
+        "output": 0.9
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "mistral-code-latest",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 1.5,
+        "output": 7.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "mistral-code-fim-latest",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 1.5,
+        "output": 7.5
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "voxtral-small-2507",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-small-latest"
+        ],
+        "capabilities": {
+          "audio": true,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-small-2507",
+        "max_context_length": 32768,
+        "name": "voxtral-small-2507",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "voxtral-small-2507",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-small-2507",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-small-latest"
+        ],
+        "capabilities": {
+          "audio": true,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-small-2507",
+        "max_context_length": 32768,
+        "name": "voxtral-small-2507",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "voxtral-small-latest",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.15,
+        "output": 0.6
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "ministral-3b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-3b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-3b-2512",
+        "max_context_length": 131072,
+        "name": "ministral-3b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "ministral-3b-2512",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.1,
+        "output": 0.1
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "ministral-3b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-3b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-3b-2512",
+        "max_context_length": 131072,
+        "name": "ministral-3b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "ministral-3b-latest",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.1,
+        "output": 0.1
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "ministral-8b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-8b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-8b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-8b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "ministral-8b-2512",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.15,
+        "output": 0.15
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "ministral-8b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-8b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-8b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-8b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "ministral-8b-latest",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.15,
+        "output": 0.15
+      },
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "ministral-14b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-14b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-14b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-14b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "ministral-14b-2512",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.2,
+        "output": 0.2
+      },
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "ministral-14b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-14b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-14b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-14b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "model_id": "ministral-14b-latest",
+      "provider": "mistral",
+      "rates_usd_per_million": {
+        "input": 0.2,
+        "output": 0.2
+      },
+      "variant_kind": "alias"
+    }
+  ],
+  "protocol_version": "2.1",
+  "rate_limit_recovery_delay_seconds": 120,
+  "reasoning_effort": "medium",
+  "reasoning_effort_policy": "OpenAI GPT Pro IDs use high as required by the API; per-model output caps are recorded in each manifest",
+  "registry_path": "configs/model_registry_v1.json",
+  "registry_snapshot_date": "2026-09-28T09:52:28.423364+00:00",
+  "replicates": 1,
+  "result_root": "results/raw/model-variant-coverage-v1-1",
+  "retry_policy": "one automatic retry only for explicit HTTP 429; preserve every attempt; do not resend transport timeouts or ambiguous 5xx responses",
+  "search_specialized_models": "kept in registry as separate exploratory cohort; not mixed into no-tools primary sweep",
+  "task_ids": [
+    "humaneval-0",
+    "humaneval-1",
+    "humaneval-2",
+    "humaneval-3",
+    "humaneval-4",
+    "humaneval-5"
+  ],
+  "taskset_path": "configs/humaneval_syntax_pilot_v1.json",
+  "temperature": 0,
+  "timeout_seconds": 300,
+  "top_p": 1
+}
