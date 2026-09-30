@@ -8,16 +8,19 @@ version = "0.1.0"
 description = "Reproducible experiments for LLM code-generation robustness under distribution shift"
 requires-python = ">=3.11"
 dependencies = [
-    "docground @ git+https://github.com/ianmaloba/DocGround.git",
     "pandas>=2.0",
     "scipy>=1.11",
     "matplotlib>=3.8",
     "seaborn>=0.13",
     "pydantic>=2.0",
+    "bandit>=1.8",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]
+
+[project.scripts]
+uel-experiments = "experiments.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
