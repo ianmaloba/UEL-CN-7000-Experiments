@@ -1,0 +1,5442 @@
+{
+  "active_providers": [
+    "openai",
+    "glm",
+    "deepseek",
+    "xai",
+    "mistral"
+  ],
+  "catalogue_snapshot": "artefacts/generated/provider-preflight-2026-09-28.json",
+  "eligible_target_count": 149,
+  "generated_at": "2026-09-28T09:52:28.423364+00:00",
+  "model_count": 234,
+  "models": [
+    {
+      "canonical_id": "gpt-3.5-turbo-0125",
+      "catalog_metadata": {
+        "created": 1706048358,
+        "id": "gpt-3.5-turbo-0125",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-3.5-turbo-0125",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4-0613",
+      "catalog_metadata": {
+        "created": 1686588896,
+        "id": "gpt-4-0613",
+        "object": "model",
+        "owned_by": "openai"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4-0613",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "chatgpt-image-latest",
+      "catalog_metadata": {
+        "created": 1765925279,
+        "id": "chatgpt-image-latest",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "chatgpt-image-latest",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-mini",
+      "catalog_metadata": {
+        "created": 1759517133,
+        "id": "gpt-realtime-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-mini",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-search-api",
+      "catalog_metadata": {
+        "created": 1759514629,
+        "id": "gpt-5-search-api",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "separate",
+      "model_id": "gpt-5-search-api",
+      "provider": "openai",
+      "reason": "search-specialized model; isolate from the no-tools primary code-generation cohort",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-2.1",
+      "catalog_metadata": {
+        "created": 1782254687,
+        "id": "gpt-realtime-2.1",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-2.1",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4-mini",
+      "catalog_metadata": {
+        "created": 1773451123,
+        "id": "gpt-5.4-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4-mini",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-3.5-turbo-instruct-0914",
+      "catalog_metadata": {
+        "created": 1694122472,
+        "id": "gpt-3.5-turbo-instruct-0914",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include_completion",
+      "model_id": "gpt-3.5-turbo-instruct-0914",
+      "provider": "openai",
+      "reason": "text completion model; use legacy completions endpoint",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-codex",
+      "catalog_metadata": {
+        "created": 1757527818,
+        "id": "gpt-5-codex",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5-codex",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-07-23",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-2.5-flare-2026-09-08",
+      "catalog_metadata": {
+        "created": 1788851006,
+        "id": "gpt-image-2.5-flare-2026-09-08",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-2.5-flare-2026-09-08",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-whisper",
+      "catalog_metadata": {
+        "created": 1778012060,
+        "id": "gpt-realtime-whisper",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-whisper",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-pro-2025-10-06",
+      "catalog_metadata": {
+        "created": 1759469707,
+        "id": "gpt-5-pro-2025-10-06",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5-pro-2025-10-06",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-2.5-sunburst",
+      "catalog_metadata": {
+        "created": 1788563162,
+        "id": "gpt-image-2.5-sunburst",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-2.5-sunburst",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-6-sol",
+      "catalog_metadata": {
+        "created": 1789405937,
+        "id": "gpt-6-sol",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-6-sol",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-tts-2025-12-15",
+      "catalog_metadata": {
+        "created": 1765610837,
+        "id": "gpt-4o-mini-tts-2025-12-15",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-mini-tts-2025-12-15",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-audio-2025-08-28",
+      "catalog_metadata": {
+        "created": 1756256146,
+        "id": "gpt-audio-2025-08-28",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-audio-2025-08-28",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4.1-2025-04-14",
+      "catalog_metadata": {
+        "created": 1744315746,
+        "id": "gpt-4.1-2025-04-14",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4.1-2025-04-14",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4",
+      "catalog_metadata": {
+        "created": 1687882411,
+        "id": "gpt-4",
+        "object": "model",
+        "owned_by": "openai"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime",
+      "catalog_metadata": {
+        "created": 1756271701,
+        "id": "gpt-realtime",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4-nano",
+      "catalog_metadata": {
+        "created": 1773450870,
+        "id": "gpt-5.4-nano",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4-nano",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.6-sol",
+      "catalog_metadata": {
+        "created": 1782228018,
+        "id": "gpt-5.6-sol",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.6-sol",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.5-pro",
+      "catalog_metadata": {
+        "created": 1776894349,
+        "id": "gpt-5.5-pro",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.5-pro",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.3-chat-latest",
+      "catalog_metadata": {
+        "created": 1772236571,
+        "id": "gpt-5.3-chat-latest",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5.3-chat-latest",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-08-10",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "omni-moderation-2024-09-26",
+      "catalog_metadata": {
+        "created": 1732734466,
+        "id": "omni-moderation-2024-09-26",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "omni-moderation-2024-09-26",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-audio-mini-2025-10-06",
+      "catalog_metadata": {
+        "created": 1759512137,
+        "id": "gpt-audio-mini-2025-10-06",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-audio-mini-2025-10-06",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.2-2025-12-11",
+      "catalog_metadata": {
+        "created": 1765313028,
+        "id": "gpt-5.2-2025-12-11",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.2-2025-12-11",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-transcribe",
+      "catalog_metadata": {
+        "created": 1742068596,
+        "id": "gpt-4o-mini-transcribe",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-mini-transcribe",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.2-pro",
+      "catalog_metadata": {
+        "created": 1765343983,
+        "id": "gpt-5.2-pro",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.2-pro",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "tts-1",
+      "catalog_metadata": {
+        "created": 1681940951,
+        "id": "tts-1",
+        "object": "model",
+        "owned_by": "openai-internal"
+      },
+      "disposition": "exclude",
+      "model_id": "tts-1",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "whisper-1",
+      "catalog_metadata": {
+        "created": 1677532384,
+        "id": "whisper-1",
+        "object": "model",
+        "owned_by": "openai-internal"
+      },
+      "disposition": "exclude",
+      "model_id": "whisper-1",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-2.1-mini",
+      "catalog_metadata": {
+        "created": 1782254706,
+        "id": "gpt-realtime-2.1-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-2.1-mini",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-mini-2025-08-07",
+      "catalog_metadata": {
+        "created": 1754425867,
+        "id": "gpt-5-mini-2025-08-07",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5-mini-2025-08-07",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "tts-1-hd-1106",
+      "catalog_metadata": {
+        "created": 1699053533,
+        "id": "tts-1-hd-1106",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "tts-1-hd-1106",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.1-codex",
+      "catalog_metadata": {
+        "created": 1762988221,
+        "id": "gpt-5.1-codex",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5.1-codex",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-07-23",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-translate",
+      "catalog_metadata": {
+        "created": 1777950216,
+        "id": "gpt-realtime-translate",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-translate",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-live-transcribe",
+      "catalog_metadata": {
+        "created": 1785168034,
+        "id": "gpt-live-transcribe",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-live-transcribe",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-2",
+      "catalog_metadata": {
+        "created": 1776399795,
+        "id": "gpt-image-2",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-2",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-3.5-turbo-instruct",
+      "catalog_metadata": {
+        "created": 1692901427,
+        "id": "gpt-3.5-turbo-instruct",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include_completion",
+      "model_id": "gpt-3.5-turbo-instruct",
+      "provider": "openai",
+      "reason": "text completion model; use legacy completions endpoint",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-transcribe-2025-12-15",
+      "catalog_metadata": {
+        "created": 1765610407,
+        "id": "gpt-4o-mini-transcribe-2025-12-15",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-mini-transcribe-2025-12-15",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4.1-mini",
+      "catalog_metadata": {
+        "created": 1744318173,
+        "id": "gpt-4.1-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4.1-mini",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-transcribe-diarize",
+      "catalog_metadata": {
+        "created": 1750798887,
+        "id": "gpt-4o-transcribe-diarize",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-transcribe-diarize",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-2-2026-04-21",
+      "catalog_metadata": {
+        "created": 1776399994,
+        "id": "gpt-image-2-2026-04-21",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-2-2026-04-21",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-tts",
+      "catalog_metadata": {
+        "created": 1742403959,
+        "id": "gpt-4o-mini-tts",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-mini-tts",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-1.5",
+      "catalog_metadata": {
+        "created": 1771461469,
+        "id": "gpt-realtime-1.5",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-1.5",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.1-codex-max",
+      "catalog_metadata": {
+        "created": 1763671532,
+        "id": "gpt-5.1-codex-max",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5.1-codex-max",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-07-23",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-2.5-flare",
+      "catalog_metadata": {
+        "created": 1788563147,
+        "id": "gpt-image-2.5-flare",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-2.5-flare",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-tts-2025-03-20",
+      "catalog_metadata": {
+        "created": 1765610731,
+        "id": "gpt-4o-mini-tts-2025-03-20",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-mini-tts-2025-03-20",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-transcribe",
+      "catalog_metadata": {
+        "created": 1785168027,
+        "id": "gpt-transcribe",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-transcribe",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4-pro",
+      "catalog_metadata": {
+        "created": 1772659601,
+        "id": "gpt-5.4-pro",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4-pro",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-live-1",
+      "catalog_metadata": {
+        "created": 1788889407,
+        "id": "gpt-live-1",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-live-1",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-search-api-2025-10-14",
+      "catalog_metadata": {
+        "created": 1760043960,
+        "id": "gpt-5-search-api-2025-10-14",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "separate",
+      "model_id": "gpt-5-search-api-2025-10-14",
+      "provider": "openai",
+      "reason": "search-specialized model; isolate from the no-tools primary code-generation cohort",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-audio-mini-2025-12-15",
+      "catalog_metadata": {
+        "created": 1765760008,
+        "id": "gpt-audio-mini-2025-12-15",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-audio-mini-2025-12-15",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "text-embedding-ada-002",
+      "catalog_metadata": {
+        "created": 1671217299,
+        "id": "text-embedding-ada-002",
+        "object": "model",
+        "owned_by": "openai-internal"
+      },
+      "disposition": "exclude",
+      "model_id": "text-embedding-ada-002",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-search-preview-2025-03-11",
+      "catalog_metadata": {
+        "created": 1741390858,
+        "id": "gpt-4o-mini-search-preview-2025-03-11",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "separate",
+      "model_id": "gpt-4o-mini-search-preview-2025-03-11",
+      "provider": "openai",
+      "reason": "search-specialized model; isolate from the no-tools primary code-generation cohort",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o1-pro-2025-03-19",
+      "catalog_metadata": {
+        "created": 1742251504,
+        "id": "o1-pro-2025-03-19",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o1-pro-2025-03-19",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4.1-nano",
+      "catalog_metadata": {
+        "created": 1744321707,
+        "id": "gpt-4.1-nano",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4.1-nano",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "chat-latest",
+      "catalog_metadata": {
+        "created": 1777704602,
+        "id": "chat-latest",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "chat-latest",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o1",
+      "catalog_metadata": {
+        "created": 1734375816,
+        "id": "o1",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o1",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-2",
+      "catalog_metadata": {
+        "created": 1778006032,
+        "id": "gpt-realtime-2",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-2",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o3-mini-2025-01-31",
+      "catalog_metadata": {
+        "created": 1738010200,
+        "id": "o3-mini-2025-01-31",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o3-mini-2025-01-31",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-search-preview-2025-03-11",
+      "catalog_metadata": {
+        "created": 1771905621,
+        "id": "gpt-4o-search-preview-2025-03-11",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "separate",
+      "model_id": "gpt-4o-search-preview-2025-03-11",
+      "provider": "openai",
+      "reason": "search-specialized model; isolate from the no-tools primary code-generation cohort",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o4-mini-2025-04-16",
+      "catalog_metadata": {
+        "created": 1744133506,
+        "id": "o4-mini-2025-04-16",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o4-mini-2025-04-16",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-nano-2025-08-07",
+      "catalog_metadata": {
+        "created": 1754426303,
+        "id": "gpt-5-nano-2025-08-07",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5-nano-2025-08-07",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.2-chat-latest",
+      "catalog_metadata": {
+        "created": 1765344352,
+        "id": "gpt-5.2-chat-latest",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5.2-chat-latest",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-08-10",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-audio",
+      "catalog_metadata": {
+        "created": 1756339249,
+        "id": "gpt-audio",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-audio",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4-2026-03-05",
+      "catalog_metadata": {
+        "created": 1772654062,
+        "id": "gpt-5.4-2026-03-05",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4-2026-03-05",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-2024-08-06",
+      "catalog_metadata": {
+        "created": 1722814719,
+        "id": "gpt-4o-2024-08-06",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4o-2024-08-06",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "sora-2",
+      "catalog_metadata": {
+        "created": 1759708615,
+        "id": "sora-2",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "sora-2",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-search-preview",
+      "catalog_metadata": {
+        "created": 1741391161,
+        "id": "gpt-4o-mini-search-preview",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "separate",
+      "model_id": "gpt-4o-mini-search-preview",
+      "provider": "openai",
+      "reason": "search-specialized model; isolate from the no-tools primary code-generation cohort",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o3-2025-04-16",
+      "catalog_metadata": {
+        "created": 1744133301,
+        "id": "o3-2025-04-16",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o3-2025-04-16",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-1-mini",
+      "catalog_metadata": {
+        "created": 1758845821,
+        "id": "gpt-image-1-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-1-mini",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "sora-2-pro",
+      "catalog_metadata": {
+        "created": 1759708663,
+        "id": "sora-2-pro",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "sora-2-pro",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4.1-nano-2025-04-14",
+      "catalog_metadata": {
+        "created": 1744321025,
+        "id": "gpt-4.1-nano-2025-04-14",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4.1-nano-2025-04-14",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-3.5-turbo-1106",
+      "catalog_metadata": {
+        "created": 1698959748,
+        "id": "gpt-3.5-turbo-1106",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-3.5-turbo-1106",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "tts-1-hd",
+      "catalog_metadata": {
+        "created": 1699046015,
+        "id": "tts-1-hd",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "tts-1-hd",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4",
+      "catalog_metadata": {
+        "created": 1772691852,
+        "id": "gpt-5.4",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o4-mini",
+      "catalog_metadata": {
+        "created": 1744225351,
+        "id": "o4-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o4-mini",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-transcribe",
+      "catalog_metadata": {
+        "created": 1742068463,
+        "id": "gpt-4o-transcribe",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-transcribe",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-2025-08-28",
+      "catalog_metadata": {
+        "created": 1756271773,
+        "id": "gpt-realtime-2025-08-28",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-2025-08-28",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.2",
+      "catalog_metadata": {
+        "created": 1765313051,
+        "id": "gpt-5.2",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.2",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.1-chat-latest",
+      "catalog_metadata": {
+        "created": 1762547951,
+        "id": "gpt-5.1-chat-latest",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5.1-chat-latest",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-07-23",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-chat-latest",
+      "catalog_metadata": {
+        "created": 1754073306,
+        "id": "gpt-5-chat-latest",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5-chat-latest",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-07-23",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "tts-1-1106",
+      "catalog_metadata": {
+        "created": 1699053241,
+        "id": "tts-1-1106",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "tts-1-1106",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-realtime-mini-2025-12-15",
+      "catalog_metadata": {
+        "created": 1765612007,
+        "id": "gpt-realtime-mini-2025-12-15",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-realtime-mini-2025-12-15",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "babbage-002",
+      "catalog_metadata": {
+        "created": 1692634615,
+        "id": "babbage-002",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include_completion",
+      "model_id": "babbage-002",
+      "provider": "openai",
+      "reason": "text completion model; use legacy completions endpoint",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.2-pro-2025-12-11",
+      "catalog_metadata": {
+        "created": 1765343959,
+        "id": "gpt-5.2-pro-2025-12-11",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.2-pro-2025-12-11",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4-turbo",
+      "catalog_metadata": {
+        "created": 1712361441,
+        "id": "gpt-4-turbo",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4-turbo",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "davinci-002",
+      "catalog_metadata": {
+        "created": 1692634301,
+        "id": "davinci-002",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include_completion",
+      "model_id": "davinci-002",
+      "provider": "openai",
+      "reason": "text completion model; use legacy completions endpoint",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o",
+      "catalog_metadata": {
+        "created": 1715367049,
+        "id": "gpt-4o",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4o",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "text-embedding-3-small",
+      "catalog_metadata": {
+        "created": 1705948997,
+        "id": "text-embedding-3-small",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "text-embedding-3-small",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.6-terra",
+      "catalog_metadata": {
+        "created": 1782228459,
+        "id": "gpt-5.6-terra",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.6-terra",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-2024-07-18",
+      "catalog_metadata": {
+        "created": 1721172717,
+        "id": "gpt-4o-mini-2024-07-18",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4o-mini-2024-07-18",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5",
+      "catalog_metadata": {
+        "created": 1754425777,
+        "id": "gpt-5",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-1.5",
+      "catalog_metadata": {
+        "created": 1764030620,
+        "id": "gpt-image-1.5",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-1.5",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4-nano-2026-03-17",
+      "catalog_metadata": {
+        "created": 1773450837,
+        "id": "gpt-5.4-nano-2026-03-17",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4-nano-2026-03-17",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4-mini-2026-03-17",
+      "catalog_metadata": {
+        "created": 1773451076,
+        "id": "gpt-5.4-mini-2026-03-17",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4-mini-2026-03-17",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.3-codex",
+      "catalog_metadata": {
+        "created": 1770537915,
+        "id": "gpt-5.3-codex",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.3-codex",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-audio-mini",
+      "catalog_metadata": {
+        "created": 1759512027,
+        "id": "gpt-audio-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-audio-mini",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-mini",
+      "catalog_metadata": {
+        "created": 1754425928,
+        "id": "gpt-5-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5-mini",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4-turbo-2024-04-09",
+      "catalog_metadata": {
+        "created": 1712601677,
+        "id": "gpt-4-turbo-2024-04-09",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4-turbo-2024-04-09",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-1",
+      "catalog_metadata": {
+        "created": 1745517030,
+        "id": "gpt-image-1",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-1",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o1-2024-12-17",
+      "catalog_metadata": {
+        "created": 1734326976,
+        "id": "o1-2024-12-17",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o1-2024-12-17",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.1-codex-mini",
+      "catalog_metadata": {
+        "created": 1763007109,
+        "id": "gpt-5.1-codex-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5.1-codex-mini",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-07-23",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini-transcribe-2025-03-20",
+      "catalog_metadata": {
+        "created": 1765610545,
+        "id": "gpt-4o-mini-transcribe-2025-03-20",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-4o-mini-transcribe-2025-03-20",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o3",
+      "catalog_metadata": {
+        "created": 1744225308,
+        "id": "o3",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o3",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-pro",
+      "catalog_metadata": {
+        "created": 1759469822,
+        "id": "gpt-5-pro",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5-pro",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4.1",
+      "catalog_metadata": {
+        "created": 1744316542,
+        "id": "gpt-4.1",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4.1",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-6-astra",
+      "catalog_metadata": {
+        "created": 1787853604,
+        "id": "gpt-6-astra",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-6-astra",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o1-pro",
+      "catalog_metadata": {
+        "created": 1742251791,
+        "id": "o1-pro",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o1-pro",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.4-pro-2026-03-05",
+      "catalog_metadata": {
+        "created": 1772659657,
+        "id": "gpt-5.4-pro-2026-03-05",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.4-pro-2026-03-05",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-3.5-turbo-16k",
+      "catalog_metadata": {
+        "created": 1683758102,
+        "id": "gpt-3.5-turbo-16k",
+        "object": "model",
+        "owned_by": "openai-internal"
+      },
+      "disposition": "include",
+      "model_id": "gpt-3.5-turbo-16k",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4.1-mini-2025-04-14",
+      "catalog_metadata": {
+        "created": 1744317547,
+        "id": "gpt-4.1-mini-2025-04-14",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4.1-mini-2025-04-14",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.1",
+      "catalog_metadata": {
+        "created": 1762800673,
+        "id": "gpt-5.1",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.1",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-search-preview",
+      "catalog_metadata": {
+        "created": 1771905534,
+        "id": "gpt-4o-search-preview",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "separate",
+      "model_id": "gpt-4o-search-preview",
+      "provider": "openai",
+      "reason": "search-specialized model; isolate from the no-tools primary code-generation cohort",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.2-codex",
+      "catalog_metadata": {
+        "created": 1766164985,
+        "id": "gpt-5.2-codex",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-5.2-codex",
+      "provider": "openai",
+      "reason": "official API shutdown on 2026-07-23",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-image-2.5-sunburst-2026-09-08",
+      "catalog_metadata": {
+        "created": 1788851010,
+        "id": "gpt-image-2.5-sunburst-2026-09-08",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-image-2.5-sunburst-2026-09-08",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-2024-11-20",
+      "catalog_metadata": {
+        "created": 1739331543,
+        "id": "gpt-4o-2024-11-20",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4o-2024-11-20",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.5",
+      "catalog_metadata": {
+        "created": 1776824847,
+        "id": "gpt-5.5",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.5",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-nano",
+      "catalog_metadata": {
+        "created": 1754426384,
+        "id": "gpt-5-nano",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5-nano",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.1-2025-11-13",
+      "catalog_metadata": {
+        "created": 1762800353,
+        "id": "gpt-5.1-2025-11-13",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.1-2025-11-13",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.6-luna",
+      "catalog_metadata": {
+        "created": 1782228658,
+        "id": "gpt-5.6-luna",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.6-luna",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-2024-05-13",
+      "catalog_metadata": {
+        "created": 1715368132,
+        "id": "gpt-4o-2024-05-13",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4o-2024-05-13",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-3.5-turbo",
+      "catalog_metadata": {
+        "created": 1677610602,
+        "id": "gpt-3.5-turbo",
+        "object": "model",
+        "owned_by": "openai"
+      },
+      "disposition": "include",
+      "model_id": "gpt-3.5-turbo",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.5-2026-04-23",
+      "catalog_metadata": {
+        "created": 1776839241,
+        "id": "gpt-5.5-2026-04-23",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.5-2026-04-23",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "text-embedding-3-large",
+      "catalog_metadata": {
+        "created": 1705953180,
+        "id": "text-embedding-3-large",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "text-embedding-3-large",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "o3-mini",
+      "catalog_metadata": {
+        "created": 1737146383,
+        "id": "o3-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "o3-mini",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5.5-pro-2026-04-23",
+      "catalog_metadata": {
+        "created": 1776894470,
+        "id": "gpt-5.5-pro-2026-04-23",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5.5-pro-2026-04-23",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "omni-moderation-latest",
+      "catalog_metadata": {
+        "created": 1731689265,
+        "id": "omni-moderation-latest",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "omni-moderation-latest",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-5-2025-08-07",
+      "catalog_metadata": {
+        "created": 1754075360,
+        "id": "gpt-5-2025-08-07",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-5-2025-08-07",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-audio-1.5",
+      "catalog_metadata": {
+        "created": 1771550885,
+        "id": "gpt-audio-1.5",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "exclude",
+      "model_id": "gpt-audio-1.5",
+      "provider": "openai",
+      "reason": "specialized non-code modality inferred from model ID",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-6-luna",
+      "catalog_metadata": {
+        "created": 1789406102,
+        "id": "gpt-6-luna",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-6-luna",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "gpt-4o-mini",
+      "catalog_metadata": {
+        "created": 1721172741,
+        "id": "gpt-4o-mini",
+        "object": "model",
+        "owned_by": "system"
+      },
+      "disposition": "include",
+      "model_id": "gpt-4o-mini",
+      "provider": "openai",
+      "reason": "text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-4.5",
+      "catalog_metadata": {
+        "created": 1753632000,
+        "id": "glm-4.5",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-4.5",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-4.5-air",
+      "catalog_metadata": {
+        "created": 1753632000,
+        "id": "glm-4.5-air",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-4.5-air",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-4.6",
+      "catalog_metadata": {
+        "created": 1759276800,
+        "id": "glm-4.6",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-4.6",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-4.7",
+      "catalog_metadata": {
+        "created": 1766332800,
+        "id": "glm-4.7",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-4.7",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5",
+      "catalog_metadata": {
+        "created": 1770739200,
+        "id": "glm-5",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-5",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5-turbo",
+      "catalog_metadata": {
+        "created": 1773504000,
+        "id": "glm-5-turbo",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-5-turbo",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.1",
+      "catalog_metadata": {
+        "created": 1774620000,
+        "id": "glm-5.1",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-5.1",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.2",
+      "catalog_metadata": {
+        "created": 1781625600,
+        "id": "glm-5.2",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-5.2",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.3",
+      "catalog_metadata": {
+        "created": 1786636800,
+        "id": "glm-5.3",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-5.3",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.3-flash",
+      "catalog_metadata": {
+        "created": 1786636800,
+        "id": "glm-5.3-flash",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-5.3-flash",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "glm-5.3-flashx",
+      "catalog_metadata": {
+        "created": 1786636800,
+        "id": "glm-5.3-flashx",
+        "object": "model",
+        "owned_by": "z-ai"
+      },
+      "disposition": "include",
+      "model_id": "glm-5.3-flashx",
+      "provider": "glm",
+      "reason": "GLM text-generation model; verify endpoint support during live smoke",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "deepseek-flash",
+      "catalog_metadata": {
+        "id": "deepseek-flash",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "name": "DeepSeek-V4.1-Flash",
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "deepseek"
+      },
+      "disposition": "include",
+      "model_id": "deepseek-flash",
+      "provider": "deepseek",
+      "reason": "official provider catalog contains text chat models",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "deepseek-v4-pro",
+      "catalog_metadata": {
+        "id": "deepseek-v4-pro",
+        "input_modalities": [
+          "text"
+        ],
+        "name": "DeepSeek-V4-Pro",
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "deepseek"
+      },
+      "disposition": "include",
+      "model_id": "deepseek-v4-pro",
+      "provider": "deepseek",
+      "reason": "official provider catalog contains text chat models",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-non-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-non-reasoning-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-non-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-latest-non-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-experimental-beta-0304-non-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-experimental-beta-non-reasoning-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-0309-non-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-non-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-non-reasoning",
+          "grok-4.20-non-reasoning-latest",
+          "grok-4.20-beta-non-reasoning",
+          "grok-4.20-beta-latest-non-reasoning",
+          "grok-4.20-experimental-beta-0304-non-reasoning",
+          "grok-4.20-experimental-beta-non-reasoning-latest",
+          "grok-4.20-beta-0309-non-reasoning",
+          "grok-4.20-non-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_41d52165d8",
+        "id": "grok-4.20-0309-non-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-non-reasoning-gv2",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-non-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-0309-reasoning",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-reasoning-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-0309",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-0309-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-0309",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-latest-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-beta-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-experimental-beta-0304-reasoning",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-experimental-beta-0304",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-experimental-beta-reasoning-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-experimental-beta-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-0309-reasoning",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-reasoning-latest",
+          "grok-4.20",
+          "grok-4.20-reasoning",
+          "grok-4.20-0309",
+          "grok-4.20-beta-0309-reasoning",
+          "grok-4.20-beta",
+          "grok-4.20-beta-0309",
+          "grok-4.20-beta-latest",
+          "grok-4.20-beta-latest-reasoning",
+          "grok-4.20-beta-reasoning",
+          "grok-4.20-experimental-beta-0304-reasoning",
+          "grok-4.20-experimental-beta-0304",
+          "grok-4.20-experimental-beta-reasoning-latest",
+          "grok-4.20-experimental-beta-latest",
+          "grok-4.20-reasoning-gv2"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_b965085801",
+        "id": "grok-4.20-0309-reasoning",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-reasoning-gv2",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-0309-reasoning",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-multi-agent-0309",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-multi-agent",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-multi-agent-0309",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-multi-agent-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-multi-agent-0309",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-multi-agent-beta-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-multi-agent-0309",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-multi-agent-experimental-beta-0304",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-multi-agent-0309",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-multi-agent-experimental-beta-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-multi-agent-0309",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.20-multi-agent-0309",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.20-multi-agent",
+          "grok-4.20-multi-agent-latest",
+          "grok-4.20-multi-agent-beta-latest",
+          "grok-4.20-multi-agent-experimental-beta-0304",
+          "grok-4.20-multi-agent-experimental-beta-latest",
+          "grok-4.20-multi-agent-beta-0309"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 25000,
+        "created": 1773014400,
+        "fingerprint": "fp_aea1788280",
+        "id": "grok-4.20-multi-agent-0309",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.20-multi-agent-beta-0309",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.20-multi-agent-0309",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.3",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.3-latest"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "capabilities": {
+          "default_reasoning_effort": "low",
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 25000,
+        "created": 1776384000,
+        "fingerprint": "fp_5bdbcb6cb6",
+        "id": "grok-4.3",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.3",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.3",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.3-latest"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "capabilities": {
+          "default_reasoning_effort": "low",
+          "reasoning_effort": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 25000,
+        "created": 1776384000,
+        "fingerprint": "fp_5bdbcb6cb6",
+        "id": "grok-4.3",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 12500,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.3-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.3",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.5",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.5-latest",
+          "grok-build-latest"
+        ],
+        "cached_prompt_text_token_price": 3000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1782691200,
+        "fingerprint": "fp_f5259ea6a3",
+        "id": "grok-4.5",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.5",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.5",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.5-latest",
+          "grok-build-latest"
+        ],
+        "cached_prompt_text_token_price": 3000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1782691200,
+        "fingerprint": "fp_f5259ea6a3",
+        "id": "grok-4.5",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.5-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.5",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.5",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-4.5-latest",
+          "grok-build-latest"
+        ],
+        "cached_prompt_text_token_price": 3000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1782691200,
+        "fingerprint": "fp_f5259ea6a3",
+        "id": "grok-4.5",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-build-latest",
+      "provider": "xai",
+      "reason": "provider alias for grok-4.5",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-4.6",
+      "catalog_metadata": {
+        "aliases": [],
+        "cached_prompt_text_token_price": 5000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1785974400,
+        "fingerprint": "fp_43bc803bbe",
+        "id": "grok-4.6",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.6",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-4.7",
+      "catalog_metadata": {
+        "aliases": [],
+        "cached_prompt_text_token_price": 5000,
+        "capabilities": {
+          "default_reasoning_effort": "high",
+          "reasoning_effort": [
+            "low",
+            "medium",
+            "high",
+            "xhigh"
+          ]
+        },
+        "completion_text_token_price": 60000,
+        "created": 1788307200,
+        "fingerprint": "fp_d15d210ead",
+        "id": "grok-4.7",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 20000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-4.7",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-build-0.1",
+      "provider": "xai",
+      "reason": "provider lists text input and output",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-code-fast-1",
+      "provider": "xai",
+      "reason": "provider alias for grok-build-0.1",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-code-fast",
+      "provider": "xai",
+      "reason": "provider alias for grok-build-0.1",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "grok-build-0.1",
+      "catalog_metadata": {
+        "aliases": [
+          "grok-code-fast-1",
+          "grok-code-fast",
+          "grok-code-fast-1-0825"
+        ],
+        "cached_prompt_text_token_price": 2000,
+        "completion_text_token_price": 20000,
+        "created": 1776297600,
+        "fingerprint": "fp_697fda935d",
+        "id": "grok-build-0.1",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "object": "model",
+        "output_modalities": [
+          "text"
+        ],
+        "owned_by": "xai",
+        "prompt_text_token_price": 10000,
+        "version": "1.0"
+      },
+      "disposition": "include",
+      "model_id": "grok-code-fast-1-0825",
+      "provider": "xai",
+      "reason": "provider alias for grok-build-0.1",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "codestral-2508",
+      "provider": "mistral",
+      "reason": "provider explicitly marks chat completion support",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "codestral-latest",
+      "provider": "mistral",
+      "reason": "provider alias for codestral-2508",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-code-latest",
+      "provider": "mistral",
+      "reason": "provider alias for codestral-2508",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "codestral-2508",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-latest",
+          "mistral-code-latest",
+          "mistral-code-fim-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": true,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-2508",
+        "max_context_length": 256000,
+        "name": "codestral-2508",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-code-fim-latest",
+      "provider": "mistral",
+      "reason": "provider alias for codestral-2508",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-small-2603",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-small-latest",
+          "mistral-vibe-cli-fast",
+          "magistral-small-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-small-2603",
+        "max_context_length": 262144,
+        "name": "mistral-small-2603",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-small-2603",
+      "provider": "mistral",
+      "reason": "provider explicitly marks chat completion support",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-small-2603",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-small-latest",
+          "mistral-vibe-cli-fast",
+          "magistral-small-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-small-2603",
+        "max_context_length": 262144,
+        "name": "mistral-small-2603",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-small-latest",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-small-2603",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-small-2603",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-small-latest",
+          "mistral-vibe-cli-fast",
+          "magistral-small-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-small-2603",
+        "max_context_length": 262144,
+        "name": "mistral-small-2603",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-vibe-cli-fast",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-small-2603",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-small-2603",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-small-latest",
+          "mistral-vibe-cli-fast",
+          "magistral-small-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-small-2603",
+        "max_context_length": 262144,
+        "name": "mistral-small-2603",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "magistral-small-latest",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-small-2603",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "voxtral-small-2507",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-small-latest"
+        ],
+        "capabilities": {
+          "audio": true,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-small-2507",
+        "max_context_length": 32768,
+        "name": "voxtral-small-2507",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "voxtral-small-2507",
+      "provider": "mistral",
+      "reason": "provider explicitly marks chat completion support",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-small-2507",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-small-latest"
+        ],
+        "capabilities": {
+          "audio": true,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-small-2507",
+        "max_context_length": 32768,
+        "name": "voxtral-small-2507",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "voxtral-small-latest",
+      "provider": "mistral",
+      "reason": "provider alias for voxtral-small-2507",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "labs-leanstral-1-5-1",
+      "catalog_metadata": {
+        "aliases": [
+          "labs-leanstral-1-5"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": true,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "labs-leanstral-1-5-1",
+        "max_context_length": 262144,
+        "name": "labs-leanstral-1-5-1",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "labs-leanstral-1-5-1",
+      "provider": "mistral",
+      "reason": "Mistral API returned labs_not_enabled; organization admin enablement is required",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "labs-leanstral-1-5",
+      "catalog_metadata": {
+        "aliases": [
+          "labs-leanstral-1-5-1"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": true,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "labs-leanstral-1-5",
+        "max_context_length": 262144,
+        "name": "labs-leanstral-1-5-1",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "labs-leanstral-1-5",
+      "provider": "mistral",
+      "reason": "Mistral API returned labs_not_enabled; organization admin enablement is required",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "ministral-3b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-3b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-3b-2512",
+        "max_context_length": 131072,
+        "name": "ministral-3b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "ministral-3b-2512",
+      "provider": "mistral",
+      "reason": "provider explicitly marks chat completion support",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "ministral-3b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-3b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-3b-2512",
+        "max_context_length": 131072,
+        "name": "ministral-3b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "ministral-3b-latest",
+      "provider": "mistral",
+      "reason": "provider alias for ministral-3b-2512",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "ministral-8b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-8b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-8b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-8b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "ministral-8b-2512",
+      "provider": "mistral",
+      "reason": "provider explicitly marks chat completion support",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "ministral-8b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-8b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-8b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-8b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "ministral-8b-latest",
+      "provider": "mistral",
+      "reason": "provider alias for ministral-8b-2512",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "ministral-14b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-14b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-14b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-14b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "ministral-14b-2512",
+      "provider": "mistral",
+      "reason": "provider explicitly marks chat completion support",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "ministral-14b-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "ministral-14b-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "ministral-14b-2512",
+        "max_context_length": 262144,
+        "name": "ministral-14b-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "ministral-14b-latest",
+      "provider": "mistral",
+      "reason": "provider alias for ministral-14b-2512",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-medium-latest",
+      "provider": "mistral",
+      "reason": "provider explicitly marks chat completion support",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-medium",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-medium-3-5",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-medium-3.5",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-medium-3",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-medium-2604",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-vibe-cli-latest",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "mistral-vibe-cli-with-tools",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-medium-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-medium",
+          "mistral-medium-3-5",
+          "mistral-medium-3.5",
+          "mistral-medium-3",
+          "mistral-medium-2604",
+          "mistral-vibe-cli-latest",
+          "mistral-vibe-cli-with-tools",
+          "magistral-medium-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": true,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": true,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-medium-latest",
+        "max_context_length": 262144,
+        "name": "mistral-medium-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "include",
+      "model_id": "magistral-medium-latest",
+      "provider": "mistral",
+      "reason": "provider alias for mistral-medium-latest",
+      "variant_kind": "alias"
+    },
+    {
+      "canonical_id": "mistral-embed-2312",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-embed"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "mistral-embed-2312",
+        "max_context_length": 8192,
+        "name": "mistral-embed-2312",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-embed-2312",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-embed",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-embed-2312"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "mistral-embed",
+        "max_context_length": 8192,
+        "name": "mistral-embed-2312",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-embed",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "codestral-embed",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-embed-2505"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-embed",
+        "max_context_length": 8192,
+        "name": "codestral-embed",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "codestral-embed",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "codestral-embed-2505",
+      "catalog_metadata": {
+        "aliases": [
+          "codestral-embed"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "codestral-embed-2505",
+        "max_context_length": 8192,
+        "name": "codestral-embed",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "codestral-embed-2505",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-moderation-2603",
+      "catalog_metadata": {
+        "aliases": [],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": true,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": true,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "mistral-moderation-2603",
+        "max_context_length": 131072,
+        "name": "mistral-moderation-2603",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-moderation-2603",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-ocr-2512",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-ocr-3-0",
+          "mistral-ocr-3"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": true,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-ocr-2512",
+        "max_context_length": 16384,
+        "name": "mistral-ocr-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-ocr-2512",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-ocr-3-0",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-ocr-2512",
+          "mistral-ocr-3"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": true,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-ocr-3-0",
+        "max_context_length": 16384,
+        "name": "mistral-ocr-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-ocr-3-0",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-ocr-3",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-ocr-2512",
+          "mistral-ocr-3-0"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": true,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-ocr-3",
+        "max_context_length": 16384,
+        "name": "mistral-ocr-2512",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-ocr-3",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-ocr-4-0",
+      "catalog_metadata": {
+        "aliases": [],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": true,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-ocr-4-0",
+        "max_context_length": 16384,
+        "name": "mistral-ocr-4-0",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-ocr-4-0",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-ocr-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-ocr-4",
+          "mistral-ocr-4-1"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": true,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-ocr-latest",
+        "max_context_length": 16384,
+        "name": "mistral-ocr-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-ocr-latest",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-ocr-4",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-ocr-latest",
+          "mistral-ocr-4-1"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": true,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-ocr-4",
+        "max_context_length": 16384,
+        "name": "mistral-ocr-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-ocr-4",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "mistral-ocr-4-1",
+      "catalog_metadata": {
+        "aliases": [
+          "mistral-ocr-latest",
+          "mistral-ocr-4"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": true,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": true
+        },
+        "created": 1790576063,
+        "id": "mistral-ocr-4-1",
+        "max_context_length": 16384,
+        "name": "mistral-ocr-latest",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "mistral-ocr-4-1",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-mini-2602",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-mini-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": true,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-mini-2602",
+        "max_context_length": 16384,
+        "name": "voxtral-mini-2602",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "voxtral-mini-2602",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-mini-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-mini-2602"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": true,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-mini-latest",
+        "max_context_length": 16384,
+        "name": "voxtral-mini-2602",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "voxtral-mini-latest",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-mini-transcribe-realtime-2602",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-mini-realtime-2602",
+          "voxtral-mini-realtime-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": true,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-mini-transcribe-realtime-2602",
+        "max_context_length": 32768,
+        "name": "voxtral-mini-transcribe-realtime-2602",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "voxtral-mini-transcribe-realtime-2602",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-mini-realtime-2602",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-mini-transcribe-realtime-2602",
+          "voxtral-mini-realtime-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": true,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-mini-realtime-2602",
+        "max_context_length": 32768,
+        "name": "voxtral-mini-transcribe-realtime-2602",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "voxtral-mini-realtime-2602",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-mini-realtime-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-mini-transcribe-realtime-2602",
+          "voxtral-mini-realtime-2602"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": false,
+          "audio_transcription": false,
+          "audio_transcription_realtime": true,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": false,
+          "function_calling": false,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-mini-realtime-latest",
+        "max_context_length": 32768,
+        "name": "voxtral-mini-transcribe-realtime-2602",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "voxtral-mini-realtime-latest",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-mini-tts-2603",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-mini-tts-latest"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": true,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-mini-tts-2603",
+        "max_context_length": 4096,
+        "name": "voxtral-mini-tts-2603",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "voxtral-mini-tts-2603",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    },
+    {
+      "canonical_id": "voxtral-mini-tts-latest",
+      "catalog_metadata": {
+        "aliases": [
+          "voxtral-mini-tts-2603"
+        ],
+        "capabilities": {
+          "audio": false,
+          "audio_speech": true,
+          "audio_transcription": false,
+          "audio_transcription_realtime": false,
+          "classification": false,
+          "completion_chat": false,
+          "completion_fim": false,
+          "fine_tuning": true,
+          "function_calling": true,
+          "moderation": false,
+          "ocr": false,
+          "reasoning": false,
+          "unified_resources": false,
+          "vision": false
+        },
+        "created": 1790576063,
+        "id": "voxtral-mini-tts-latest",
+        "max_context_length": 4096,
+        "name": "voxtral-mini-tts-2603",
+        "object": "model",
+        "owned_by": "mistralai",
+        "type": "base"
+      },
+      "disposition": "exclude",
+      "model_id": "voxtral-mini-tts-latest",
+      "provider": "mistral",
+      "reason": "provider does not mark chat completion capability",
+      "variant_kind": "catalog_entry"
+    }
+  ],
+  "protocol_version": "1.0",
+  "selection_rule": "include every account-listed text-to-text/chat model, every provider-listed alias, and text-completion-only OpenAI base models; preserve search-specialized models as a separate no-tools exploratory cohort; exclude official API shutdowns, audio, image, video, embedding, moderation, OCR/ASR/TTS specializations, archived, and non-chat models",
+  "separate_exploratory_target_count": 6
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "taskset_id": "synthetic-python-controls-v1",
+  "source": "repository-controlled pilot fixtures; not dissertation evidence",
+  "tasks": [
+    {
+      "task_id": "sum-even-values",
+      "language": "python",
+      "source_reference": "repository-controlled calibration fixture",
+      "source_license": "project-internal; not for dissertation evidence",
+      "original_prompt": "Write a Python function `sum_even_values(values)` that returns the sum of the even integers in a list of integers. An empty list returns 0.",
+      "shifted_prompt": "Implement `sum_even_values(sequence)`. Given a list of integers, produce the total of entries divisible by two; if it has no entries, produce zero.",
+      "shift_proxy": "syntax",
+      "transformation": "semantics-preserving rewording and parameter renaming",
+      "semantic_invariant": "For every list of integers, both prompts require the sum of exactly its even values.",
+      "expected_symbol": "sum_even_values",
+      "reference_solution": "def sum_even_values(values):\n    return sum(value for value in values if value % 2 == 0)",
+      "test_code": "from candidate import sum_even_values\n\ndef test_mixed_values():\n    assert sum_even_values([1, 2, 3, 4, -6]) == 0\n\ndef test_empty_values():\n    assert sum_even_values([]) == 0\n",
+      "status": "pilot"
+    },
+    {
+      "task_id": "normalize-whitespace",
+      "language": "python",
+      "source_reference": "repository-controlled calibration fixture",
+      "source_license": "project-internal; not for dissertation evidence",
+      "original_prompt": "Write a Python function `normalize_whitespace(text)` that strips leading and trailing whitespace and replaces every internal run of whitespace with one space.",
+      "shifted_prompt": "Create `normalize_whitespace(raw_text)`: remove outside spacing, then collapse each consecutive whitespace block between words to a single ordinary space.",
+      "shift_proxy": "syntax",
+      "transformation": "semantics-preserving rewording and parameter renaming",
+      "semantic_invariant": "For every string, both prompts return stripped text with each internal whitespace run represented by one space.",
+      "expected_symbol": "normalize_whitespace",
+      "reference_solution": "import re\n\ndef normalize_whitespace(text):\n    return re.sub(r'\\s+', ' ', text).strip()",
+      "test_code": "from candidate import normalize_whitespace\n\ndef test_mixed_whitespace():\n    assert normalize_whitespace('  a\\t  b\\n c  ') == 'a b c'\n\ndef test_blank_string():\n    assert normalize_whitespace('   ') == ''\n",
+      "status": "pilot"
+    }
+  ]
+}
