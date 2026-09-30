@@ -1,0 +1,132 @@
+{
+  "created_at": "2026-09-29T16:12:40.577684+00:00",
+  "docground_version": "0.2.0",
+  "documentation_snapshot_date": "2026-09-29",
+  "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+  "schema_version": "1.0",
+  "status": "approved",
+  "tasks": [
+    {
+      "approval": "approve_suggestion",
+      "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+      "libraries": [
+        "pandas"
+      ],
+      "original_prompt": "Write complete Python code for `region_totals(csv_text)`. The input is CSV text with `region` and numeric `amount` columns. Return a dictionary mapping each region to the sum of its amounts.",
+      "prompt_hashes": {
+        "original": "d736ddf801061f0b6244dfd95fd6594e6835bb2da14d2003a9c03ca34b84737d",
+        "shifted": "29687cd6f8f316148459d059058a88a44f31728fa5c4800e9185c7329956d323",
+        "suggested": "b7df652d0e248752289ec88e659e53554cec268be6012641881bdd360ae10e35"
+      },
+      "required_apis": [
+        "pandas.read_csv",
+        "pandas.DataFrame.groupby"
+      ],
+      "shifted_prompt": "Write complete Python code for `region_totals(csv_text)` using pandas. Parse the CSV text with `pandas.read_csv` and an in-memory text stream, group the rows by `region` with `DataFrame.groupby`, sum `amount`, and return a dictionary.",
+      "suggested_prompt": "ORIGINAL TASK (preserved verbatim):\nWrite complete Python code for `region_totals(csv_text)` using pandas. Parse the CSV text with `pandas.read_csv` and an in-memory text stream, group the rows by `region` with `DataFrame.groupby`, sum `amount`, and return a dictionary.\n\nReference API documentation from the selected snapshot:\nSnapshot date: 2026-09-29\n\n## pandas (third-party): Tabular data analysis library built around the DataFrame.\nSource checked: 3.0.6, 2026-09-29\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.merge.html\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html\n- pandas.read_csv(filepath_or_buffer, *, sep=',', header='infer', names=None, usecols=None, dtype=None, nrows=None) -> DataFrame\n- pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=None)\n- DataFrame.head(n=5) -> DataFrame\n- DataFrame.groupby(by=None, level=None, *, as_index=True, sort=True, group_keys=True, observed=True, dropna=True) -> DataFrameGroupBy\n- pandas.merge(left, right, how='inner', on=None, left_on=None, right_on=None, left_index=False, right_index=False, sort=False, suffixes=('_x', '_y'), copy=<no_default>, indicator=False, validate=None) -> DataFrame\n- DataFrame.merge(right, how='inner', on=None, left_on=None, right_on=None) -> DataFrame\n- DataFrame.to_csv(path_or_buf=None, *, sep=',', index=True) -> str | None\n\nUse the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.",
+      "task_id": "api-pandas-groupby"
+    },
+    {
+      "approval": "approve_suggestion",
+      "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+      "libraries": [
+        "pandas"
+      ],
+      "original_prompt": "Write complete Python code for `join_inventory(prices, stock)`. Each input is a list of dictionaries keyed by `sku`. Return records containing `sku`, `price`, and `quantity` for matching SKUs only, preserving the left input order.",
+      "prompt_hashes": {
+        "original": "148a2ee14ec59549fa9d874140b6e66d5c92a3b5d8b64bd8d95d88fe064a268e",
+        "shifted": "d7e9048a7328e575662bfc962fddc5dbdf96fab639a9d68ee4fc532ae5d58654",
+        "suggested": "7cb093b0a11d6682d6d8cc45e691e0cc21d90e21d6eb1b1bf2df9e4008c1da0d"
+      },
+      "required_apis": [
+        "pandas.merge"
+      ],
+      "shifted_prompt": "Write complete Python code for `join_inventory(prices, stock)` using pandas. Convert both lists of dictionaries to DataFrames, call `pandas.merge` with `on='sku'` and `how='inner'`, and return records with `sku`, `price`, and `quantity` in left input order.",
+      "suggested_prompt": "ORIGINAL TASK (preserved verbatim):\nWrite complete Python code for `join_inventory(prices, stock)` using pandas. Convert both lists of dictionaries to DataFrames, call `pandas.merge` with `on='sku'` and `how='inner'`, and return records with `sku`, `price`, and `quantity` in left input order.\n\nReference API documentation from the selected snapshot:\nSnapshot date: 2026-09-29\n\n## pandas (third-party): Tabular data analysis library built around the DataFrame.\nSource checked: 3.0.6, 2026-09-29\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.merge.html\nOfficial reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html\n- pandas.read_csv(filepath_or_buffer, *, sep=',', header='infer', names=None, usecols=None, dtype=None, nrows=None) -> DataFrame\n- pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=None)\n- DataFrame.head(n=5) -> DataFrame\n- DataFrame.groupby(by=None, level=None, *, as_index=True, sort=True, group_keys=True, observed=True, dropna=True) -> DataFrameGroupBy\n- pandas.merge(left, right, how='inner', on=None, left_on=None, right_on=None, left_index=False, right_index=False, sort=False, suffixes=('_x', '_y'), copy=<no_default>, indicator=False, validate=None) -> DataFrame\n- DataFrame.merge(right, how='inner', on=None, left_on=None, right_on=None) -> DataFrame\n- DataFrame.to_csv(path_or_buf=None, *, sep=',', index=True) -> str | None\n\nUse the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.",
+      "task_id": "api-pandas-merge"
+    },
+    {
+      "approval": "approve_suggestion",
+      "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+      "libraries": [
+        "numpy"
+      ],
+      "original_prompt": "Write complete Python code for `vector_length(values)`. Return the Euclidean length of a non-empty one-dimensional numeric sequence as a float.",
+      "prompt_hashes": {
+        "original": "32c484cfd2cee0bd9d6bb5ac814881f6715ba56233299b1ef8c702373c2d8134",
+        "shifted": "0fd96b182347686af0f378acae420137913e5b1d5a86db0603082f6e4689396d",
+        "suggested": "c1bb52eb1d5b4c4108d4595cc69a590e748de48d67ed6de162e420ab0ac0e5fa"
+      },
+      "required_apis": [
+        "numpy.linalg.norm"
+      ],
+      "shifted_prompt": "Write complete Python code for `vector_length(values)` using NumPy. Convert or pass the input as an array-like value and compute its Euclidean vector length with `numpy.linalg.norm`. Return a float.",
+      "suggested_prompt": "ORIGINAL TASK (preserved verbatim):\nWrite complete Python code for `vector_length(values)` using NumPy. Convert or pass the input as an array-like value and compute its Euclidean vector length with `numpy.linalg.norm`. Return a float.\n\nReference API documentation from the selected snapshot:\nSnapshot date: 2026-09-29\n\n## numpy (third-party): N-dimensional arrays and vectorised numerical operations.\nSource checked: 2.5, 2026-09-29\nOfficial reference: https://numpy.org/doc/stable/reference/generated/numpy.reshape.html\nOfficial reference: https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html\n- numpy.array(object, dtype=None, *, copy=True, order='K', ndmin=0) -> ndarray\n- numpy.zeros(shape, dtype=float, order='C') -> ndarray\n- numpy.arange(start, stop=None, step=1, dtype=None) -> ndarray\n- numpy.mean(a, axis=None, dtype=None, out=None) -> ndarray | float\n- numpy.reshape(a, /, shape, order='C', *, copy=None) -> ndarray\n- numpy.linalg.norm(x, ord=None, axis=None, keepdims=False) -> float | ndarray\n\nUse the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.",
+      "task_id": "api-numpy-norm"
+    },
+    {
+      "approval": "approve_suggestion",
+      "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+      "libraries": [
+        "numpy"
+      ],
+      "original_prompt": "Write complete Python code for `reshape_values(values, rows, columns)`. Reshape a flat numeric sequence into the requested number of rows and columns in row-major order, then return nested Python lists. Reject incompatible dimensions.",
+      "prompt_hashes": {
+        "original": "70d73a9cb7833510677bc641112e41d749a2e77d6f1d4c7c5a7c80352d636b03",
+        "shifted": "365e1d8b8a8d46eaf12aa33842d367328e138d9487e71daedcc99ee0759abb22",
+        "suggested": "8fa29cfe0ea312c63b54740eaea00742b5be8882e4a3f04b0f6bd71e3c8b030b"
+      },
+      "required_apis": [
+        "numpy.reshape"
+      ],
+      "shifted_prompt": "Write complete Python code for `reshape_values(values, rows, columns)` using NumPy. Use `numpy.reshape(values, (rows, columns), order='C')`, return nested Python lists, and allow NumPy to reject incompatible dimensions.",
+      "suggested_prompt": "ORIGINAL TASK (preserved verbatim):\nWrite complete Python code for `reshape_values(values, rows, columns)` using NumPy. Use `numpy.reshape(values, (rows, columns), order='C')`, return nested Python lists, and allow NumPy to reject incompatible dimensions.\n\nReference API documentation from the selected snapshot:\nSnapshot date: 2026-09-29\n\n## numpy (third-party): N-dimensional arrays and vectorised numerical operations.\nSource checked: 2.5, 2026-09-29\nOfficial reference: https://numpy.org/doc/stable/reference/generated/numpy.reshape.html\nOfficial reference: https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html\n- numpy.array(object, dtype=None, *, copy=True, order='K', ndmin=0) -> ndarray\n- numpy.zeros(shape, dtype=float, order='C') -> ndarray\n- numpy.arange(start, stop=None, step=1, dtype=None) -> ndarray\n- numpy.mean(a, axis=None, dtype=None, out=None) -> ndarray | float\n- numpy.reshape(a, /, shape, order='C', *, copy=None) -> ndarray\n- numpy.linalg.norm(x, ord=None, axis=None, keepdims=False) -> float | ndarray\n\nUse the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.",
+      "task_id": "api-numpy-reshape"
+    },
+    {
+      "approval": "approve_suggestion",
+      "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+      "libraries": [
+        "requests"
+      ],
+      "original_prompt": "Write complete Python code for `fetch_title(url)`. Request a JSON endpoint and return its `title` field. If the server responds with an unsuccessful HTTP status, raise the corresponding request error. Never make an actual network request in the supplied tests.",
+      "prompt_hashes": {
+        "original": "bfb0de9a2362a39b73c9c0fe94bdcbc7ac9938e9cb19665a03dfd1cab6bf6cf2",
+        "shifted": "b191fed143a9395141944e39c9feac172bfe25a5e50aba0934690ea740ad5ff6",
+        "suggested": "143203aa2b8ac09b80be42b4c406f3784ce7c4cdc97522c1aeab0d3f4d0b7a76"
+      },
+      "required_apis": [
+        "requests.get",
+        "requests.Response.raise_for_status",
+        "requests.Response.json"
+      ],
+      "shifted_prompt": "Write complete Python code for `fetch_title(url)` using Requests. Call `requests.get` with a five-second timeout, call `Response.raise_for_status`, decode the response with `Response.json`, and return its `title` field. The supplied tests mock the request; do not add retries.",
+      "suggested_prompt": "ORIGINAL TASK (preserved verbatim):\nWrite complete Python code for `fetch_title(url)` using Requests. Call `requests.get` with a five-second timeout, call `Response.raise_for_status`, decode the response with `Response.json`, and return its `title` field. The supplied tests mock the request; do not add retries.\n\nReference API documentation from the selected snapshot:\nSnapshot date: 2026-09-29\n\n## requests (third-party): HTTP client for Python.\nSource checked: 2.34.2, 2026-09-29\nOfficial reference: https://requests.readthedocs.io/en/stable/api/\nOfficial reference: https://requests.readthedocs.io/en/latest/user/quickstart/\n- requests.get(url, params=None, **kwargs) -> Response\n- requests.post(url, data=None, json=None, **kwargs) -> Response\n- requests.request(method, url, **kwargs) -> Response\n- Response.json(**kwargs) -> Any\n- Response.raise_for_status() -> None\n- Response.status_code -> int\n- Response.text -> str\n\nUse the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.",
+      "task_id": "api-requests-get-json"
+    },
+    {
+      "approval": "approve_suggestion",
+      "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+      "libraries": [
+        "requests"
+      ],
+      "original_prompt": "Write complete Python code for `create_item(url, payload)`. Send the mapping as JSON to an endpoint and return the `id` from the JSON response. If the server responds with an unsuccessful HTTP status, raise the corresponding request error. Never make an actual network request in the supplied tests.",
+      "prompt_hashes": {
+        "original": "af271d85fb20215c8113efae8ee5c1d3bf3505b4ced9da57ca48b13c5bd175cf",
+        "shifted": "e0697861211b97ac02944f57f38ec3b98e2e5fa2150f5bfedc11fd089752b77e",
+        "suggested": "767d8f8536322066b1d65038617d687a830fcd2df5b8b3fbab71b346eaadd129"
+      },
+      "required_apis": [
+        "requests.post",
+        "requests.Response.raise_for_status",
+        "requests.Response.json"
+      ],
+      "shifted_prompt": "Write complete Python code for `create_item(url, payload)` using Requests. Call `requests.post` with `json=payload` and a five-second timeout, call `Response.raise_for_status`, decode with `Response.json`, and return the response's `id`. The supplied tests mock the request; do not add retries.",
+      "suggested_prompt": "ORIGINAL TASK (preserved verbatim):\nWrite complete Python code for `create_item(url, payload)` using Requests. Call `requests.post` with `json=payload` and a five-second timeout, call `Response.raise_for_status`, decode with `Response.json`, and return the response's `id`. The supplied tests mock the request; do not add retries.\n\nReference API documentation from the selected snapshot:\nSnapshot date: 2026-09-29\n\n## requests (third-party): HTTP client for Python.\nSource checked: 2.34.2, 2026-09-29\nOfficial reference: https://requests.readthedocs.io/en/stable/api/\nOfficial reference: https://requests.readthedocs.io/en/latest/user/quickstart/\n- requests.get(url, params=None, **kwargs) -> Response\n- requests.post(url, data=None, json=None, **kwargs) -> Response\n- requests.request(method, url, **kwargs) -> Response\n- Response.json(**kwargs) -> Any\n- Response.raise_for_status() -> None\n- Response.status_code -> int\n- Response.text -> str\n\nUse the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.",
+      "task_id": "api-requests-post-json"
+    }
+  ],
+  "taskset_id": "docground-api-pilot-candidate-v1",
+  "taskset_path": "configs/docground_api_pilot_v1_candidate.json",
+  "taskset_sha256": "12b177fa0f9595ae301b9e48603610e4c0c7cf82ca004ad9c55ca86c791af606"
+}

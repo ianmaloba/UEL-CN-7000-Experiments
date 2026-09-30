@@ -1,0 +1,246 @@
+{
+  "comparison_status": "requires_review",
+  "cleanup_check": {
+    "ordering": "Read-only exact-name inspection completed after the six sequential fixture timings.",
+    "inspection_returncode": 1,
+    "result": "All 31 exact audit-owned container names returned No such container; no container remained to remove.",
+    "existing_containers": [],
+    "removal_actions": [],
+    "inspected_names": [
+      "docground-check-014af58aa9f449998a519f837fe48059",
+      "docground-check-03885c8c03634e00a2ea5066d4e8d6d7",
+      "docground-check-1328bd5cbdd243cc9bcf0164b13d40e3",
+      "docground-check-17a9e7d0488b464c9d757f7fe8c76854",
+      "docground-check-20a935bd2b9743a49fe87cb7b42e8f2b",
+      "docground-check-2e3d5faedbc54daaa138e3ce2a40f565",
+      "docground-check-3eda4b5190dd45ffa24ad7590ed44032",
+      "docground-check-406aadb3505f40379630c63751959fb3",
+      "docground-check-4ef4147b70434360aec28a5030f72074",
+      "docground-check-5898e9cc392b40bea9e8601757963828",
+      "docground-check-612d8bdf240e42c4a40b019b1bc5d4a0",
+      "docground-check-62ff3cb9be314005a199e02aa52d0d3e",
+      "docground-check-64025e6b60284f1ea97d918265089131",
+      "docground-check-656b09fa68694fa0bcb65a0e79311443",
+      "docground-check-66ff45fa8da74cf5b557f6761ba0601e",
+      "docground-check-704f745798254740b87fcc687424232d",
+      "docground-check-78137ff1fe4d43038f590805ea84ead7",
+      "docground-check-786533f4a8894226b2cb023a78a11924",
+      "docground-check-9a3ac33bbfe844e79ab012168344926a",
+      "docground-check-aaeb394f0d614f1695dc10f4c575da3e",
+      "docground-check-b0cd9bee846b4652bf629f77da917b25",
+      "docground-check-baa0c49371354df6b0c94a14c39e8710",
+      "docground-check-c3fa7613104641ed87877c7e2eb3594a",
+      "docground-check-cfb0ada404a64c74bba1a40e4ad70fe4",
+      "docground-check-d351b7e819ca47a797a0a3639e070897",
+      "docground-check-e2499ccb6eb64de6b0943bcacdf60615",
+      "docground-check-e65cbec28fc44605bf16e27307c1243b",
+      "docground-check-eb476e8ae014421b9b59116ad581dbaf",
+      "docground-check-f2f66c2e199f40ecaae5731d566dee0d",
+      "docground-check-f82a7e1c134d48a19d2dde489be25f65",
+      "docground-check-f9717e9bbf2941d3b9e12c0bfd4690d1"
+    ]
+  },
+  "docground_version": "0.2.1",
+  "finished_at": "2026-09-30T05:44:27.705193+00:00",
+  "fixture_checks": [
+    {
+      "elapsed_monotonic_seconds": 5.146872,
+      "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+      "finished_at": "2026-09-30T05:44:17.464654+00:00",
+      "reference_solution_sha256": "c8db5369d3ccb6e6ca36cd45036dea0e72aaecabe7c1b42a0357abd6cec38d5d",
+      "started_at": "2026-09-30T05:44:12.317917+00:00",
+      "task_id": "api-pandas-groupby",
+      "test_code_sha256": "aeeab6c2634015c2d6ac8ed0c8a32ca5ee23349e16d3f8d0b7f02483bda20691",
+      "timeout_seconds": 15.0,
+      "verification": {
+        "correctness": {
+          "returncode": 0,
+          "status": "pass",
+          "stderr": "",
+          "stdout": "",
+          "timed_out": false
+        },
+        "hallucination_findings": [],
+        "notes": [],
+        "security_findings": [],
+        "syntax_error": null,
+        "syntax_status": "pass",
+        "verdict": "pass"
+      }
+    },
+    {
+      "elapsed_monotonic_seconds": 2.542005,
+      "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+      "finished_at": "2026-09-30T05:44:20.006824+00:00",
+      "reference_solution_sha256": "aa27d3624db82ac736d500da350871af197391892c2e59d2d369bb4fcc6c8ee2",
+      "started_at": "2026-09-30T05:44:17.464878+00:00",
+      "task_id": "api-pandas-merge",
+      "test_code_sha256": "0455dda1d4e31e0a2d81e95afde3fd0a24ea815a2bb6336bbb855d2e47ccd99d",
+      "timeout_seconds": 15.0,
+      "verification": {
+        "correctness": {
+          "returncode": 0,
+          "status": "pass",
+          "stderr": "",
+          "stdout": "",
+          "timed_out": false
+        },
+        "hallucination_findings": [],
+        "notes": [],
+        "security_findings": [],
+        "syntax_error": null,
+        "syntax_status": "pass",
+        "verdict": "pass"
+      }
+    },
+    {
+      "elapsed_monotonic_seconds": 1.207783,
+      "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+      "finished_at": "2026-09-30T05:44:21.214832+00:00",
+      "reference_solution_sha256": "a3eeef2b46b1a6d6712dd71c014635830647874aa98454221d212b5f99e0b754",
+      "started_at": "2026-09-30T05:44:20.007079+00:00",
+      "task_id": "api-numpy-norm",
+      "test_code_sha256": "1f5c4a762f731963a5c430aefaa5138d5d7723f1c81b075da6476478628cfe7a",
+      "timeout_seconds": 15.0,
+      "verification": {
+        "correctness": {
+          "returncode": 0,
+          "status": "pass",
+          "stderr": "",
+          "stdout": "",
+          "timed_out": false
+        },
+        "hallucination_findings": [],
+        "notes": [],
+        "security_findings": [],
+        "syntax_error": null,
+        "syntax_status": "pass",
+        "verdict": "pass"
+      }
+    },
+    {
+      "elapsed_monotonic_seconds": 1.881585,
+      "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+      "finished_at": "2026-09-30T05:44:23.096473+00:00",
+      "reference_solution_sha256": "59adbba1c29acef73b1964f9f6ed53bb003a53d7d9a70761d4a5ea9d8fd44667",
+      "started_at": "2026-09-30T05:44:21.214922+00:00",
+      "task_id": "api-numpy-reshape",
+      "test_code_sha256": "b68f8184c26decda4dffd0c5a11c4b8fb60b6c4a07e6373d8c2c9ad2a7fcb944",
+      "timeout_seconds": 15.0,
+      "verification": {
+        "correctness": {
+          "returncode": 0,
+          "status": "pass",
+          "stderr": "",
+          "stdout": "",
+          "timed_out": false
+        },
+        "hallucination_findings": [],
+        "notes": [],
+        "security_findings": [],
+        "syntax_error": null,
+        "syntax_status": "pass",
+        "verdict": "pass"
+      }
+    },
+    {
+      "elapsed_monotonic_seconds": 2.341532,
+      "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+      "finished_at": "2026-09-30T05:44:25.438232+00:00",
+      "reference_solution_sha256": "3c89e5ab57cc08392cf1495b8beac396ed8b27a2a33cd753958d4d4b5fbc2c58",
+      "started_at": "2026-09-30T05:44:23.096755+00:00",
+      "task_id": "api-requests-get-json",
+      "test_code_sha256": "d3d43c3ba8db07e66a1ff074ccef6d6e1221c0f5114da347785db409cf38d5b4",
+      "timeout_seconds": 15.0,
+      "verification": {
+        "correctness": {
+          "returncode": 0,
+          "status": "pass",
+          "stderr": "",
+          "stdout": "",
+          "timed_out": false
+        },
+        "hallucination_findings": [],
+        "notes": [],
+        "security_findings": [],
+        "syntax_error": null,
+        "syntax_status": "pass",
+        "verdict": "pass"
+      }
+    },
+    {
+      "elapsed_monotonic_seconds": 2.266586,
+      "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+      "finished_at": "2026-09-30T05:44:27.704961+00:00",
+      "reference_solution_sha256": "7e29bc2a690623d9040e9acc17f802b2bf872c6e9e751d1ae979195f269caa36",
+      "started_at": "2026-09-30T05:44:25.438418+00:00",
+      "task_id": "api-requests-post-json",
+      "test_code_sha256": "8024db8b63579340bd0bb31366177fd48ba1875eccb2643f20f8250ff92ddcaa",
+      "timeout_seconds": 15.0,
+      "verification": {
+        "correctness": {
+          "returncode": 0,
+          "status": "pass",
+          "stderr": "",
+          "stdout": "",
+          "timed_out": false
+        },
+        "hallucination_findings": [],
+        "notes": [],
+        "security_findings": [],
+        "syntax_error": null,
+        "syntax_status": "pass",
+        "verdict": "pass"
+      }
+    }
+  ],
+  "fixture_workers": 1,
+  "functional_confusion_matrix": [
+    {
+      "count": 31,
+      "original": "fail",
+      "replay": "fail"
+    },
+    {
+      "count": 5,
+      "original": "fail",
+      "replay": "timeout"
+    },
+    {
+      "count": 7,
+      "original": "not_run",
+      "replay": "not_run"
+    },
+    {
+      "count": 244,
+      "original": "pass",
+      "replay": "pass"
+    },
+    {
+      "count": 73,
+      "original": "pass",
+      "replay": "timeout"
+    },
+    {
+      "count": 1,
+      "original": "timeout",
+      "replay": "fail"
+    }
+  ],
+  "interpretation": [
+    "The source audit pass status records integrity/completion, not equivalent functional outcomes or dissertation readiness.",
+    "All 79 functional disagreements involve a timeout in either original or replay evaluation. No pass-to-fail or fail-to-pass changes occurred.",
+    "A long process wall-clock gap was observed during replay. Sleep/resume, local load and Docker timing are possible explanations, but the cause is unconfirmed.",
+    "Sequential reference diagnostics assess the current environment; they cannot establish the cause of earlier timing outcomes.",
+    "Original saved model responses and both evaluation sets remain unchanged. These diagnostics generate no new model observations."
+  ],
+  "network_calls": 0,
+  "new_candidate_evaluations": 0,
+  "replay_cleanup_uncertainty_records": 31,
+  "replay_timeout_records": 78,
+  "schema_version": 1,
+  "source_audit": "results/tables/docground_api_pilot_v1/docground_reuse_audit_0_2_1.json",
+  "source_audit_sha256": "7d3c195b0af4ac1646d2c23a07fc28880034d11d06c1d6b3bd1cfa0b5553e161",
+  "source_audit_unchanged": true,
+  "started_at": "2026-09-30T05:44:12.317352+00:00"
+}
