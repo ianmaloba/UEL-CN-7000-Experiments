@@ -1,0 +1,13 @@
+comparison,before_outcome,after_outcome,count
+shifted_baseline_minus_baseline,0,0,1
+shifted_baseline_minus_baseline,0,1,1
+shifted_baseline_minus_baseline,1,0,13
+shifted_baseline_minus_baseline,1,1,18
+shifted_docground_minus_shifted_baseline,0,0,1
+shifted_docground_minus_shifted_baseline,0,1,13
+shifted_docground_minus_shifted_baseline,1,0,3
+shifted_docground_minus_shifted_baseline,1,1,18
+shifted_docground_minus_baseline,0,0,0
+shifted_docground_minus_baseline,0,1,2
+shifted_docground_minus_baseline,1,0,4
+shifted_docground_minus_baseline,1,1,26

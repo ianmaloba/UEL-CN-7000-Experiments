@@ -1,0 +1,163 @@
+{
+  "scope": "Arithmetic and static source review only; not independent authentication of provider execution",
+  "attempts": 116,
+  "selected_slots": 108,
+  "conditions": {
+    "baseline": {
+      "slots": 36,
+      "generation": {
+        "complete": 33,
+        "incomplete_response": 2,
+        "transport_or_parse_error": 1
+      },
+      "functional": {
+        "fail": 2,
+        "pass": 31,
+        "not_run": 3
+      }
+    },
+    "shifted_baseline": {
+      "slots": 36,
+      "generation": {
+        "complete": 36
+      },
+      "functional": {
+        "fail": 14,
+        "pass": 22
+      }
+    },
+    "shifted_docground": {
+      "slots": 36,
+      "generation": {
+        "complete": 35,
+        "incomplete_response": 1
+      },
+      "functional": {
+        "pass": 31,
+        "fail": 4,
+        "not_run": 1
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "before": "baseline",
+      "after": "shifted_baseline",
+      "pairs": 33,
+      "transitions": {
+        "('fail', 'fail')": 1,
+        "('pass', 'pass')": 18,
+        "('pass', 'fail')": 13,
+        "('fail', 'pass')": 1
+      },
+      "pooled_delta_pp": -36.36363636363637,
+      "task_mean_delta_pp": -35.0,
+      "task_deltas": {
+        "api-numpy-norm": -0.2,
+        "api-numpy-reshape": -0.16666666666666666,
+        "api-pandas-groupby": -0.8333333333333334,
+        "api-requests-get-json": -0.5,
+        "api-requests-post-json": 0.0,
+        "api-pandas-merge": -0.4
+      },
+      "task_pair_counts": {
+        "api-numpy-norm": 5,
+        "api-numpy-reshape": 6,
+        "api-pandas-groupby": 6,
+        "api-requests-get-json": 6,
+        "api-requests-post-json": 5,
+        "api-pandas-merge": 5
+      }
+    },
+    {
+      "before": "shifted_baseline",
+      "after": "shifted_docground",
+      "pairs": 35,
+      "transitions": {
+        "('fail', 'pass')": 13,
+        "('pass', 'pass')": 18,
+        "('fail', 'fail')": 1,
+        "('pass', 'fail')": 3
+      },
+      "pooled_delta_pp": 28.571428571428573,
+      "task_mean_delta_pp": 28.333333333333332,
+      "task_deltas": {
+        "api-numpy-norm": 0.16666666666666666,
+        "api-numpy-reshape": 0.2,
+        "api-pandas-groupby": 0.6666666666666666,
+        "api-pandas-merge": 0.16666666666666666,
+        "api-requests-get-json": 0.3333333333333333,
+        "api-requests-post-json": 0.16666666666666666
+      },
+      "task_pair_counts": {
+        "api-numpy-norm": 6,
+        "api-numpy-reshape": 5,
+        "api-pandas-groupby": 6,
+        "api-pandas-merge": 6,
+        "api-requests-get-json": 6,
+        "api-requests-post-json": 6
+      }
+    },
+    {
+      "before": "baseline",
+      "after": "shifted_docground",
+      "pairs": 32,
+      "transitions": {
+        "('fail', 'pass')": 2,
+        "('pass', 'pass')": 26,
+        "('pass', 'fail')": 4
+      },
+      "pooled_delta_pp": -6.25,
+      "task_mean_delta_pp": -5.5555555555555545,
+      "task_deltas": {
+        "api-numpy-norm": 0.0,
+        "api-numpy-reshape": 0.0,
+        "api-pandas-groupby": -0.16666666666666666,
+        "api-requests-get-json": -0.16666666666666666,
+        "api-requests-post-json": 0.2,
+        "api-pandas-merge": -0.2
+      },
+      "task_pair_counts": {
+        "api-numpy-norm": 5,
+        "api-numpy-reshape": 5,
+        "api-pandas-groupby": 6,
+        "api-requests-get-json": 6,
+        "api-requests-post-json": 5,
+        "api-pandas-merge": 5
+      }
+    }
+  ],
+  "prompt_hashes": {
+    "normalized_match": 116
+  },
+  "security_review": [
+    {
+      "run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "rule": "B101",
+      "severity": "LOW",
+      "assert_nodes_in_saved_code": 0,
+      "finding_matches_saved_code": false
+    },
+    {
+      "run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "rule": "B101",
+      "severity": "LOW",
+      "assert_nodes_in_saved_code": 0,
+      "finding_matches_saved_code": false
+    }
+  ],
+  "inventory_missing": [
+    ".DS_Store",
+    "dataset_provenance.json"
+  ],
+  "inventory_changed": [
+    "docground_replay/docground_reuse_audit.json",
+    "validation.json"
+  ],
+  "provenance_status": "unresolved: missing dataset_provenance.json and fixture wording in chart registry",
+  "generation_all_attempts": {
+    "complete": 104,
+    "transport_or_parse_error": 9,
+    "incomplete_response": 3
+  }
+}

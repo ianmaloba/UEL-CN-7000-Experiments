@@ -1,0 +1,306 @@
+{
+  "registry": [
+    {
+      "figure_id": "figure_model_coverage_generation_status",
+      "title": "Generation status by provider",
+      "png": "figures/figure_model_coverage_generation_status.png",
+      "source_files": [
+        "tables/table_model_coverage_provider.csv"
+      ],
+      "source_columns": [
+        "provider",
+        "latest_complete_outputs",
+        "latest_incomplete_outputs",
+        "latest_provider_errors"
+      ],
+      "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_model_coverage_paired_status",
+      "title": "Paired generation status by provider",
+      "png": "figures/figure_model_coverage_paired_status.png",
+      "source_files": [
+        "tables/table_model_coverage_provider.csv"
+      ],
+      "source_columns": [
+        "provider",
+        "complete_pairs",
+        "mixed_pairs",
+        "infrastructure_error_pairs"
+      ],
+      "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_model_coverage_docground_paired_status",
+      "title": "Grounding-core paired status by provider",
+      "png": "figures/figure_model_coverage_docground_paired_status.png",
+      "source_files": [
+        "tables/table_model_coverage_provider.csv"
+      ],
+      "source_columns": [
+        "provider",
+        "complete_grounding_core_pairs",
+        "mixed_grounding_core_pairs",
+        "infrastructure_error_grounding_core_pairs"
+      ],
+      "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_model_coverage_functional_status",
+      "title": "Functional status by provider",
+      "png": "figures/figure_model_coverage_functional_status.png",
+      "source_files": [
+        "tables/table_model_coverage_provider.csv"
+      ],
+      "source_columns": [
+        "provider",
+        "functional_pass_outputs",
+        "functional_fail_outputs",
+        "functional_not_run_outputs"
+      ],
+      "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_condition_rates",
+      "title": "Condition comparison: functional, API-conformance, and security-issue rates",
+      "png": "figures/figure_condition_rates.png",
+      "source_files": [
+        "tables/condition_rates.csv"
+      ],
+      "source_columns": [
+        "condition",
+        "functional_rate_complete",
+        "api_issue_rate_complete",
+        "security_issue_rate_complete"
+      ],
+      "calculation": "Grouped bar of functional, API-conformance, and security-issue rates per condition (complete slots only).",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_coverage_and_retries",
+      "title": "Coverage, failures and retained gaps",
+      "png": "figures/figure_coverage_and_retries.png",
+      "source_files": [
+        "tables/condition_rates.csv",
+        "tables/table_model_coverage_attempts.csv"
+      ],
+      "source_columns": [
+        "condition",
+        "complete_slots",
+        "missing_slots",
+        "attempt",
+        "generation_status",
+        "recovered_after_retry"
+      ],
+      "calculation": "Stacked bar of first-attempt generation status counts by condition.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_paired_transitions__shifted_baseline__baseline",
+      "title": "Paired functional transitions: shifted_baseline_minus_baseline",
+      "png": "figures/figure_paired_transitions__shifted_baseline__baseline.png",
+      "source_files": [
+        "tables/paired_transitions.csv"
+      ],
+      "source_columns": [
+        "comparison",
+        "before_outcome",
+        "after_outcome",
+        "count"
+      ],
+      "calculation": "2x2 heatmap of before/after functional-outcome counts for the comparison.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_paired_transitions__shifted_docground__baseline",
+      "title": "Paired functional transitions: shifted_docground_minus_baseline",
+      "png": "figures/figure_paired_transitions__shifted_docground__baseline.png",
+      "source_files": [
+        "tables/paired_transitions.csv"
+      ],
+      "source_columns": [
+        "comparison",
+        "before_outcome",
+        "after_outcome",
+        "count"
+      ],
+      "calculation": "2x2 heatmap of before/after functional-outcome counts for the comparison.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_paired_transitions__shifted_docground__shifted_baseline",
+      "title": "Paired functional transitions: shifted_docground_minus_shifted_baseline",
+      "png": "figures/figure_paired_transitions__shifted_docground__shifted_baseline.png",
+      "source_files": [
+        "tables/paired_transitions.csv"
+      ],
+      "source_columns": [
+        "comparison",
+        "before_outcome",
+        "after_outcome",
+        "count"
+      ],
+      "calculation": "2x2 heatmap of before/after functional-outcome counts for the comparison.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_paired_effects",
+      "title": "Paired effects (after - before) with 95% task-cluster bootstrap CI",
+      "png": "figures/figure_paired_effects.png",
+      "source_files": [
+        "tables/paired_effects.csv"
+      ],
+      "source_columns": [
+        "comparison",
+        "metric",
+        "delta_pp",
+        "ci_low_pp",
+        "ci_high_pp",
+        "ci_method",
+        "bootstrap_resamples"
+      ],
+      "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_paired_effects__shifted_baseline__baseline",
+      "title": "Paired effect (after - before) with 95% CI: shifted_baseline_minus_baseline",
+      "png": "figures/figure_paired_effects__shifted_baseline__baseline.png",
+      "source_files": [
+        "tables/paired_effects.csv"
+      ],
+      "source_columns": [
+        "comparison",
+        "metric",
+        "delta_pp",
+        "ci_low_pp",
+        "ci_high_pp",
+        "ci_method",
+        "bootstrap_resamples"
+      ],
+      "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_paired_effects__shifted_docground__baseline",
+      "title": "Paired effect (after - before) with 95% CI: shifted_docground_minus_baseline",
+      "png": "figures/figure_paired_effects__shifted_docground__baseline.png",
+      "source_files": [
+        "tables/paired_effects.csv"
+      ],
+      "source_columns": [
+        "comparison",
+        "metric",
+        "delta_pp",
+        "ci_low_pp",
+        "ci_high_pp",
+        "ci_method",
+        "bootstrap_resamples"
+      ],
+      "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_paired_effects__shifted_docground__shifted_baseline",
+      "title": "Paired effect (after - before) with 95% CI: shifted_docground_minus_shifted_baseline",
+      "png": "figures/figure_paired_effects__shifted_docground__shifted_baseline.png",
+      "source_files": [
+        "tables/paired_effects.csv"
+      ],
+      "source_columns": [
+        "comparison",
+        "metric",
+        "delta_pp",
+        "ci_low_pp",
+        "ci_high_pp",
+        "ci_method",
+        "bootstrap_resamples"
+      ],
+      "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_model_variants",
+      "title": "Functional pass rate by model and condition",
+      "png": "figures/figure_model_variants.png",
+      "source_files": [
+        "tables/model_rates.csv"
+      ],
+      "source_columns": [
+        "provider",
+        "model_id",
+        "condition",
+        "functional_rate_complete"
+      ],
+      "calculation": "Grouped bar of functional pass rate by provider:model across conditions.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_task_distributions",
+      "title": "Per-task functional pass rate distribution by condition",
+      "png": "figures/figure_task_distributions.png",
+      "source_files": [
+        "tables/task_rates.csv"
+      ],
+      "source_columns": [
+        "task_id",
+        "condition",
+        "functional_rate_complete"
+      ],
+      "calculation": "Box plot of per-task functional pass rate distributions by condition.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_task_heatmap",
+      "title": "Functional pass rate by task and condition",
+      "png": "figures/figure_task_heatmap.png",
+      "source_files": [
+        "tables/task_rates.csv"
+      ],
+      "source_columns": [
+        "task_id",
+        "condition",
+        "functional_rate_complete"
+      ],
+      "calculation": "Heatmap of functional pass rate by task and condition.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_task_correlations",
+      "title": "Task-feature correlations with functional pass rate by condition",
+      "png": "figures/figure_task_correlations.png",
+      "source_files": [
+        "tables/task_correlations.csv"
+      ],
+      "source_columns": [
+        "feature",
+        "condition",
+        "spearman_rho",
+        "n_tasks"
+      ],
+      "calculation": "Heatmap of Spearman rank correlation between task features and per-condition functional pass rate.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    },
+    {
+      "figure_id": "figure_attempt_history",
+      "title": "Execution timeline: attempt and recovery history",
+      "png": "figures/figure_attempt_history.png",
+      "source_files": [
+        "tables/table_model_coverage_attempts.csv"
+      ],
+      "source_columns": [
+        "run_id",
+        "attempt",
+        "generation_status",
+        "functional_status",
+        "created_at"
+      ],
+      "calculation": "Scatter of attempt number over execution sequence, coloured by generation status.",
+      "scope": "Fixture run records; see dataset_provenance.json."
+    }
+  ]
+}
