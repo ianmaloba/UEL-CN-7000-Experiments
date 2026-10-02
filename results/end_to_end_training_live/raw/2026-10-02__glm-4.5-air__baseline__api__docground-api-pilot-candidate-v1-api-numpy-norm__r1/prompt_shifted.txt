@@ -1,0 +1,1 @@
+Write complete Python code for `vector_length(values)` using NumPy. Convert or pass the input as an array-like value and compute its Euclidean vector length with `numpy.linalg.norm`. Return a float.

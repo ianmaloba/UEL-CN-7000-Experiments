@@ -1,0 +1,47 @@
+{
+  "api_conformance_status": "not_applicable",
+  "details": {
+    "attempt": 1,
+    "billing_state": "unknown; not automatically resent",
+    "catalog_metadata": {
+      "aliases": [
+        "grok-4.20-reasoning",
+        "grok-4.20-reasoning-latest",
+        "grok-4.20-beta-reasoning"
+      ],
+      "cached_prompt_text_token_price": 2000,
+      "completion_text_token_price": 25000,
+      "created": 1773014400,
+      "fingerprint": "fp_41d52165d9",
+      "id": "grok-4.20-0309-reasoning",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "xai",
+      "prompt_text_token_price": 12500,
+      "version": "1.0"
+    },
+    "elapsed_seconds": 0.001,
+    "endpoint": "https://api.x.ai/v1/chat/completions",
+    "evaluation_mode": "docker_isolated",
+    "generation_status": "transport_or_parse_error",
+    "http_status": null,
+    "provider_error": "URLError",
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "retryable": false,
+    "route": "chat_completions"
+  },
+  "functional_status": "not_run",
+  "hallucination_status": "not_run",
+  "security_status": "not_run",
+  "syntax_status": "not_run"
+}

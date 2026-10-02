@@ -1,0 +1,9 @@
+```python
+def join_inventory(prices, stock):
+    stock_map = {r['sku']: r['quantity'] for r in stock}
+    out = []
+    for p in prices:
+        if p['sku'] in stock_map:
+            out.append({'sku': p['sku'], 'price': p['price'], 'quantity': stock_map[p['sku']]})
+    return out
+```

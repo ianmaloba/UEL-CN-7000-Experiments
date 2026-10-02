@@ -1,0 +1,2 @@
+run_id,task_id,condition,attempt,generation_status,provider_http_status,request_id,input_tokens,output_tokens,estimated_cost_usd,syntax_status,functional_status,security_status,hallucination_status,api_conformance_status
+2026-10-02__glm-4.5-air__shifted_baseline__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1,api-numpy-reshape,shifted_baseline,1,complete,200,,67,54,7.28e-05,pass,pass,pass,not_detected,pass

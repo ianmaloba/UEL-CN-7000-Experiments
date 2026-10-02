@@ -1,0 +1,79 @@
+{
+  "dataset_type": "end_to_end_live_training",
+  "status": "passed",
+  "checks": [
+    {
+      "name": "run_directory_completeness",
+      "status": "passed",
+      "detail": "Every run directory has all 8 expected artefact files"
+    },
+    {
+      "name": "prompt_sha256_length",
+      "status": "passed",
+      "detail": "All prompt_sha256 values are 64-character lowercase hex"
+    },
+    {
+      "name": "timestamp_ordering",
+      "status": "passed",
+      "detail": "Run created_at values are chronologically ordered"
+    },
+    {
+      "name": "retry_policy",
+      "status": "passed",
+      "detail": "Retries (a2+) only follow transport_or_parse_error on a1; 8 retries found"
+    },
+    {
+      "name": "provider_model_populated",
+      "status": "passed",
+      "detail": "All runs have non-empty provider and model_id"
+    },
+    {
+      "name": "xai_request_id_populated",
+      "status": "passed",
+      "detail": "All complete xAI runs have request_id populated"
+    },
+    {
+      "name": "candidate_code_present",
+      "status": "passed",
+      "detail": "All complete runs have candidate code in response.txt"
+    },
+    {
+      "name": "run_id_directory_match",
+      "status": "passed",
+      "detail": "run_id in run_manifest.json matches directory name for every run"
+    }
+  ],
+  "planned_slots": 108,
+  "total_run_directories": 116,
+  "complete_latest": 104,
+  "transport_errors": 9,
+  "incomplete_responses": 3,
+  "total_retries": 8,
+  "providers": [
+    "deepseek",
+    "glm",
+    "mistral",
+    "xai"
+  ],
+  "models": [
+    "codestral-2508",
+    "deepseek-flash",
+    "glm-4.5",
+    "glm-4.5-air",
+    "grok-4.20-0309-non-reasoning",
+    "grok-4.20-0309-reasoning"
+  ],
+  "tasks": [
+    "api-numpy-norm",
+    "api-numpy-reshape",
+    "api-pandas-groupby",
+    "api-pandas-merge",
+    "api-requests-get-json",
+    "api-requests-post-json"
+  ],
+  "conditions": [
+    "baseline",
+    "shifted_baseline",
+    "shifted_docground"
+  ]
+}

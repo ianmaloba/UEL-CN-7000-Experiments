@@ -1,0 +1,59 @@
+{
+  "api_conformance_status": "pass",
+  "details": {
+    "actual_model_id": "deepseek-flash",
+    "attempt": 1,
+    "bandit_findings": [],
+    "catalog_metadata": {
+      "id": "deepseek-flash",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "name": "DeepSeek-V4.1-Flash",
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "deepseek"
+    },
+    "cost_rate_usd_per_million": {
+      "input": 0.3,
+      "output": 1.2
+    },
+    "elapsed_seconds": 2.239,
+    "endpoint": "https://api.deepseek.com/chat/completions",
+    "estimated_cost_usd": 0.000141,
+    "evaluation_mode": "docker_isolated",
+    "finish_reason": "stop",
+    "functional_output": "",
+    "functional_returncode": 0,
+    "generation_status": "complete",
+    "http_status": 200,
+    "input_tokens": 302,
+    "output_tokens": 42,
+    "provider_response_id": "d24ca49e-2cb2-41fd-a318-2fc2a7f20a9e",
+    "request_id": null,
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "route": "chat_completions",
+    "usage": {
+      "completion_tokens": 42,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 302,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 344
+    }
+  },
+  "functional_status": "pass",
+  "hallucination_status": "not_detected",
+  "security_status": "pass",
+  "syntax_status": "pass"
+}

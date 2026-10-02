@@ -1,0 +1,1 @@
+Write complete Python code for `reshape_values(values, rows, columns)`. Reshape a flat numeric sequence into the requested number of rows and columns in row-major order, then return nested Python lists. Reject incompatible dimensions.

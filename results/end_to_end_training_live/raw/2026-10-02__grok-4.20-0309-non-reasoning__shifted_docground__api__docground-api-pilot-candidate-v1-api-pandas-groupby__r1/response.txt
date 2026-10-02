@@ -1,0 +1,9 @@
+```python
+import pandas as pd
+import io
+
+def region_totals(csv_text):
+    df = pd.read_csv(io.StringIO(csv_text))
+    grouped = df.groupby('region', as_index=False)
+    return dict(zip(grouped['region'], grouped['amount'].sum()))
+```
