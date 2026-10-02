@@ -1,0 +1,1 @@
+Write complete Python code for `vector_length(values)`. Return the Euclidean length of a non-empty one-dimensional numeric sequence as a float.

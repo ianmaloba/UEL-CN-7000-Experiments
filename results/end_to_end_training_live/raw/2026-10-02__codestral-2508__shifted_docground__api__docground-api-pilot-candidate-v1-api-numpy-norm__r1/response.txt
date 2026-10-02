@@ -1,0 +1,6 @@
+```python
+import math
+
+def vector_length(values):
+    return math.sqrt(sum(v * v for v in values))
+```

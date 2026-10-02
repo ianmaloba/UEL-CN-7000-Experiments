@@ -1,0 +1,1 @@
+Write complete Python code for `create_item(url, payload)` using Requests. Call `requests.post` with `json=payload` and a five-second timeout, call `Response.raise_for_status`, decode with `Response.json`, and return the response's `id`. The supplied tests mock the request; do not add retries.

@@ -1,0 +1,76 @@
+{
+  "api_conformance_status": "fail",
+  "details": {
+    "actual_model_id": "codestral-2508",
+    "attempt": 1,
+    "bandit_findings": [],
+    "catalog_metadata": {
+      "aliases": [
+        "codestral-latest",
+        "mistral-code-latest",
+        "mistral-code-fim-latest"
+      ],
+      "capabilities": {
+        "audio": false,
+        "audio_speech": false,
+        "audio_transcription": false,
+        "audio_transcription_realtime": false,
+        "classification": false,
+        "completion_chat": true,
+        "completion_fim": true,
+        "fine_tuning": false,
+        "function_calling": true,
+        "moderation": false,
+        "ocr": false,
+        "reasoning": false,
+        "unified_resources": false,
+        "vision": false
+      },
+      "created": 1790576063,
+      "id": "codestral-2508",
+      "max_context_length": 256000,
+      "name": "codestral-2508",
+      "object": "model",
+      "owned_by": "mistralai",
+      "type": "base"
+    },
+    "cost_rate_usd_per_million": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "elapsed_seconds": 2.722,
+    "endpoint": "https://api.mistral.ai/v1/chat/completions",
+    "estimated_cost_usd": 0.0001203,
+    "evaluation_mode": "docker_isolated",
+    "finish_reason": "stop",
+    "functional_output": "",
+    "functional_returncode": 0,
+    "generation_status": "complete",
+    "http_status": 200,
+    "input_tokens": 299,
+    "output_tokens": 34,
+    "provider_response_id": "542820ab1cec4bc48fc0c9713f987b9e",
+    "request_id": null,
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "route": "chat_completions",
+    "usage": {
+      "completion_tokens": 34,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 299,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 333
+    }
+  },
+  "functional_status": "pass",
+  "hallucination_status": "not_detected",
+  "security_status": "pass",
+  "syntax_status": "pass"
+}

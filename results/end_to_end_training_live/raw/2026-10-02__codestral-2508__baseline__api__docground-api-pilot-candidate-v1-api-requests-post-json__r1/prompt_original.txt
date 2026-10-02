@@ -1,0 +1,1 @@
+Write complete Python code for `create_item(url, payload)`. Send the mapping as JSON to an endpoint and return the `id` from the JSON response. If the server responds with an unsuccessful HTTP status, raise the corresponding request error. Never make an actual network request in the supplied tests.

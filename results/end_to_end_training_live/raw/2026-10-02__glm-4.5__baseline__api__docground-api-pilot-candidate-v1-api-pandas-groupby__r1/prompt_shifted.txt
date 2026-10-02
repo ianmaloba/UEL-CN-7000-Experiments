@@ -1,0 +1,1 @@
+Write complete Python code for `region_totals(csv_text)` using pandas. Parse the CSV text with `pandas.read_csv` and an in-memory text stream, group the rows by `region` with `DataFrame.groupby`, sum `amount`, and return a dictionary.

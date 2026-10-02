@@ -1,0 +1,2 @@
+run_id,task_id,condition,attempt,generation_status,provider_http_status,request_id,input_tokens,output_tokens,estimated_cost_usd,syntax_status,functional_status,security_status,hallucination_status,api_conformance_status
+2026-10-02__codestral-2508__baseline__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1,api-pandas-merge,baseline,1,incomplete_response,200,,60,512,0.0004788,fail,not_run,not_run,not_run,not_run

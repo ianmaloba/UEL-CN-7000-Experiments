@@ -1,0 +1,61 @@
+{
+  "api_conformance_status": "pass",
+  "details": {
+    "actual_model_id": "glm-4.5",
+    "attempt": 1,
+    "bandit_findings": [
+      {
+        "confidence": "MEDIUM",
+        "description": "Use of assert detected.",
+        "line_number": 4,
+        "severity": "LOW",
+        "test_id": "B101",
+        "test_name": "assert_used"
+      }
+    ],
+    "catalog_metadata": {
+      "created": 1753632000,
+      "id": "glm-4.5",
+      "object": "model",
+      "owned_by": "z-ai"
+    },
+    "cost_rate_usd_per_million": {
+      "input": 0.6,
+      "output": 2.2
+    },
+    "elapsed_seconds": 7.476,
+    "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "estimated_cost_usd": 0.0002754,
+    "evaluation_mode": "docker_isolated",
+    "finish_reason": "stop",
+    "functional_output": "",
+    "functional_returncode": 0,
+    "generation_status": "complete",
+    "http_status": 200,
+    "input_tokens": 283,
+    "output_tokens": 48,
+    "provider_response_id": "202610020900005d6b7da53fe240be87",
+    "request_id": null,
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "route": "chat_completions",
+    "usage": {
+      "completion_tokens": 48,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 283,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 331
+    }
+  },
+  "functional_status": "pass",
+  "hallucination_status": "not_detected",
+  "security_status": "findings",
+  "syntax_status": "pass"
+}

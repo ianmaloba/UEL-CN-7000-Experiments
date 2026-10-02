@@ -1,0 +1,1226 @@
+{
+  "audit_runtime_docground_version": "0.2.1",
+  "audit_script_sha256": "62b31bf2a82b801e1bfd18e842bbff65d794785779c95e567689bc3218bbb060",
+  "audit_status": "complete",
+  "campaign_id": "docground-api-pilot-v1",
+  "config_path": "config/campaign_snapshot.json",
+  "config_sha256": null,
+  "counts": {
+    "grounded_records": 35,
+    "no_saved_response": 2,
+    "replayed_functionally": 0,
+    "replayed_statically": 35,
+    "total_runs": 116
+  },
+  "created_at": "2026-10-02T11:05:32.848735+00:00",
+  "documentation_snapshot_sha256": "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640",
+  "errors": [],
+  "excluded_nonmatching_slots": [],
+  "extraction_difference_run_ids": [],
+  "grounded_records": [
+    {
+      "artifact_dir": "raw/2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "codestral-2508",
+      "offline_replay": {
+        "code_sha256": "113b0c22b5cf24d37512017543f0b6cee132f6dba75349fe519cf57058166467",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 1,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "fail",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "mistral",
+      "selected_prompt_sha256": "c1bb52eb1d5b4c4108d4595cc69a590e748de48d67ed6de162e420ab0ac0e5fa",
+      "source_file_sha256": {
+        "evaluation.json": "e7dbd6be60f8f11d2c6d6dc3e3359bab9b1782de7c10edc81850ac837f368bc0",
+        "response.txt": "113b0c22b5cf24d37512017543f0b6cee132f6dba75349fe519cf57058166467",
+        "run_manifest.json": "87cead2c96694b689b48647a51fd4f83a1cc567aee6ccfdf0676d780e76784ff"
+      },
+      "source_run_id": "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "task_id": "api-numpy-norm"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "codestral-2508",
+      "offline_replay": {
+        "code_sha256": "b6554b651d6b26090fcdce6cd7d77ae95fa9b6cffca121da0e4e996b72cadb5e",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "mistral",
+      "selected_prompt_sha256": "8fa29cfe0ea312c63b54740eaea00742b5be8882e4a3f04b0f6bd71e3c8b030b",
+      "source_file_sha256": {
+        "evaluation.json": "e0bdb051ca5d58143a5a166e8639fceaa123e6ca1239fcd2ef076065fb6b8b5c",
+        "response.txt": "b6554b651d6b26090fcdce6cd7d77ae95fa9b6cffca121da0e4e996b72cadb5e",
+        "run_manifest.json": "5c4968fd038aef29a79a9383ec87a3301bd10e5cf61574df27f6b68944f7b324"
+      },
+      "source_run_id": "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "task_id": "api-numpy-reshape"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "codestral-2508",
+      "offline_replay": {
+        "code_sha256": "c71c1d2ad9c44c7cebc185aa728138296e62511b8f57e18acefe0664c08f3ff5",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "mistral",
+      "selected_prompt_sha256": "b7df652d0e248752289ec88e659e53554cec268be6012641881bdd360ae10e35",
+      "source_file_sha256": {
+        "evaluation.json": "5e8c72009df5920eb3ad5937b34bc4d78a1094cf2cc589edd1e990eec33d64ea",
+        "response.txt": "c71c1d2ad9c44c7cebc185aa728138296e62511b8f57e18acefe0664c08f3ff5",
+        "run_manifest.json": "d6ebf163803582542d6ac762b34a66417bebfe230fcc4e3b49d4eb511ed4a526"
+      },
+      "source_run_id": "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "task_id": "api-pandas-groupby"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "codestral-2508",
+      "offline_replay": {
+        "code_sha256": "a1fad0a9764c7fe82b63c7ab885eca25102465e689155bbb1571bfda186c0a32",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "fail",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "mistral",
+      "selected_prompt_sha256": "7cb093b0a11d6682d6d8cc45e691e0cc21d90e21d6eb1b1bf2df9e4008c1da0d",
+      "source_file_sha256": {
+        "evaluation.json": "e6772876ad0172f80f8f8edd0c175337dcaba03e668e8dd4ebe5b5cb67f89edf",
+        "response.txt": "a1fad0a9764c7fe82b63c7ab885eca25102465e689155bbb1571bfda186c0a32",
+        "run_manifest.json": "93072d64b6917d4f57fb81b3540755d1fd0b7b81f5fa6aa0d5b27dc17308c743"
+      },
+      "source_run_id": "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "task_id": "api-pandas-merge"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "codestral-2508",
+      "offline_replay": {
+        "code_sha256": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "mistral",
+      "selected_prompt_sha256": "143203aa2b8ac09b80be42b4c406f3784ce7c4cdc97522c1aeab0d3f4d0b7a76",
+      "source_file_sha256": {
+        "evaluation.json": "4466da7c1a4caceb53356a70b98b51048ca8fcfdb3249cc32f77871d92ad6375",
+        "response.txt": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "run_manifest.json": "35da2d07da4580bf20d1ce19b1f7d2907bbb707975d1ae4b73c648a2ddb5df23"
+      },
+      "source_run_id": "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "task_id": "api-requests-get-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "codestral-2508",
+      "offline_replay": {
+        "code_sha256": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "mistral",
+      "selected_prompt_sha256": "767d8f8536322066b1d65038617d687a830fcd2df5b8b3fbab71b346eaadd129",
+      "source_file_sha256": {
+        "evaluation.json": "5b10218fae4d26be603eb96deedbd638ed9d5abeef60d0651bc9e23c47c4c2f5",
+        "response.txt": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "run_manifest.json": "84f45889c6ef72ff265927f1e1ce47bd5882696e63c10b2f7e5b633866cfb057"
+      },
+      "source_run_id": "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "task_id": "api-requests-post-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "deepseek-flash",
+      "offline_replay": {
+        "code_sha256": "74a929760064e17bddf6a2ee52e93310d886903b1ef45c0c70170afef3c45111",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "deepseek",
+      "selected_prompt_sha256": "c1bb52eb1d5b4c4108d4595cc69a590e748de48d67ed6de162e420ab0ac0e5fa",
+      "source_file_sha256": {
+        "evaluation.json": "ddbcd2de037c942cadc962944fb0fc2e206735a89250df56e098d1247921e9e0",
+        "response.txt": "74a929760064e17bddf6a2ee52e93310d886903b1ef45c0c70170afef3c45111",
+        "run_manifest.json": "580558db5c90f087caba72771f4904e8d468fc346d6328f697b328038ec02690"
+      },
+      "source_run_id": "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "task_id": "api-numpy-norm"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "deepseek-flash",
+      "offline_replay": {
+        "code_sha256": "b6554b651d6b26090fcdce6cd7d77ae95fa9b6cffca121da0e4e996b72cadb5e",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "deepseek",
+      "selected_prompt_sha256": "8fa29cfe0ea312c63b54740eaea00742b5be8882e4a3f04b0f6bd71e3c8b030b",
+      "source_file_sha256": {
+        "evaluation.json": "5d548f5b9f6686503f17fa48e7cb641252934209d9636717da00498d77c1de09",
+        "response.txt": "b6554b651d6b26090fcdce6cd7d77ae95fa9b6cffca121da0e4e996b72cadb5e",
+        "run_manifest.json": "c14778d984ef0975d723a3cc6027844eeecaba82e621c5e5f5fceaa658912848"
+      },
+      "source_run_id": "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "task_id": "api-numpy-reshape"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "deepseek-flash",
+      "offline_replay": {
+        "code_sha256": "c71c1d2ad9c44c7cebc185aa728138296e62511b8f57e18acefe0664c08f3ff5",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "deepseek",
+      "selected_prompt_sha256": "b7df652d0e248752289ec88e659e53554cec268be6012641881bdd360ae10e35",
+      "source_file_sha256": {
+        "evaluation.json": "af37d94eb43c2d6b1da759928fe4c72fb3e7f74ef38da03e958463e397ce6f29",
+        "response.txt": "c71c1d2ad9c44c7cebc185aa728138296e62511b8f57e18acefe0664c08f3ff5",
+        "run_manifest.json": "6b7685ca1cba21c34ded05dc0cb9e09412cb293fdb33c0b4c9aac92e16d1c253"
+      },
+      "source_run_id": "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "task_id": "api-pandas-groupby"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "deepseek-flash",
+      "offline_replay": {
+        "code_sha256": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "deepseek",
+      "selected_prompt_sha256": "7cb093b0a11d6682d6d8cc45e691e0cc21d90e21d6eb1b1bf2df9e4008c1da0d",
+      "source_file_sha256": {
+        "evaluation.json": "253dc2d0671d241f678e7e0998c04ac5c8011ba49c7fb75a75592f765f1ba965",
+        "response.txt": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "run_manifest.json": "0c6af86b5a157eebeb3f86c15942f5b9cc75a38731bbd9196d9ccba06520cea6"
+      },
+      "source_run_id": "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "task_id": "api-pandas-merge"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "deepseek-flash",
+      "offline_replay": {
+        "code_sha256": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "deepseek",
+      "selected_prompt_sha256": "143203aa2b8ac09b80be42b4c406f3784ce7c4cdc97522c1aeab0d3f4d0b7a76",
+      "source_file_sha256": {
+        "evaluation.json": "ad4d4fa8962aa74c74e4aa2407769c3338441a619706e7c0e0db9315ade95792",
+        "response.txt": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "run_manifest.json": "b61fb31cc530b4ab9f47c8cf4f98b6555bf8734629387cf3c35e567d7b5fa980"
+      },
+      "source_run_id": "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "task_id": "api-requests-get-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "deepseek-flash",
+      "offline_replay": {
+        "code_sha256": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "deepseek",
+      "selected_prompt_sha256": "767d8f8536322066b1d65038617d687a830fcd2df5b8b3fbab71b346eaadd129",
+      "source_file_sha256": {
+        "evaluation.json": "490e9aeefa0271ca40bbd2d0fd4220bab733b72ae26fcc52a485e225b570c5b5",
+        "response.txt": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "run_manifest.json": "ec4338ef94dfa470a1fa9ee37120c44995b229f5c76b8bc259e2aafa6c3cad98"
+      },
+      "source_run_id": "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "task_id": "api-requests-post-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5-air",
+      "offline_replay": {
+        "code_sha256": "74a929760064e17bddf6a2ee52e93310d886903b1ef45c0c70170afef3c45111",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "c1bb52eb1d5b4c4108d4595cc69a590e748de48d67ed6de162e420ab0ac0e5fa",
+      "source_file_sha256": {
+        "evaluation.json": "19cee2eb62ced2cce1d72a72e74c7d31b10f0fe8997fc02d503ad720291ac4d4",
+        "response.txt": "74a929760064e17bddf6a2ee52e93310d886903b1ef45c0c70170afef3c45111",
+        "run_manifest.json": "71dee76cf28287e44d5303fb47a616a40a80ab60826c69d485f10b6010f2be91"
+      },
+      "source_run_id": "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "task_id": "api-numpy-norm"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5-air",
+      "offline_replay": {
+        "code_sha256": "b6554b651d6b26090fcdce6cd7d77ae95fa9b6cffca121da0e4e996b72cadb5e",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "8fa29cfe0ea312c63b54740eaea00742b5be8882e4a3f04b0f6bd71e3c8b030b",
+      "source_file_sha256": {
+        "evaluation.json": "2ebc64b6c29fba87280c755babe114fe2686ad989fed628208439575c611a47a",
+        "response.txt": "b6554b651d6b26090fcdce6cd7d77ae95fa9b6cffca121da0e4e996b72cadb5e",
+        "run_manifest.json": "4b9a18b42e582f067b21819a4ea94f54fa8c78ef0b56edb75ad152c43bce8a33"
+      },
+      "source_run_id": "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "task_id": "api-numpy-reshape"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5-air",
+      "offline_replay": {
+        "code_sha256": "831b887cfde9526d989a01a206191a2f22e13776f4d0258ad27fac213791089e",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "fail",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "b7df652d0e248752289ec88e659e53554cec268be6012641881bdd360ae10e35",
+      "source_file_sha256": {
+        "evaluation.json": "cd7b034e7388b14da97f6d4e3e3bb2124ebd5fa4f6a01764550f5bef6dcb34ec",
+        "response.txt": "831b887cfde9526d989a01a206191a2f22e13776f4d0258ad27fac213791089e",
+        "run_manifest.json": "589b863fee68b150373bb57779dcd3ea1a2f9c3ca5ff427f34ade19d607e10bc"
+      },
+      "source_run_id": "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "task_id": "api-pandas-groupby"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5-air",
+      "offline_replay": {
+        "code_sha256": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "7cb093b0a11d6682d6d8cc45e691e0cc21d90e21d6eb1b1bf2df9e4008c1da0d",
+      "source_file_sha256": {
+        "evaluation.json": "550da4b5aabae5d5bfb86daab2045548e554f969b45de0fec49753f5e7fa4f9e",
+        "response.txt": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "run_manifest.json": "2222a2194fe06e701cc5a08a3e3d53a221bb6e1ce0e5007c59f03646b6de116a"
+      },
+      "source_run_id": "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "task_id": "api-pandas-merge"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5-air",
+      "offline_replay": {
+        "code_sha256": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "143203aa2b8ac09b80be42b4c406f3784ce7c4cdc97522c1aeab0d3f4d0b7a76",
+      "source_file_sha256": {
+        "evaluation.json": "6b144400e5373a9e2149716a19840516d987d89cb1ddb7b92d54e5a26b853cc6",
+        "response.txt": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "run_manifest.json": "dad7d0e84ec693da75555f828b464ba8cca7750d2a40600dfe2d69e292ef1eb2"
+      },
+      "source_run_id": "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "task_id": "api-requests-get-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5-air",
+      "offline_replay": {
+        "code_sha256": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "767d8f8536322066b1d65038617d687a830fcd2df5b8b3fbab71b346eaadd129",
+      "source_file_sha256": {
+        "evaluation.json": "b5b2b07cd27bc7df1b7e39515a5fa567518588b22a99fab6837c7b60995cd4f3",
+        "response.txt": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "run_manifest.json": "6b1333a4a8924662a501452ea702de28e495533fc619b3cd2836f58bcf9995db"
+      },
+      "source_run_id": "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "task_id": "api-requests-post-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1__a2",
+      "attempt": 2,
+      "generation_status": "complete",
+      "model_id": "glm-4.5",
+      "offline_replay": {
+        "code_sha256": "644ebef89d4967b3637c9e0cf7c1de9360eea288f21e7f208335602aa29d8a44",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "fail",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "c1bb52eb1d5b4c4108d4595cc69a590e748de48d67ed6de162e420ab0ac0e5fa",
+      "source_file_sha256": {
+        "evaluation.json": "7b4382ebb3b30e8cdf54c1edc224a8d3410b93b7a697ae0b56e5b89867e55fb2",
+        "response.txt": "644ebef89d4967b3637c9e0cf7c1de9360eea288f21e7f208335602aa29d8a44",
+        "run_manifest.json": "297640e0d8d54d6d235d3b316dc5d74b99e9bec72bed3fc5cfe31c0ae9ea0e93"
+      },
+      "source_run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1__a2",
+      "task_id": "api-numpy-norm"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5",
+      "offline_replay": {
+        "code_sha256": "42136abb2b6238324aa879bad7bad0edf9d67b30910c905574264e531fc16039",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "8fa29cfe0ea312c63b54740eaea00742b5be8882e4a3f04b0f6bd71e3c8b030b",
+      "source_file_sha256": {
+        "evaluation.json": "8753fc593a3508afc4124355d309de78738238fa5a0388779ba344f6b527e177",
+        "response.txt": "42136abb2b6238324aa879bad7bad0edf9d67b30910c905574264e531fc16039",
+        "run_manifest.json": "29b2327074fa847d3cade6d04e66e31017d8557dbe6218ba7445a070091adf47"
+      },
+      "source_run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "task_id": "api-numpy-reshape"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5",
+      "offline_replay": {
+        "code_sha256": "c71c1d2ad9c44c7cebc185aa728138296e62511b8f57e18acefe0664c08f3ff5",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "b7df652d0e248752289ec88e659e53554cec268be6012641881bdd360ae10e35",
+      "source_file_sha256": {
+        "evaluation.json": "936f065439af2367202c3a2f62a2db6ad051111fd9c3d394d21a58e2c7bdcada",
+        "response.txt": "c71c1d2ad9c44c7cebc185aa728138296e62511b8f57e18acefe0664c08f3ff5",
+        "run_manifest.json": "c77e288ea9d6b2ea37dfe5eea89684b3dc9af651552f7380ecb34d566da680e9"
+      },
+      "source_run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "task_id": "api-pandas-groupby"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5",
+      "offline_replay": {
+        "code_sha256": "2b964e784b17811b294cc9a09f95299ebdb75fb37f103b2135c2b436c8fd70d7",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "fail",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "7cb093b0a11d6682d6d8cc45e691e0cc21d90e21d6eb1b1bf2df9e4008c1da0d",
+      "source_file_sha256": {
+        "evaluation.json": "d54ed7472e524688a5a45e334ae39c4119af3702c10f7ef43713f37eed0866e2",
+        "response.txt": "2b964e784b17811b294cc9a09f95299ebdb75fb37f103b2135c2b436c8fd70d7",
+        "run_manifest.json": "a5250624f887a724691370bda19f4f6ee684d6e9e855ee44d9213ef8b738cc59"
+      },
+      "source_run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "task_id": "api-pandas-merge"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5",
+      "offline_replay": {
+        "code_sha256": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "143203aa2b8ac09b80be42b4c406f3784ce7c4cdc97522c1aeab0d3f4d0b7a76",
+      "source_file_sha256": {
+        "evaluation.json": "bace44f0c85b1b664e64f25e93e17dd24a3e0fa1d04f6d1202c368af257f1fd9",
+        "response.txt": "b3ae9e3f76941b9956443b6663b50f0c835a432d764c7df871c603b088c9cae3",
+        "run_manifest.json": "10f1f128e16de07005d4a5a033b093e97bbc5d37e9458ea39ffc5cbbfae7e3d8"
+      },
+      "source_run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "task_id": "api-requests-get-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "glm-4.5",
+      "offline_replay": {
+        "code_sha256": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "glm",
+      "selected_prompt_sha256": "767d8f8536322066b1d65038617d687a830fcd2df5b8b3fbab71b346eaadd129",
+      "source_file_sha256": {
+        "evaluation.json": "cc5c9cb2260ed1b4f53fd3175d99e2fd27a1b16b5df0a4545bc2824bacce5889",
+        "response.txt": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "run_manifest.json": "98ae9107c699e9441ec1f1c33fa09d692298090c718748cdadf04536920b1990"
+      },
+      "source_run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "task_id": "api-requests-post-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "offline_replay": {
+        "code_sha256": "d44edd7f6db41e53da4f5690a4906406966b0c1f1e11f5111501f5dbe92d667c",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "c1bb52eb1d5b4c4108d4595cc69a590e748de48d67ed6de162e420ab0ac0e5fa",
+      "source_file_sha256": {
+        "evaluation.json": "c2dbeb4bb4281ac6e32182e25e6a51095598f19eec86251200ffd8d05c3c8dac",
+        "response.txt": "d44edd7f6db41e53da4f5690a4906406966b0c1f1e11f5111501f5dbe92d667c",
+        "run_manifest.json": "1a1298d6beb97e26c3140279e571186302a657fb4ea7f4d7bf099c0d5c3e4463"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "task_id": "api-numpy-norm"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "offline_replay": {
+        "code_sha256": "42136abb2b6238324aa879bad7bad0edf9d67b30910c905574264e531fc16039",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "8fa29cfe0ea312c63b54740eaea00742b5be8882e4a3f04b0f6bd71e3c8b030b",
+      "source_file_sha256": {
+        "evaluation.json": "04e2859557a65ef83a8c05c1afa74755eec0c8a11df214088a7502650c7b7e26",
+        "response.txt": "42136abb2b6238324aa879bad7bad0edf9d67b30910c905574264e531fc16039",
+        "run_manifest.json": "52174accc50560c838e42ea4746d9ec7c38d4cebedbecad6ceac62f2f794d9db"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+      "task_id": "api-numpy-reshape"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "offline_replay": {
+        "code_sha256": "54b75e7fe55106dc87b62fdbf6c8671865c379472aff6c926193b4a2d3f3a0ef",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "b7df652d0e248752289ec88e659e53554cec268be6012641881bdd360ae10e35",
+      "source_file_sha256": {
+        "evaluation.json": "5a261800adc43068bf10a2623fdb489c0ab075d2fae906ffb43322d613944791",
+        "response.txt": "54b75e7fe55106dc87b62fdbf6c8671865c379472aff6c926193b4a2d3f3a0ef",
+        "run_manifest.json": "4cc3cd64ffc469079c1261e1b35c43126ffeb02b6a64c9a7d27851c1d68a3c7c"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "task_id": "api-pandas-groupby"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "offline_replay": {
+        "code_sha256": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "7cb093b0a11d6682d6d8cc45e691e0cc21d90e21d6eb1b1bf2df9e4008c1da0d",
+      "source_file_sha256": {
+        "evaluation.json": "666ab1005f13d3841119ee74c23a91f60ba785343a047c53a6d1971d87c4a713",
+        "response.txt": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "run_manifest.json": "99535451fc4132b3632e5ca74e782e5f7581c1edfdc98e1d3dd5d8c5825ccd94"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "task_id": "api-pandas-merge"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "offline_replay": {
+        "code_sha256": "2ea67255281b9bc2bed130f328d157a3fbd16cd2ead3746c0c114cf0d5ee7d77",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "fail",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "143203aa2b8ac09b80be42b4c406f3784ce7c4cdc97522c1aeab0d3f4d0b7a76",
+      "source_file_sha256": {
+        "evaluation.json": "8a976da0a856bec880d790bf9e86580b3c63dbc85147aad29f8a5a072af59213",
+        "response.txt": "2ea67255281b9bc2bed130f328d157a3fbd16cd2ead3746c0c114cf0d5ee7d77",
+        "run_manifest.json": "6254c8525e764ce74e6b867b48b64b189c5c16ef08a11dddcac6de1ba37c67dd"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "task_id": "api-requests-get-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-non-reasoning",
+      "offline_replay": {
+        "code_sha256": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "767d8f8536322066b1d65038617d687a830fcd2df5b8b3fbab71b346eaadd129",
+      "source_file_sha256": {
+        "evaluation.json": "9383d812da384c701dabe1d8909f1cb6c882f4f3eb34b259b3a78fb6684c3cad",
+        "response.txt": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "run_manifest.json": "e3c549b498ce06a5250706517a11e73b3e607154f89334b8bdd35904ab3c74de"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "task_id": "api-requests-post-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-reasoning",
+      "offline_replay": {
+        "code_sha256": "74a929760064e17bddf6a2ee52e93310d886903b1ef45c0c70170afef3c45111",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "c1bb52eb1d5b4c4108d4595cc69a590e748de48d67ed6de162e420ab0ac0e5fa",
+      "source_file_sha256": {
+        "evaluation.json": "148fe714c33200c6378ced4e401ffe4ea9c1bb21950534cc695f56112c7dea63",
+        "response.txt": "74a929760064e17bddf6a2ee52e93310d886903b1ef45c0c70170afef3c45111",
+        "run_manifest.json": "6628a280caa53585b14942296e472cc3c93545f728060804bc974fbe3c371da6"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+      "task_id": "api-numpy-norm"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-reasoning",
+      "offline_replay": {
+        "code_sha256": "54b75e7fe55106dc87b62fdbf6c8671865c379472aff6c926193b4a2d3f3a0ef",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "b7df652d0e248752289ec88e659e53554cec268be6012641881bdd360ae10e35",
+      "source_file_sha256": {
+        "evaluation.json": "261af695c7c3996eb44eaf38d21912afe7989223953276eac952a5091863ca76",
+        "response.txt": "54b75e7fe55106dc87b62fdbf6c8671865c379472aff6c926193b4a2d3f3a0ef",
+        "run_manifest.json": "65f33c3b67c63dd1f92b42460e9b494543881045f53a6ae363a4c18bf4f46f13"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+      "task_id": "api-pandas-groupby"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-reasoning",
+      "offline_replay": {
+        "code_sha256": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "7cb093b0a11d6682d6d8cc45e691e0cc21d90e21d6eb1b1bf2df9e4008c1da0d",
+      "source_file_sha256": {
+        "evaluation.json": "a9b6cb84a2b0e3077ba21b3ee99e230d78ef95665ac8ea43cb83d954b7f9cd12",
+        "response.txt": "3f47b80f1b5d255d8c794996d3e0ab7574720da9ecf2759436af7e07598dddd8",
+        "run_manifest.json": "4e74f1bd3ef991f88d12f88b0d27fc265feb2870ca0ce76046b6bc8dfcd9a4b0"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+      "task_id": "api-pandas-merge"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-reasoning",
+      "offline_replay": {
+        "code_sha256": "87052af6bea57ed34a3431a692ee159989f8e88afed21aba6bde317efcd4c6bb",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "fail",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "143203aa2b8ac09b80be42b4c406f3784ce7c4cdc97522c1aeab0d3f4d0b7a76",
+      "source_file_sha256": {
+        "evaluation.json": "dccbf0e4b665b6477cf3fbde20b09ed2b3d8790c13b40d912415ae76a9492477",
+        "response.txt": "87052af6bea57ed34a3431a692ee159989f8e88afed21aba6bde317efcd4c6bb",
+        "run_manifest.json": "075abcadc1627b2c52df724feca7a2390716d28471306c1b7d4d78968b572561"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+      "task_id": "api-requests-get-json"
+    },
+    {
+      "artifact_dir": "raw/2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "attempt": 1,
+      "generation_status": "complete",
+      "model_id": "grok-4.20-0309-reasoning",
+      "offline_replay": {
+        "code_sha256": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "export_attempted": false,
+        "functional_tests_executed": false,
+        "matches_current_adapter_extraction": true,
+        "network_calls": 0,
+        "recorded_adapter_calls": 1,
+        "status": "replayed_and_statically_verified",
+        "workflow_status": "verified"
+      },
+      "original_evaluation": {
+        "api_conformance_status": "pass",
+        "evaluator_image": "uel-cn7000/docground-api-eval:py3.14.7-v1",
+        "functional_status": "pass",
+        "newly_executed": false,
+        "source": "saved run record",
+        "syntax_status": "pass"
+      },
+      "provider": "xai",
+      "selected_prompt_sha256": "767d8f8536322066b1d65038617d687a830fcd2df5b8b3fbab71b346eaadd129",
+      "source_file_sha256": {
+        "evaluation.json": "724f8bc431327ef1539f86c53c23d5b2fa92064f06ccdc4cf48a632964da671c",
+        "response.txt": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+        "run_manifest.json": "caea06262ae8c9e2e5bc9a256fbd4c504b9cc53478fa1b32f40519a12ad7a21b"
+      },
+      "source_run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+      "task_id": "api-requests-post-json"
+    }
+  ],
+  "historical_docground_version": "0.2.0",
+  "interpretation": "Static replay of saved grounding observations. No network calls, no provider credentials, no raw-record modifications.",
+  "limitations": [
+    "Replay validates workflow and prompt integrity only; it does not re-sample models.",
+    "Functional replay requires the original Docker evaluator image and has been run."
+  ],
+  "network_calls": 0,
+  "raw_records_modified": false,
+  "repeated_valid_response_groups": [],
+  "review_sha256": "f71000aae4d20608b4e98f6c85c6ed7c9e57136f65cb9992f6db9d020a80b61d",
+  "schema_version": 1,
+  "taskset_sha256": "12b177fa0f9595ae301b9e48603610e4c0c7cf82ca004ad9c55ca86c791af606",
+  "verified_source_run_ids": [
+    "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+    "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+    "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+    "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+    "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+    "2026-10-02__codestral-2508__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+    "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+    "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+    "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+    "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+    "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+    "2026-10-02__deepseek-flash__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+    "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+    "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+    "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+    "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+    "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+    "2026-10-02__glm-4.5-air__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+    "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1__a2",
+    "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+    "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+    "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+    "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+    "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+    "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+    "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+    "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+    "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+    "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+    "2026-10-02__grok-4.20-0309-non-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+    "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1",
+    "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-groupby__r1",
+    "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+    "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
+    "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1"
+  ]
+}

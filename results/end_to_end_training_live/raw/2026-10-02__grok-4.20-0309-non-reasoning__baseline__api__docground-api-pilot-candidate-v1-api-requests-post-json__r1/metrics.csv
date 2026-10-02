@@ -1,0 +1,2 @@
+run_id,task_id,condition,attempt,generation_status,provider_http_status,request_id,input_tokens,output_tokens,estimated_cost_usd,syntax_status,functional_status,security_status,hallucination_status,api_conformance_status
+2026-10-02__grok-4.20-0309-non-reasoning__baseline__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1,api-requests-post-json,baseline,1,complete,200,057c81b1-2fd5-4944-9544-2fce12d69b23,74,64,0.0002525,pass,pass,pass,not_detected,not_applicable

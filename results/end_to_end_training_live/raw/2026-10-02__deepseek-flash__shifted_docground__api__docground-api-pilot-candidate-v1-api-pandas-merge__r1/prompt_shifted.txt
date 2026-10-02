@@ -1,0 +1,1 @@
+Write complete Python code for `join_inventory(prices, stock)` using pandas. Convert both lists of dictionaries to DataFrames, call `pandas.merge` with `on='sku'` and `how='inner'`, and return records with `sku`, `price`, and `quantity` in left input order.

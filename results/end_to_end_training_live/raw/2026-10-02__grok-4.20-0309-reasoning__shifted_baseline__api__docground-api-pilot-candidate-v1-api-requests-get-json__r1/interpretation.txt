@@ -1,0 +1,3 @@
+STATUS: pilot
+CLAIM: No dissertation finding; this artefact records one model output in a controlled pilot.
+LIMITATIONS: One task and replicate do not support generalisation; interpret only with its paired run, provider metadata, and the frozen campaign protocol.

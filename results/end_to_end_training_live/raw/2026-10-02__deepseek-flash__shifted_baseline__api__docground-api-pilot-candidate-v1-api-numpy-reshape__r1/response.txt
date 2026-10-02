@@ -1,0 +1,6 @@
+```python
+def reshape_values(values, rows, columns):
+    if rows * columns != len(values):
+        raise ValueError('incompatible dimensions')
+    return [list(values[i * columns:(i + 1) * columns]) for i in range(rows)]
+```

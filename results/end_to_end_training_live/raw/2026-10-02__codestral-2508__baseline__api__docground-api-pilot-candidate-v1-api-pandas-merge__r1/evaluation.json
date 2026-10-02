@@ -1,0 +1,76 @@
+{
+  "api_conformance_status": "not_run",
+  "details": {
+    "actual_model_id": "codestral-2508",
+    "attempt": 1,
+    "bandit_findings": [],
+    "catalog_metadata": {
+      "aliases": [
+        "codestral-latest",
+        "mistral-code-latest",
+        "mistral-code-fim-latest"
+      ],
+      "capabilities": {
+        "audio": false,
+        "audio_speech": false,
+        "audio_transcription": false,
+        "audio_transcription_realtime": false,
+        "classification": false,
+        "completion_chat": true,
+        "completion_fim": true,
+        "fine_tuning": false,
+        "function_calling": true,
+        "moderation": false,
+        "ocr": false,
+        "reasoning": false,
+        "unified_resources": false,
+        "vision": false
+      },
+      "created": 1790576063,
+      "id": "codestral-2508",
+      "max_context_length": 256000,
+      "name": "codestral-2508",
+      "object": "model",
+      "owned_by": "mistralai",
+      "type": "base"
+    },
+    "cost_rate_usd_per_million": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "elapsed_seconds": 3.481,
+    "endpoint": "https://api.mistral.ai/v1/chat/completions",
+    "estimated_cost_usd": 0.0004788,
+    "evaluation_mode": "docker_isolated",
+    "finish_reason": "length",
+    "functional_output": "",
+    "functional_returncode": null,
+    "generation_status": "incomplete_response",
+    "http_status": 200,
+    "input_tokens": 60,
+    "output_tokens": 512,
+    "provider_response_id": "9a12cd29fe9b4b02bd2438f8dd2de330",
+    "request_id": null,
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "route": "chat_completions",
+    "usage": {
+      "completion_tokens": 512,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 60,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 572
+    }
+  },
+  "functional_status": "not_run",
+  "hallucination_status": "not_run",
+  "security_status": "not_run",
+  "syntax_status": "fail"
+}

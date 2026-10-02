@@ -1,0 +1,19 @@
+ORIGINAL TASK (preserved verbatim):
+Write complete Python code for `create_item(url, payload)` using Requests. Call `requests.post` with `json=payload` and a five-second timeout, call `Response.raise_for_status`, decode with `Response.json`, and return the response's `id`. The supplied tests mock the request; do not add retries.
+
+Reference API documentation from the selected snapshot:
+Snapshot date: 2026-09-29
+
+## requests (third-party): HTTP client for Python.
+Source checked: 2.34.2, 2026-09-29
+Official reference: https://requests.readthedocs.io/en/stable/api/
+Official reference: https://requests.readthedocs.io/en/latest/user/quickstart/
+- requests.get(url, params=None, **kwargs) -> Response
+- requests.post(url, data=None, json=None, **kwargs) -> Response
+- requests.request(method, url, **kwargs) -> Response
+- Response.json(**kwargs) -> Any
+- Response.raise_for_status() -> None
+- Response.status_code -> int
+- Response.text -> str
+
+Use the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.

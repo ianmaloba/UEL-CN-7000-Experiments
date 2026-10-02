@@ -1,0 +1,1 @@
+Write complete Python code for `region_totals(csv_text)`. The input is CSV text with `region` and numeric `amount` columns. Return a dictionary mapping each region to the sum of its amounts.

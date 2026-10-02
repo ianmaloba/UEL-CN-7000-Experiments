@@ -1,0 +1,71 @@
+{
+  "api_conformance_status": "pass",
+  "details": {
+    "actual_model_id": "grok-4.20-0309-non-reasoning",
+    "attempt": 1,
+    "bandit_findings": [],
+    "candidate_test_failure": true,
+    "catalog_metadata": {
+      "aliases": [
+        "grok-4.20-non-reasoning",
+        "grok-4.20-non-reasoning-latest",
+        "grok-4.20-beta-non-reasoning",
+        "grok-4.20-beta-latest-non-reasoning"
+      ],
+      "cached_prompt_text_token_price": 2000,
+      "completion_text_token_price": 25000,
+      "created": 1773014400,
+      "fingerprint": "fp_41d52165d8",
+      "id": "grok-4.20-0309-non-reasoning",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "xai",
+      "prompt_text_token_price": 12500,
+      "version": "1.0"
+    },
+    "cost_rate_usd_per_million": {
+      "input": 1.25,
+      "output": 2.5
+    },
+    "elapsed_seconds": 3.152,
+    "endpoint": "https://api.x.ai/v1/chat/completions",
+    "estimated_cost_usd": 0.0002225,
+    "evaluation_mode": "docker_isolated",
+    "finish_reason": "stop",
+    "functional_output": "AssertionError: assert ... failed",
+    "functional_returncode": 1,
+    "generation_status": "complete",
+    "http_status": 200,
+    "input_tokens": 66,
+    "output_tokens": 56,
+    "provider_response_id": "ae809b9e-9608-4209-ba8d-2602f364077c",
+    "request_id": "ae809b9e-9608-4209-ba8d-2602f364077c",
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "route": "chat_completions",
+    "usage": {
+      "completion_tokens": 56,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 66,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 122
+    }
+  },
+  "functional_status": "fail",
+  "hallucination_status": "not_detected",
+  "security_status": "pass",
+  "syntax_status": "pass"
+}

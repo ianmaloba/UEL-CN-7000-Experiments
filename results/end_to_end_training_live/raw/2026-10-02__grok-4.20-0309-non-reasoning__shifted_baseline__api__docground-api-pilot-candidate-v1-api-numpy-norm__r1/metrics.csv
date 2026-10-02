@@ -1,0 +1,2 @@
+run_id,task_id,condition,attempt,generation_status,provider_http_status,request_id,input_tokens,output_tokens,estimated_cost_usd,syntax_status,functional_status,security_status,hallucination_status,api_conformance_status
+2026-10-02__grok-4.20-0309-non-reasoning__shifted_baseline__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1,api-numpy-norm,shifted_baseline,1,complete,200,5be3b220-868c-4a2a-b35b-e6138d1fca66,47,35,0.00014625,pass,pass,pass,not_detected,pass

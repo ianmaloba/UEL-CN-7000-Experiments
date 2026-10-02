@@ -1,0 +1,52 @@
+{
+  "api_conformance_status": "not_applicable",
+  "details": {
+    "actual_model_id": "glm-4.5",
+    "attempt": 1,
+    "bandit_findings": [],
+    "catalog_metadata": {
+      "created": 1753632000,
+      "id": "glm-4.5",
+      "object": "model",
+      "owned_by": "z-ai"
+    },
+    "cost_rate_usd_per_million": {
+      "input": 0.6,
+      "output": 2.2
+    },
+    "elapsed_seconds": 5.949,
+    "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "estimated_cost_usd": 0.000134,
+    "evaluation_mode": "docker_isolated",
+    "finish_reason": "stop",
+    "functional_output": "",
+    "functional_returncode": 0,
+    "generation_status": "complete",
+    "http_status": 200,
+    "input_tokens": 73,
+    "output_tokens": 41,
+    "provider_response_id": "202610020900004088bc7a3ad94a5f8f",
+    "request_id": null,
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "route": "chat_completions",
+    "usage": {
+      "completion_tokens": 41,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 73,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 114
+    }
+  },
+  "functional_status": "pass",
+  "hallucination_status": "not_detected",
+  "security_status": "pass",
+  "syntax_status": "pass"
+}

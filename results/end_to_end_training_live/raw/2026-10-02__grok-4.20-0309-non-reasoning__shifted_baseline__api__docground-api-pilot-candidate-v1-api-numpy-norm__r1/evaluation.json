@@ -1,0 +1,70 @@
+{
+  "api_conformance_status": "pass",
+  "details": {
+    "actual_model_id": "grok-4.20-0309-non-reasoning",
+    "attempt": 1,
+    "bandit_findings": [],
+    "catalog_metadata": {
+      "aliases": [
+        "grok-4.20-non-reasoning",
+        "grok-4.20-non-reasoning-latest",
+        "grok-4.20-beta-non-reasoning",
+        "grok-4.20-beta-latest-non-reasoning"
+      ],
+      "cached_prompt_text_token_price": 2000,
+      "completion_text_token_price": 25000,
+      "created": 1773014400,
+      "fingerprint": "fp_41d52165d8",
+      "id": "grok-4.20-0309-non-reasoning",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "object": "model",
+      "output_modalities": [
+        "text"
+      ],
+      "owned_by": "xai",
+      "prompt_text_token_price": 12500,
+      "version": "1.0"
+    },
+    "cost_rate_usd_per_million": {
+      "input": 1.25,
+      "output": 2.5
+    },
+    "elapsed_seconds": 5.134,
+    "endpoint": "https://api.x.ai/v1/chat/completions",
+    "estimated_cost_usd": 0.00014625,
+    "evaluation_mode": "docker_isolated",
+    "finish_reason": "stop",
+    "functional_output": "",
+    "functional_returncode": 0,
+    "generation_status": "complete",
+    "http_status": 200,
+    "input_tokens": 47,
+    "output_tokens": 35,
+    "provider_response_id": "5be3b220-868c-4a2a-b35b-e6138d1fca66",
+    "request_id": "5be3b220-868c-4a2a-b35b-e6138d1fca66",
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "route": "chat_completions",
+    "usage": {
+      "completion_tokens": 35,
+      "completion_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "prompt_tokens": 47,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 82
+    }
+  },
+  "functional_status": "pass",
+  "hallucination_status": "not_detected",
+  "security_status": "pass",
+  "syntax_status": "pass"
+}

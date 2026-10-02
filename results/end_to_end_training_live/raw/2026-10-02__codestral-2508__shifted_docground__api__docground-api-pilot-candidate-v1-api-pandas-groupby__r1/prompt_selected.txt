@@ -1,0 +1,21 @@
+ORIGINAL TASK (preserved verbatim):
+Write complete Python code for `region_totals(csv_text)` using pandas. Parse the CSV text with `pandas.read_csv` and an in-memory text stream, group the rows by `region` with `DataFrame.groupby`, sum `amount`, and return a dictionary.
+
+Reference API documentation from the selected snapshot:
+Snapshot date: 2026-09-29
+
+## pandas (third-party): Tabular data analysis library built around the DataFrame.
+Source checked: 3.0.6, 2026-09-29
+Official reference: https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html
+Official reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.groupby.html
+Official reference: https://pandas.pydata.org/docs/reference/api/pandas.merge.html
+Official reference: https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.merge.html
+- pandas.read_csv(filepath_or_buffer, *, sep=',', header='infer', names=None, usecols=None, dtype=None, nrows=None) -> DataFrame
+- pandas.DataFrame(data=None, index=None, columns=None, dtype=None, copy=None)
+- DataFrame.head(n=5) -> DataFrame
+- DataFrame.groupby(by=None, level=None, *, as_index=True, sort=True, group_keys=True, observed=True, dropna=True) -> DataFrameGroupBy
+- pandas.merge(left, right, how='inner', on=None, left_on=None, right_on=None, left_index=False, right_index=False, sort=False, suffixes=('_x', '_y'), copy=<no_default>, indicator=False, validate=None) -> DataFrame
+- DataFrame.merge(right, how='inner', on=None, left_on=None, right_on=None) -> DataFrame
+- DataFrame.to_csv(path_or_buf=None, *, sep=',', index=True) -> str | None
+
+Use the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.

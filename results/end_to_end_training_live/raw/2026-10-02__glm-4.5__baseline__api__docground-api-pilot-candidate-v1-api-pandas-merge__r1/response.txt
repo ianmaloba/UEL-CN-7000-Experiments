@@ -1,0 +1,9 @@
+```python
+import pandas as pd
+
+def join_inventory(prices, stock):
+    left = pd.DataFrame(prices)
+    right = pd.DataFrame(stock)
+    merged = pd.merge(left, right, on='sku', how='inner', sort=False)
+    return merged[['sku', 'price', 'quantity']].to_dict(orient='records')
+```

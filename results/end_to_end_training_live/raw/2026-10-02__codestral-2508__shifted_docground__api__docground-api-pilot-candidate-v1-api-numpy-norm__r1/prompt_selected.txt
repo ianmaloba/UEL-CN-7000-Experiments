@@ -1,0 +1,18 @@
+ORIGINAL TASK (preserved verbatim):
+Write complete Python code for `vector_length(values)` using NumPy. Convert or pass the input as an array-like value and compute its Euclidean vector length with `numpy.linalg.norm`. Return a float.
+
+Reference API documentation from the selected snapshot:
+Snapshot date: 2026-09-29
+
+## numpy (third-party): N-dimensional arrays and vectorised numerical operations.
+Source checked: 2.5, 2026-09-29
+Official reference: https://numpy.org/doc/stable/reference/generated/numpy.reshape.html
+Official reference: https://numpy.org/doc/stable/reference/generated/numpy.linalg.norm.html
+- numpy.array(object, dtype=None, *, copy=True, order='K', ndmin=0) -> ndarray
+- numpy.zeros(shape, dtype=float, order='C') -> ndarray
+- numpy.arange(start, stop=None, step=1, dtype=None) -> ndarray
+- numpy.mean(a, axis=None, dtype=None, out=None) -> ndarray | float
+- numpy.reshape(a, /, shape, order='C', *, copy=None) -> ndarray
+- numpy.linalg.norm(x, ord=None, axis=None, keepdims=False) -> float | ndarray
+
+Use the documented APIs where they fit the task. Do not invent package or API names. If the documentation is insufficient, state the uncertainty.

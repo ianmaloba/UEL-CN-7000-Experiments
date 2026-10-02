@@ -1,0 +1,1 @@
+Write complete Python code for `fetch_title(url)`. Request a JSON endpoint and return its `title` field. If the server responds with an unsuccessful HTTP status, raise the corresponding request error. Never make an actual network request in the supplied tests.

@@ -1,0 +1,30 @@
+{
+  "api_conformance_status": "not_applicable",
+  "details": {
+    "attempt": 1,
+    "billing_state": "unknown; not automatically resent",
+    "catalog_metadata": {
+      "created": 1753632000,
+      "id": "glm-4.5-air",
+      "object": "model",
+      "owned_by": "z-ai"
+    },
+    "elapsed_seconds": 0.001,
+    "endpoint": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+    "evaluation_mode": "docker_isolated",
+    "generation_status": "transport_or_parse_error",
+    "http_status": null,
+    "provider_error": "URLError",
+    "request_params": {
+      "max_tokens": 512,
+      "temperature": 0.0,
+      "top_p": 1.0
+    },
+    "retryable": false,
+    "route": "chat_completions"
+  },
+  "functional_status": "not_run",
+  "hallucination_status": "not_run",
+  "security_status": "not_run",
+  "syntax_status": "not_run"
+}
