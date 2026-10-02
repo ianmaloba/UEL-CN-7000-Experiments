@@ -1,0 +1,5 @@
+provider,model_targets,planned_outputs,latest_complete_outputs,latest_incomplete_outputs,latest_empty_outputs,latest_provider_errors,latest_transport_errors,latest_missing_outputs,complete_pairs,mixed_pairs,incomplete_pairs,infrastructure_error_pairs,complete_grounding_core_pairs,mixed_grounding_core_pairs,incomplete_grounding_core_pairs,infrastructure_error_grounding_core_pairs,functional_pass_outputs,functional_fail_outputs,functional_timeout_outputs,functional_not_run_outputs,api_conformance_pass_outputs,api_conformance_fail_outputs,api_conformance_not_run_outputs,known_campaign_cost_usd_all_attempts,known_spend_usd_budget_scope,unknown_billing_reserve_usd_budget_scope,remaining_budget_after_reserve_usd
+deepseek,1,18,18,0,0,1,0,0,6,0,0,0,6,0,0,0,17,1,0,1,10,2,7,0.001963,0.001963,0.25,4.748037
+glm,2,36,35,1,0,2,0,0,11,1,0,0,12,0,0,0,27,8,0,3,23,1,14,0.005718,0.005718,0.25,4.744282
+mistral,1,18,17,1,0,1,0,0,5,1,0,0,6,0,0,0,13,4,0,2,8,4,7,0.002178,0.002178,0.25,4.747822
+xai,2,36,34,1,0,5,0,0,11,0,0,1,11,1,0,0,27,7,0,6,22,1,17,0.012942,0.012942,0.25,4.737057

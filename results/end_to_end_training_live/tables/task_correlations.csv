@@ -1,0 +1,4 @@
+feature,condition,spearman_rho,n_tasks
+task_index,baseline,0.1143,6
+task_index,shifted_baseline,0.2,6
+task_index,shifted_docground,-0.1143,6
