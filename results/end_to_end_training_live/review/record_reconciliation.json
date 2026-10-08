@@ -1,5 +1,5 @@
 {
-  "scope": "Arithmetic and static source review only; not independent authentication of provider execution",
+  "scope": "Arithmetic and static source review only; no provider requests or candidate execution; not independent authentication of historical execution.",
   "attempts": 116,
   "selected_slots": 108,
   "conditions": {
@@ -39,6 +39,80 @@
       }
     }
   },
+  "run_file_completeness": {
+    "directories": 116,
+    "expected_files_per_directory": 8,
+    "complete_directories": 116,
+    "incomplete_directories": [],
+    "run_id_mismatches": []
+  },
+  "retry_accounting": {
+    "additional_attempts": 8,
+    "slots_with_multiple_attempts": 8,
+    "policy_issues": []
+  },
+  "selected_unavailable_outputs": {
+    "count": 4,
+    "generation_statuses": {
+      "incomplete_response": 3,
+      "transport_or_parse_error": 1
+    },
+    "records": [
+      {
+        "run_id": "2026-10-02__codestral-2508__baseline__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
+        "provider": "mistral",
+        "model": "codestral-2508",
+        "task": "api-pandas-merge",
+        "condition": "baseline",
+        "replicate": 1,
+        "attempt": 1,
+        "functional": "not_run",
+        "generation": "incomplete_response",
+        "api": "not_run",
+        "security": "not_run"
+      },
+      {
+        "run_id": "2026-10-02__glm-4.5-air__baseline__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
+        "provider": "glm",
+        "model": "glm-4.5-air",
+        "task": "api-requests-post-json",
+        "condition": "baseline",
+        "replicate": 1,
+        "attempt": 1,
+        "functional": "not_run",
+        "generation": "incomplete_response",
+        "api": "not_run",
+        "security": "not_run"
+      },
+      {
+        "run_id": "2026-10-02__grok-4.20-0309-reasoning__baseline__api__docground-api-pilot-candidate-v1-api-numpy-norm__r1__a2",
+        "provider": "xai",
+        "model": "grok-4.20-0309-reasoning",
+        "task": "api-numpy-norm",
+        "condition": "baseline",
+        "replicate": 1,
+        "attempt": 2,
+        "functional": "not_run",
+        "generation": "transport_or_parse_error",
+        "api": "not_applicable",
+        "security": "not_run"
+      },
+      {
+        "run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-numpy-reshape__r1",
+        "provider": "xai",
+        "model": "grok-4.20-0309-reasoning",
+        "task": "api-numpy-reshape",
+        "condition": "shifted_docground",
+        "replicate": 1,
+        "attempt": 1,
+        "functional": "not_run",
+        "generation": "incomplete_response",
+        "api": "not_run",
+        "security": "not_run"
+      }
+    ],
+    "interpretation": "Unavailable outputs remain in selected-slot denominators; these are distinct from missing archive files."
+  },
   "comparisons": [
     {
       "before": "baseline",
@@ -67,6 +141,10 @@
         "api-requests-get-json": 6,
         "api-requests-post-json": 5,
         "api-pandas-merge": 5
+      },
+      "weighting": {
+        "pooled_delta_pp": "Each complete pair has equal weight.",
+        "task_mean_delta_pp": "Each represented task has equal weight."
       }
     },
     {
@@ -96,6 +174,10 @@
         "api-pandas-merge": 6,
         "api-requests-get-json": 6,
         "api-requests-post-json": 6
+      },
+      "weighting": {
+        "pooled_delta_pp": "Each complete pair has equal weight.",
+        "task_mean_delta_pp": "Each represented task has equal weight."
       }
     },
     {
@@ -124,37 +206,242 @@
         "api-requests-get-json": 6,
         "api-requests-post-json": 5,
         "api-pandas-merge": 5
+      },
+      "weighting": {
+        "pooled_delta_pp": "Each complete pair has equal weight.",
+        "task_mean_delta_pp": "Each represented task has equal weight."
       }
     }
   ],
   "prompt_hashes": {
-    "normalized_match": 116
+    "file_bytes_match": 0,
+    "one_appended_lf_removed_match": 116,
+    "mismatch": 0,
+    "rule": "Compare bytes after removing exactly one final LF appended by write_run; preserve every other byte.",
+    "mismatches": []
   },
   "security_review": [
     {
       "run_id": "2026-10-02__glm-4.5__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1",
       "rule": "B101",
       "severity": "LOW",
+      "recorded_security_status": "findings",
+      "reported_line_number": 4,
       "assert_nodes_in_saved_code": 0,
-      "finding_matches_saved_code": false
+      "assert_line_numbers_in_saved_code": [],
+      "finding_matches_saved_code": false,
+      "review_status": "unsupported_source_attribution",
+      "response_file_sha256": "b01cf352012623fae4dfc2f40fab6acfda7741a1a6be7488f456cd4336431300",
+      "extracted_code_sha256": "066e71f59718618fa4dbca6d097f646cecbe4e1fc7a11f6bb3785868c76cf796",
+      "evaluation_file_sha256": "cc5c9cb2260ed1b4f53fd3175d99e2fd27a1b16b5df0a4545bc2824bacce5889",
+      "interpretation": "Static source attribution only; no new security pass or functional result is assigned."
     },
     {
       "run_id": "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
       "rule": "B101",
       "severity": "LOW",
+      "recorded_security_status": "findings",
+      "reported_line_number": 4,
       "assert_nodes_in_saved_code": 0,
-      "finding_matches_saved_code": false
+      "assert_line_numbers_in_saved_code": [],
+      "finding_matches_saved_code": false,
+      "review_status": "unsupported_source_attribution",
+      "response_file_sha256": "87052af6bea57ed34a3431a692ee159989f8e88afed21aba6bde317efcd4c6bb",
+      "extracted_code_sha256": "9de8d854df14412dadf92f025894061d0f822b24ecbf523e838c11dc74925e0a",
+      "evaluation_file_sha256": "dccbf0e4b665b6477cf3fbde20b09ed2b3d8790c13b40d912415ae76a9492477",
+      "interpretation": "Static source attribution only; no new security pass or functional result is assigned."
     }
   ],
   "inventory_missing": [
-    ".DS_Store",
-    "dataset_provenance.json"
+    ".DS_Store"
   ],
   "inventory_changed": [
+    "chart_registry.json",
+    "dataset_provenance.json",
     "docground_replay/docground_reuse_audit.json",
     "validation.json"
   ],
-  "provenance_status": "unresolved: missing dataset_provenance.json and fixture wording in chart registry",
+  "original_inventory_review": {
+    "status": "differences_present",
+    "inventory_sha256": "940d1867686c231d8d12f508997ccc4ca1c99e34b798daf8e8cd7ccf8d568593",
+    "entries": 1003,
+    "missing": [
+      ".DS_Store"
+    ],
+    "changed": [
+      "chart_registry.json",
+      "dataset_provenance.json",
+      "docground_replay/docground_reuse_audit.json",
+      "validation.json"
+    ],
+    "differences": [
+      {
+        "path": ".DS_Store",
+        "status": "missing",
+        "expected_sha256": "4a54d3e1baa3fe3e1223f0f085d6c3627527ea9ad8572da85daff7aec6baa469",
+        "current_sha256": null,
+        "expected_bytes": 8196,
+        "current_bytes": null
+      },
+      {
+        "path": "chart_registry.json",
+        "status": "changed",
+        "expected_sha256": "a4cee8a8576485d7db9b93d66895f10f986594aefa941fbd6fa1d2cf5a976fb7",
+        "current_sha256": "f9fdc83245684cbf832e373befb4586f4d460a2826f8c29150d672fc95a711ca",
+        "expected_bytes": 11176,
+        "current_bytes": 12238
+      },
+      {
+        "path": "dataset_provenance.json",
+        "status": "changed",
+        "expected_sha256": "f3b21d3e292f8929bc7e682f8b677280d9a74706cc580e9d72188a564a27aceb",
+        "current_sha256": "373441f41dcc7376ae5e5593cf177e123cf8787c84218dd06f089a924cf94bef",
+        "expected_bytes": 2308,
+        "current_bytes": 7695
+      },
+      {
+        "path": "docground_replay/docground_reuse_audit.json",
+        "status": "changed",
+        "expected_sha256": "57c30c1cc2747de488c8380f00de751a05d384fc22f64336fdd3b2579e1fb147",
+        "current_sha256": "1905f0dd3f341dec024a895f2ae9bf8ab7468901ad22220af7e7541897db1eb8",
+        "expected_bytes": 61049,
+        "current_bytes": 66058
+      },
+      {
+        "path": "validation.json",
+        "status": "changed",
+        "expected_sha256": "28aaab12946be7e1006b610380412e76cd3e2658b5455963f8d4105b9aa12e0a",
+        "current_sha256": "3e45ff2f1f67eacb0fb4cb933c2bc6dbfc6cc48c9c6cd5752cc9bff4e7465949",
+        "expected_bytes": 1966,
+        "current_bytes": 4726
+      }
+    ]
+  },
+  "metadata_review": {
+    "validation_dataset_type": "supplied_recorded_evaluations_origin_unresolved",
+    "chart_scopes": [
+      "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+    ],
+    "validation_reported_counts": {
+      "planned_slots": 108,
+      "total_run_directories": 116,
+      "complete_latest": 104,
+      "transport_errors": 9,
+      "incomplete_responses": 3,
+      "total_retries": 8
+    },
+    "fixture_live_classification_conflict": false,
+    "replay": {
+      "status": "internally_consistent_with_unresolved_history",
+      "audit_file_sha256": "1905f0dd3f341dec024a895f2ae9bf8ab7468901ad22220af7e7541897db1eb8",
+      "issues": [],
+      "uncertainties": [
+        "historical_network_call_count_unverified"
+      ],
+      "recorded_counts": {
+        "grounded_records": 35,
+        "no_saved_response": 2,
+        "replayed_functionally": 0,
+        "replayed_statically": 35,
+        "total_runs": 116
+      },
+      "observed_counts": {
+        "grounded_records": 35,
+        "replayed_statically": 35,
+        "functional_tests_executed_records": 0
+      },
+      "network_calls": {
+        "recorded_top_level": null,
+        "sum_of_recorded_per_record_counts": null,
+        "historical_actual_calls_verified": false
+      },
+      "functional_completion_claim_in_limitations": false,
+      "limitations": [
+        "Replay does not re-sample models or authenticate their historical execution.",
+        "Functional replay has not been executed according to the supplied zero count and per-record false flags; functional pass labels are not independently confirmed.",
+        "The current configuration hash identifies the preserved snapshot; it does not establish historical use.",
+        "Supplied network_calls was 0 at the top level and summed to 1 across records. Actual historical network activity is unknown.",
+        "Supplied code_sha256 values hash saved response file bytes, not extracted Python code."
+      ],
+      "config": {
+        "path": "config/campaign_snapshot.json",
+        "recorded_sha256": "dabb089cd25eb80132de34923b670962060b3b8752c22f2d29ada27bf29aa460",
+        "current_snapshot_sha256": "dabb089cd25eb80132de34923b670962060b3b8752c22f2d29ada27bf29aa460",
+        "matches_current_snapshot": true,
+        "historical_config_verified": false,
+        "hash_basis": "Current file bytes only; this does not establish the configuration used historically."
+      },
+      "source_file_hash_mismatches": [],
+      "code_sha256_matches": {
+        "response_file_bytes": 35
+      },
+      "interpretation": "Saved audit statements are inspected, not re-executed. Zero recorded functional replays cannot independently confirm functional labels."
+    },
+    "validation_count_disagreements": []
+  },
+  "supplied_metadata_review": {
+    "validation_dataset_type": "end_to_end_live_training",
+    "chart_scopes": [
+      "Fixture run records; see dataset_provenance.json."
+    ],
+    "validation_reported_counts": {
+      "planned_slots": 108,
+      "total_run_directories": 116,
+      "complete_latest": 104,
+      "transport_errors": 9,
+      "incomplete_responses": 3,
+      "total_retries": 8
+    },
+    "fixture_live_classification_conflict": true,
+    "replay": {
+      "status": "issues_present",
+      "audit_file_sha256": "b6dd7030b27a91cfe20577ce32f1bfefb9390418bf07470426dd245660cc96af",
+      "issues": [
+        "network_call_totals_disagree",
+        "functional_replay_claim_without_executed_records",
+        "config_hash_missing",
+        "code_hash_describes_response_file_bytes"
+      ],
+      "uncertainties": [],
+      "recorded_counts": {
+        "grounded_records": 35,
+        "no_saved_response": 2,
+        "replayed_functionally": 0,
+        "replayed_statically": 35,
+        "total_runs": 116
+      },
+      "observed_counts": {
+        "grounded_records": 35,
+        "replayed_statically": 35,
+        "functional_tests_executed_records": 0
+      },
+      "network_calls": {
+        "recorded_top_level": 0,
+        "sum_of_recorded_per_record_counts": 1,
+        "historical_actual_calls_verified": false
+      },
+      "functional_completion_claim_in_limitations": true,
+      "limitations": [
+        "Replay validates workflow and prompt integrity only; it does not re-sample models.",
+        "Functional replay requires the original Docker evaluator image and has been run."
+      ],
+      "config": {
+        "path": "config/campaign_snapshot.json",
+        "recorded_sha256": null,
+        "current_snapshot_sha256": "dabb089cd25eb80132de34923b670962060b3b8752c22f2d29ada27bf29aa460",
+        "matches_current_snapshot": false,
+        "historical_config_verified": false,
+        "hash_basis": "Current file bytes only; this does not establish the configuration used historically."
+      },
+      "source_file_hash_mismatches": [],
+      "code_sha256_matches": {
+        "response_file_bytes": 35
+      },
+      "interpretation": "Saved audit statements are inspected, not re-executed. Zero recorded functional replays cannot independently confirm functional labels."
+    },
+    "validation_count_disagreements": []
+  },
+  "provenance_status": "Metadata and supplied labels do not independently authenticate live execution. Consult dataset_provenance.json and the preserved original metadata for repair history.",
   "generation_all_attempts": {
     "complete": 104,
     "transport_or_parse_error": 9,
