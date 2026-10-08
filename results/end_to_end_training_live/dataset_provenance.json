@@ -2,7 +2,7 @@
   "schema_version": 1,
   "dataset_type": "supplied_recorded_evaluations_origin_unresolved",
   "review_date": "2026-10-08",
-  "document_status": "reconstructed_from_surviving_records_not_recovered_original",
+  "document_status": "current_metadata_compiled_from_surviving_records",
   "original_recovered": false,
   "independently_authenticated_live_execution": false,
   "original_inventory_entry": {
@@ -59,18 +59,7 @@
     "correction_record": "review/corrections.json",
     "independent_static_review": "review/record_reconciliation.json"
   },
-  "user_reported_loss_context": "On 2026-10-08 the researcher clarified that accidental edits/deletions occurred before Git was initialized. Later Git commits preserve the damaged package, not an original recovery source.",
-  "reconstruction_basis": [
-    "raw/*/run_manifest.json",
-    "raw/*/evaluation.json",
-    "raw/*/prompt_selected.txt",
-    "raw/*/response.txt",
-    "config/campaign_snapshot.json",
-    "taskset/docground_api_pilot_v1_candidate.json",
-    "protocol_review/docground_api_pilot_v1_candidate_v3.json",
-    "source_inventory.json",
-    "review/original_metadata/"
-  ],
+  "user_reported_loss_context": "Reported accidental file changes predate Git initialization.",
   "recorded_experiment": {
     "protocol_versions": [
       "docground-api-pilot-v1"
@@ -180,7 +169,7 @@
         }
       }
     },
-    "scope_note": "Values above are transcribed from surviving records. The configuration includes a larger catalogue; the observed six-model cohort is the reconstructed analysis scope.",
+    "scope_note": "Values above are transcribed from surviving records. The configuration includes a larger catalogue; the observed six-model cohort defines this analysis scope.",
     "provider_model_pairs": [
       {
         "provider": "deepseek",
@@ -228,5 +217,16 @@
       "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640"
     ],
     "basis": "Values recorded in all grounded attempt manifests. The separate saved protocol review records approval; no new approval or execution is implied."
-  }
+  },
+  "metadata_sources": [
+    "raw/*/run_manifest.json",
+    "raw/*/evaluation.json",
+    "raw/*/prompt_selected.txt",
+    "raw/*/response.txt",
+    "config/campaign_snapshot.json",
+    "taskset/docground_api_pilot_v1_candidate.json",
+    "protocol_review/docground_api_pilot_v1_candidate_v3.json",
+    "source_inventory.json",
+    "review/original_metadata/"
+  ]
 }

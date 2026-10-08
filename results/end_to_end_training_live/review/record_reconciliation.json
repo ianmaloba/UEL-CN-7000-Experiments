@@ -295,9 +295,9 @@
         "path": "dataset_provenance.json",
         "status": "changed",
         "expected_sha256": "f3b21d3e292f8929bc7e682f8b677280d9a74706cc580e9d72188a564a27aceb",
-        "current_sha256": "373441f41dcc7376ae5e5593cf177e123cf8787c84218dd06f089a924cf94bef",
+        "current_sha256": "d6a4959fba05ca0b5fef2b93603782e0ed58d5d7a753d6f33b9a197d14cf5988",
         "expected_bytes": 2308,
-        "current_bytes": 7695
+        "current_bytes": 7544
       },
       {
         "path": "docground_replay/docground_reuse_audit.json",
@@ -311,9 +311,9 @@
         "path": "validation.json",
         "status": "changed",
         "expected_sha256": "28aaab12946be7e1006b610380412e76cd3e2658b5455963f8d4105b9aa12e0a",
-        "current_sha256": "3e45ff2f1f67eacb0fb4cb933c2bc6dbfc6cc48c9c6cd5752cc9bff4e7465949",
+        "current_sha256": "8d04f216a17dbc764514a8a63951fd9740531cdd788e484f64d6c2d3e3628f8c",
         "expected_bytes": 1966,
-        "current_bytes": 4726
+        "current_bytes": 4702
       }
     ]
   },

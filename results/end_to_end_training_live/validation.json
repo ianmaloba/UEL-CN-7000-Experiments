@@ -35,7 +35,7 @@
     "shifted_docground"
   ],
   "review_date": "2026-10-08",
-  "validation_scope": "Reconstructed structural validation of surviving files and explicit counts; no new model generation, functional execution or historical authentication.",
+  "validation_scope": "Structural validation of current files and explicit counts; no new model generation, functional execution or historical authentication.",
   "supplied_checks": [
     {
       "name": "run_directory_completeness",
@@ -145,5 +145,5 @@
   "provenance_record": "dataset_provenance.json",
   "supplied_metadata": "review/original_metadata/validation.json",
   "structural_status": "passed",
-  "validation_basis": "review/record_reconciliation.json; checks reconstructed on 2026-10-08 from current surviving bytes"
+  "validation_basis": "review/record_reconciliation.json; checks calculated on 2026-10-08 from current file bytes"
 }

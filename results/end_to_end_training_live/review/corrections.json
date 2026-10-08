@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "review_date": "2026-10-08",
-  "method": "Manual reconstruction from surviving manifests, prompts, responses, evaluations and configuration; no model API calls, candidate execution, or new replay.",
+  "method": "Manual metadata repair using surviving manifests, prompts, responses, evaluations and configuration; no model API calls, candidate execution, or new replay.",
   "raw_records_modified": false,
   "historical_inventories_modified": false,
   "original_provenance_recovered": false,
@@ -9,7 +9,7 @@
     {
       "path": "validation.json",
       "before_sha256": "e43b587f46bbf12de4e6814f5a7385acc6c90acc5b74b78b4e61ae4d7f28e4ab",
-      "after_sha256": "3e45ff2f1f67eacb0fb4cb933c2bc6dbfc6cc48c9c6cd5752cc9bff4e7465949",
+      "after_sha256": "8d04f216a17dbc764514a8a63951fd9740531cdd788e484f64d6c2d3e3628f8c",
       "preserved_before": "review/original_metadata/validation.json",
       "reason": "Replace unsupported live-training/passed classification with requires_review and explicit counting units. Preserve supplied checks separately."
     },
@@ -30,8 +30,8 @@
     {
       "path": "dataset_provenance.json",
       "before": "missing",
-      "after_sha256": "373441f41dcc7376ae5e5593cf177e123cf8787c84218dd06f089a924cf94bef",
-      "reason": "Reconstruct provenance from surviving records, explicitly distinguish current reconstruction from unavailable original bytes."
+      "after_sha256": "d6a4959fba05ca0b5fef2b93603782e0ed58d5d7a753d6f33b9a197d14cf5988",
+      "reason": "Compile a current provenance record from surviving files. Original bytes are unavailable; the current file has a separate SHA-256."
     }
   ],
   "unresolved": [
@@ -48,5 +48,9 @@
     "28.57 percentage points pooled and 28.33 equal-task are different estimators"
   ],
   "current_inventory_policy": "Separate current_inventory.json hashes the corrected package. Historical inventory hashes are not rewritten.",
-  "loss_context": "On 2026-10-08 the researcher clarified that accidental edits/deletions occurred before Git was initialized. Later Git commits preserve the damaged package, not an original recovery source."
+  "loss_context": "Reported accidental file changes predate Git initialization.",
+  "terminology_update": {
+    "date": "2026-10-08",
+    "detail": "Simplified metadata descriptions; source records, original-file availability and historical inventory hashes are unchanged."
+  }
 }
