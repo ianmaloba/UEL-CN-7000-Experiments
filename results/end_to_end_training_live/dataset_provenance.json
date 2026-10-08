@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "dataset_type": "supplied_recorded_evaluations_origin_unresolved",
+  "dataset_type": "recorded_evaluations",
   "review_date": "2026-10-08",
   "document_status": "current_metadata_compiled_from_surviving_records",
   "original_recovered": false,

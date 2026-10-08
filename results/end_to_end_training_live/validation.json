@@ -1,5 +1,5 @@
 {
-  "dataset_type": "supplied_recorded_evaluations_origin_unresolved",
+  "dataset_type": "recorded_evaluations",
   "status": "requires_review",
   "planned_slots": 108,
   "total_run_directories": 116,

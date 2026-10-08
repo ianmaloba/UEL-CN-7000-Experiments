@@ -1,10 +1,10 @@
 # Recorded API constraint and grounding results
 
-This package contains 116 supplied attempts across 108 selected model/task/condition slots. Eight slots have a second attempt. The selected functional totals remain 31/33 at baseline, 22/36 with API constraints, and 31/35 with documentation grounding. Four selected outputs are unavailable: three incomplete responses and one transport/parse failure. All 116 attempt directories retain their eight expected files.
+This package contains 116 recorded attempts across 108 selected model/task/condition slots. Eight slots have a second attempt. The selected functional totals remain 31/33 at baseline, 22/36 with API constraints, and 31/35 with documentation grounding. Four selected outputs are unavailable: three incomplete responses and one transport/parse failure. All 116 attempt directories retain their eight expected files.
 
 ## Evidence status and corrections
 
-The classification is **supplied recorded evaluations with unresolved historical origin**. The original chart registry said fixture; the supplied validation said live training. Those labels conflict, and neither can be independently authenticated from this archive. The folder name does not establish model-weight training.
+The classification is **recorded evaluations** (`recorded_evaluations`). The original chart registry said fixture; the supplied validation said live training. Those labels conflict, and neither can be independently authenticated from this archive. The folder name does not establish model-weight training.
 
 On 8 October 2026, the metadata was corrected without generating new model answers, executing candidate code, or changing raw evaluations. The current `dataset_provenance.json` was compiled from surviving manifests, evaluations, prompts, configuration, taskset and protocol review. It records the observed providers, models, tasks, conditions, settings, counts and supporting file hashes. The missing 2,308-byte original remains unavailable, so the current file is not a byte-for-byte recovery and has its own hash.
 

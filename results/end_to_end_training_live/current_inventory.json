@@ -14,13 +14,13 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 5345,
-      "sha256": "5ea564c6defe69058ebeb8392d2c3d755d2b78fca961204a08dc9c34d447ff30"
+      "bytes": 5327,
+      "sha256": "62bd48cb87f37d96f3bdb6900df38e6f280043a9a363715e75beb8f178c40274"
     },
     {
       "path": "chart_registry.json",
-      "bytes": 12238,
-      "sha256": "f9fdc83245684cbf832e373befb4586f4d460a2826f8c29150d672fc95a711ca"
+      "bytes": 11536,
+      "sha256": "99367087eca67bcc6f78f06954262d3ce138d6f60df27daf3b2a6c92fad0e27c"
     },
     {
       "path": "config/campaign_snapshot.json",
@@ -29,8 +29,8 @@
     },
     {
       "path": "dataset_provenance.json",
-      "bytes": 7544,
-      "sha256": "d6a4959fba05ca0b5fef2b93603782e0ed58d5d7a753d6f33b9a197d14cf5988"
+      "bytes": 7517,
+      "sha256": "59baeb2abf5d0bd12003acac71af0aa36a43e314dcc26f2c266a78633fd5ad78"
     },
     {
       "path": "docground_replay/docground_reuse_audit.json",
@@ -4959,8 +4959,8 @@
     },
     {
       "path": "review/corrections.json",
-      "bytes": 3248,
-      "sha256": "c2c43c1ed4bfda532ffb93790141b9e68e70bb440a33ec00c66516b5b1e44d4b"
+      "bytes": 3559,
+      "sha256": "456ab1830cfb75b754125722d06861438ea10cea0b980ba85536b7a8f91074ac"
     },
     {
       "path": "review/original_metadata/chart_registry.json",
@@ -4979,8 +4979,8 @@
     },
     {
       "path": "review/record_reconciliation.json",
-      "bytes": 16227,
-      "sha256": "69cbb3f175bd681383672506c0216645887858b10edc706d4737f4c6d7ea3563"
+      "bytes": 16161,
+      "sha256": "2cd094f5237b185a0881b12aab1bbc2833a3df573cf8c1ed78fa7c2e235bdc97"
     },
     {
       "path": "source_inventory.json",
@@ -5059,8 +5059,8 @@
     },
     {
       "path": "validation.json",
-      "bytes": 4702,
-      "sha256": "8d04f216a17dbc764514a8a63951fd9740531cdd788e484f64d6c2d3e3628f8c"
+      "bytes": 4675,
+      "sha256": "5a8d2b70e31d6332681ae53ebb0f6e8b96e6474bb0fdde4ef45450ae2cf63e1c"
     }
   ]
 }

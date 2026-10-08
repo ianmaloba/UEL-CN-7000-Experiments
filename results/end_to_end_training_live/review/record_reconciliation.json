@@ -287,17 +287,17 @@
         "path": "chart_registry.json",
         "status": "changed",
         "expected_sha256": "a4cee8a8576485d7db9b93d66895f10f986594aefa941fbd6fa1d2cf5a976fb7",
-        "current_sha256": "f9fdc83245684cbf832e373befb4586f4d460a2826f8c29150d672fc95a711ca",
+        "current_sha256": "99367087eca67bcc6f78f06954262d3ce138d6f60df27daf3b2a6c92fad0e27c",
         "expected_bytes": 11176,
-        "current_bytes": 12238
+        "current_bytes": 11536
       },
       {
         "path": "dataset_provenance.json",
         "status": "changed",
         "expected_sha256": "f3b21d3e292f8929bc7e682f8b677280d9a74706cc580e9d72188a564a27aceb",
-        "current_sha256": "d6a4959fba05ca0b5fef2b93603782e0ed58d5d7a753d6f33b9a197d14cf5988",
+        "current_sha256": "59baeb2abf5d0bd12003acac71af0aa36a43e314dcc26f2c266a78633fd5ad78",
         "expected_bytes": 2308,
-        "current_bytes": 7544
+        "current_bytes": 7517
       },
       {
         "path": "docground_replay/docground_reuse_audit.json",
@@ -311,16 +311,16 @@
         "path": "validation.json",
         "status": "changed",
         "expected_sha256": "28aaab12946be7e1006b610380412e76cd3e2658b5455963f8d4105b9aa12e0a",
-        "current_sha256": "8d04f216a17dbc764514a8a63951fd9740531cdd788e484f64d6c2d3e3628f8c",
+        "current_sha256": "5a8d2b70e31d6332681ae53ebb0f6e8b96e6474bb0fdde4ef45450ae2cf63e1c",
         "expected_bytes": 1966,
-        "current_bytes": 4702
+        "current_bytes": 4675
       }
     ]
   },
   "metadata_review": {
-    "validation_dataset_type": "supplied_recorded_evaluations_origin_unresolved",
+    "validation_dataset_type": "recorded_evaluations",
     "chart_scopes": [
-      "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "Recorded evaluations; see dataset_provenance.json."
     ],
     "validation_reported_counts": {
       "planned_slots": 108,
