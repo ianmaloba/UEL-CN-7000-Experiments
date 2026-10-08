@@ -3,8 +3,7 @@
 This repository is the dissertation experiment and evidence project for **Robustness
 of LLMs for Code Generation Under Distribution Shift**. It is intentionally separate
 from [DocGround](https://github.com/ianmaloba/DocGround), the reusable grounding and
-verification wrapper, and from [Draft-DocGround](https://github.com/ianmaloba/Draft-DocGround),
-the proof-of-concept baseline.
+verification wrapper.
 
 ## Responsibilities
 
@@ -67,6 +66,10 @@ creating results. Every accepted result gets a stable run ID and mapped files fo
 outputs, metrics, tables, figures, screenshots, and a plain-text interpretation note.
 Interpretations describe what the data supports and what it does not support; they do
 not turn anecdotal smoke tests into dissertation findings.
+
+For the retained end-to-end results archive, start with its
+[README](results/end_to_end_training_live/README.md), which describes the archive's
+contents, counting units, and interpretation limits.
 
 ## Initial setup
 
