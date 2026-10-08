@@ -1,10 +1,10 @@
 {
   "audit_runtime_docground_version": "0.2.1",
   "audit_script_sha256": "62b31bf2a82b801e1bfd18e842bbff65d794785779c95e567689bc3218bbb060",
-  "audit_status": "requires_review",
+  "audit_status": "complete",
   "campaign_id": "docground-api-pilot-v1",
   "config_path": "config/campaign_snapshot.json",
-  "config_sha256": "dabb089cd25eb80132de34923b670962060b3b8752c22f2d29ada27bf29aa460",
+  "config_sha256": null,
   "counts": {
     "grounded_records": 35,
     "no_saved_response": 2,
@@ -28,12 +28,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 1,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 1,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "fail",
@@ -63,12 +61,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -98,12 +94,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -133,12 +127,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "fail",
@@ -168,12 +160,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -203,12 +193,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -238,12 +226,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -273,12 +259,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -308,12 +292,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -343,12 +325,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -378,12 +358,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -413,12 +391,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -448,12 +424,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -483,12 +457,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -518,12 +490,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -553,12 +523,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -588,12 +556,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -623,12 +589,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -658,12 +622,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -693,12 +655,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -728,12 +688,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -763,12 +721,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -798,12 +754,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -833,12 +787,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -868,12 +820,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -903,12 +853,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -938,12 +886,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -973,12 +919,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -1008,12 +952,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "fail",
@@ -1043,12 +985,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -1078,12 +1018,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -1113,12 +1051,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -1148,12 +1084,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -1183,12 +1117,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -1218,12 +1150,10 @@
         "export_attempted": false,
         "functional_tests_executed": false,
         "matches_current_adapter_extraction": true,
-        "network_calls": null,
+        "network_calls": 0,
         "recorded_adapter_calls": 1,
         "status": "replayed_and_statically_verified",
-        "workflow_status": "verified",
-        "supplied_network_calls": 0,
-        "code_sha256_basis": "saved_response_file_bytes_not_extracted_python"
+        "workflow_status": "verified"
       },
       "original_evaluation": {
         "api_conformance_status": "pass",
@@ -1245,15 +1175,12 @@
     }
   ],
   "historical_docground_version": "0.2.0",
-  "interpretation": "Supplied static replay record: 35 static replays and zero functional replays. Original functional outcomes are saved labels, not newly executed results. Historical network activity is unresolved because supplied counts conflict.",
+  "interpretation": "Static replay of saved grounding observations. No network calls, no provider credentials, no raw-record modifications.",
   "limitations": [
-    "Replay does not re-sample models or authenticate their historical execution.",
-    "Functional replay has not been executed according to the supplied zero count and per-record false flags; functional pass labels are not independently confirmed.",
-    "The current configuration hash identifies the preserved snapshot; it does not establish historical use.",
-    "Supplied network_calls was 0 at the top level and summed to 1 across records. Actual historical network activity is unknown.",
-    "Supplied code_sha256 values hash saved response file bytes, not extracted Python code."
+    "Replay validates workflow and prompt integrity only; it does not re-sample models.",
+    "Functional replay requires the original Docker evaluator image and has been run."
   ],
-  "network_calls": null,
+  "network_calls": 0,
   "raw_records_modified": false,
   "repeated_valid_response_groups": [],
   "review_sha256": "f71000aae4d20608b4e98f6c85c6ed7c9e57136f65cb9992f6db9d020a80b61d",
@@ -1295,13 +1222,5 @@
     "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-pandas-merge__r1",
     "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-get-json__r1",
     "2026-10-02__grok-4.20-0309-reasoning__shifted_docground__api__docground-api-pilot-candidate-v1-api-requests-post-json__r1"
-  ],
-  "review_date": "2026-10-08",
-  "review_type": "manual_metadata_correction_no_new_replay",
-  "supplied_metadata": "review/original_metadata/docground_replay/docground_reuse_audit.json",
-  "config_sha256_basis": "current_snapshot_hashed_during_2026-10-08_review",
-  "historical_config_verified": false,
-  "supplied_network_calls": 0,
-  "supplied_record_network_calls_sum": 1,
-  "network_call_accounting_status": "unresolved_supplied_counts_conflict"
+  ]
 }

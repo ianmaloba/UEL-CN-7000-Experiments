@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-08",
+  "method": "Manual metadata repair using surviving manifests, prompts, responses, evaluations and configuration; no model API calls, candidate execution, or new replay.",
+  "raw_records_modified": false,
+  "historical_inventories_modified": false,
+  "original_provenance_recovered": false,
+  "metadata_changes": [
+    {
+      "path": "validation.json",
+      "before_sha256": "e43b587f46bbf12de4e6814f5a7385acc6c90acc5b74b78b4e61ae4d7f28e4ab",
+      "after_sha256": "5a8d2b70e31d6332681ae53ebb0f6e8b96e6474bb0fdde4ef45450ae2cf63e1c",
+      "preserved_before": "review/original_metadata/validation.json",
+      "reason": "Replace unsupported live-training/passed classification with requires_review and explicit counting units. Preserve supplied checks separately."
+    },
+    {
+      "path": "chart_registry.json",
+      "before_sha256": "a4cee8a8576485d7db9b93d66895f10f986594aefa941fbd6fa1d2cf5a976fb7",
+      "after_sha256": "99367087eca67bcc6f78f06954262d3ce138d6f60df27daf3b2a6c92fad0e27c",
+      "preserved_before": "review/original_metadata/chart_registry.json",
+      "reason": "Use the recorded_evaluations classification consistently and refer to provenance details; qualify unsupported security flags."
+    },
+    {
+      "path": "docground_replay/docground_reuse_audit.json",
+      "before_sha256": "b6dd7030b27a91cfe20577ce32f1bfefb9390418bf07470426dd245660cc96af",
+      "after_sha256": "1905f0dd3f341dec024a895f2ae9bf8ab7468901ad22220af7e7541897db1eb8",
+      "preserved_before": "review/original_metadata/docground_replay/docground_reuse_audit.json",
+      "reason": "Correct functional wording; identify current config hash basis; mark conflicting historical network counts unknown while retaining supplied values; explain response-byte hashes."
+    },
+    {
+      "path": "dataset_provenance.json",
+      "before": "missing",
+      "after_sha256": "59baeb2abf5d0bd12003acac71af0aa36a43e314dcc26f2c266a78633fd5ad78",
+      "reason": "Compile a current provenance record from surviving files. Original bytes are unavailable; the current file has a separate SHA-256."
+    }
+  ],
+  "unresolved": [
+    "Original 2308-byte provenance and inventory-matching validation/replay were not recovered.",
+    "Historical origin (fixture versus live) remains unresolved.",
+    "Two B101 source attributions remain unsupported.",
+    "No independent functional replay exists for this cohort.",
+    "Actual historical replay network calls and historical configuration use remain unverified."
+  ],
+  "preserved_outcomes": [
+    "116 attempts, 108 selected slots, eight retries",
+    "Four unavailable selected outputs retained in coverage denominators",
+    "35 complete grounding/constraint pairs: 13 rescues and 3 regressions",
+    "28.57 percentage points pooled and 28.33 equal-task are different estimators"
+  ],
+  "current_inventory_policy": "Separate current_inventory.json hashes the corrected package. Historical inventory hashes are not rewritten.",
+  "loss_context": "Reported accidental file changes predate Git initialization.",
+  "terminology_update": {
+    "date": "2026-10-08",
+    "detail": "Simplified metadata descriptions; source records, original-file availability and historical inventory hashes are unchanged."
+  },
+  "classification_label_update": {
+    "date": "2026-10-08",
+    "dataset_type": "recorded_evaluations",
+    "detail": "Use a consistent neutral label in current metadata, chart scopes and README; supporting provenance details remain in the audit record."
+  }
+}

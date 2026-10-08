@@ -1,7 +1,42 @@
 {
-  "dataset_type": "end_to_end_live_training",
-  "status": "passed",
-  "checks": [
+  "dataset_type": "recorded_evaluations",
+  "status": "requires_review",
+  "planned_slots": 108,
+  "total_run_directories": 116,
+  "complete_latest": 104,
+  "transport_errors": 9,
+  "incomplete_responses": 3,
+  "total_retries": 8,
+  "providers": [
+    "deepseek",
+    "glm",
+    "mistral",
+    "xai"
+  ],
+  "models": [
+    "codestral-2508",
+    "deepseek-flash",
+    "glm-4.5",
+    "glm-4.5-air",
+    "grok-4.20-0309-non-reasoning",
+    "grok-4.20-0309-reasoning"
+  ],
+  "tasks": [
+    "api-numpy-norm",
+    "api-numpy-reshape",
+    "api-pandas-groupby",
+    "api-pandas-merge",
+    "api-requests-get-json",
+    "api-requests-post-json"
+  ],
+  "conditions": [
+    "baseline",
+    "shifted_baseline",
+    "shifted_docground"
+  ],
+  "review_date": "2026-10-08",
+  "validation_scope": "Structural validation of current files and explicit counts; no new model generation, functional execution or historical authentication.",
+  "supplied_checks": [
     {
       "name": "run_directory_completeness",
       "status": "passed",
@@ -43,37 +78,72 @@
       "detail": "run_id in run_manifest.json matches directory name for every run"
     }
   ],
-  "planned_slots": 108,
-  "total_run_directories": 116,
-  "complete_latest": 104,
-  "transport_errors": 9,
-  "incomplete_responses": 3,
-  "total_retries": 8,
-  "providers": [
-    "deepseek",
-    "glm",
-    "mistral",
-    "xai"
+  "checks": [
+    {
+      "name": "run_directory_completeness",
+      "status": "passed",
+      "detail": "116 directories contain all 8 expected files."
+    },
+    {
+      "name": "exact_prompt_text_sha256",
+      "status": "passed",
+      "detail": "116 hashes match after removing exactly one appended LF byte."
+    },
+    {
+      "name": "run_id_directory_match",
+      "status": "passed",
+      "detail": "All surviving run IDs match their directory names."
+    },
+    {
+      "name": "retry_policy",
+      "status": "passed",
+      "detail": "8 additional attempts across 8 slots; each follows a transport/parse error."
+    },
+    {
+      "name": "provider_model_populated",
+      "status": "passed",
+      "detail": "All manifests contain provider and model identifiers."
+    },
+    {
+      "name": "selected_output_accounting",
+      "status": "passed",
+      "detail": "108 selected slots include 104 complete outputs, 3 incomplete responses and 1 transport/parse failure."
+    },
+    {
+      "name": "replay_source_file_hashes",
+      "status": "passed",
+      "detail": "All 105 source file hashes in the 35-record supplied replay match current raw files."
+    },
+    {
+      "name": "historical_origin",
+      "status": "unresolved",
+      "detail": "Fixture versus live labels conflict; original provenance unavailable."
+    },
+    {
+      "name": "security_source_attribution",
+      "status": "requires_review",
+      "detail": "Two B101 labels do not match saved candidates; no verified vulnerability conclusion."
+    },
+    {
+      "name": "historical_replay_network_accounting",
+      "status": "unresolved",
+      "detail": "Supplied top-level 0 differs from per-record sum 1; actual historical calls unknown."
+    }
   ],
-  "models": [
-    "codestral-2508",
-    "deepseek-flash",
-    "glm-4.5",
-    "glm-4.5-air",
-    "grok-4.20-0309-non-reasoning",
-    "grok-4.20-0309-reasoning"
-  ],
-  "tasks": [
-    "api-numpy-norm",
-    "api-numpy-reshape",
-    "api-pandas-groupby",
-    "api-pandas-merge",
-    "api-requests-get-json",
-    "api-requests-post-json"
-  ],
-  "conditions": [
-    "baseline",
-    "shifted_baseline",
-    "shifted_docground"
-  ]
+  "counting_units": {
+    "planned_slots": "selected model/task/condition observations",
+    "total_run_directories": "all attempts including retries",
+    "complete_latest": "selected slots",
+    "transport_errors": "all attempts; 1 selected slot remains unavailable",
+    "incomplete_responses": "all attempts and selected slots",
+    "total_retries": "additional attempts, across 8 slots"
+  },
+  "unavailable_selected_outputs": {
+    "incomplete_response": 3,
+    "transport_or_parse_error": 1
+  },
+  "provenance_record": "dataset_provenance.json",
+  "supplied_metadata": "review/original_metadata/validation.json",
+  "structural_status": "passed",
+  "validation_basis": "review/record_reconciliation.json; checks calculated on 2026-10-08 from current file bytes"
 }
