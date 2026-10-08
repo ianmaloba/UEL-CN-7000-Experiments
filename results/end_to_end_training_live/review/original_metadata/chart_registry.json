@@ -14,7 +14,7 @@
         "latest_provider_errors"
       ],
       "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_model_coverage_paired_status",
@@ -30,7 +30,7 @@
         "infrastructure_error_pairs"
       ],
       "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_model_coverage_docground_paired_status",
@@ -46,7 +46,7 @@
         "infrastructure_error_grounding_core_pairs"
       ],
       "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_model_coverage_functional_status",
@@ -62,7 +62,7 @@
         "functional_not_run_outputs"
       ],
       "calculation": "Stacked horizontal bar of counts by provider, mirroring analysis/aggregate_model_coverage.py.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_condition_rates",
@@ -78,8 +78,7 @@
         "security_issue_rate_complete"
       ],
       "calculation": "Grouped bar of functional, API-conformance, and security-issue rates per condition (complete slots only).",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json.",
-      "interpretation_limit": "Security series shows supplied scanner flags, including two B101 labels with unsupported source attribution. It is not a verified vulnerability rate."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_coverage_and_retries",
@@ -98,7 +97,7 @@
         "recovered_after_retry"
       ],
       "calculation": "Stacked bar of first-attempt generation status counts by condition.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_paired_transitions__shifted_baseline__baseline",
@@ -114,7 +113,7 @@
         "count"
       ],
       "calculation": "2x2 heatmap of before/after functional-outcome counts for the comparison.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_paired_transitions__shifted_docground__baseline",
@@ -130,7 +129,7 @@
         "count"
       ],
       "calculation": "2x2 heatmap of before/after functional-outcome counts for the comparison.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_paired_transitions__shifted_docground__shifted_baseline",
@@ -146,7 +145,7 @@
         "count"
       ],
       "calculation": "2x2 heatmap of before/after functional-outcome counts for the comparison.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_paired_effects",
@@ -165,7 +164,7 @@
         "bootstrap_resamples"
       ],
       "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_paired_effects__shifted_baseline__baseline",
@@ -184,7 +183,7 @@
         "bootstrap_resamples"
       ],
       "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_paired_effects__shifted_docground__baseline",
@@ -203,7 +202,7 @@
         "bootstrap_resamples"
       ],
       "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_paired_effects__shifted_docground__shifted_baseline",
@@ -222,7 +221,7 @@
         "bootstrap_resamples"
       ],
       "calculation": "After-minus-before delta in percentage points with 95% CI from 5000-resample task-cluster bootstrap.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_model_variants",
@@ -238,7 +237,7 @@
         "functional_rate_complete"
       ],
       "calculation": "Grouped bar of functional pass rate by provider:model across conditions.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_task_distributions",
@@ -253,7 +252,7 @@
         "functional_rate_complete"
       ],
       "calculation": "Box plot of per-task functional pass rate distributions by condition.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_task_heatmap",
@@ -268,7 +267,7 @@
         "functional_rate_complete"
       ],
       "calculation": "Heatmap of functional pass rate by task and condition.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_task_correlations",
@@ -284,7 +283,7 @@
         "n_tasks"
       ],
       "calculation": "Heatmap of Spearman rank correlation between task features and per-condition functional pass rate.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     },
     {
       "figure_id": "figure_attempt_history",
@@ -301,9 +300,7 @@
         "created_at"
       ],
       "calculation": "Scatter of attempt number over execution sequence, coloured by generation status.",
-      "scope": "Supplied recorded evaluations; historical origin unresolved. See dataset_provenance.json."
+      "scope": "Fixture run records; see dataset_provenance.json."
     }
-  ],
-  "review_date": "2026-10-08",
-  "figures_status": "Preserved supplied derived figures; metadata clarification does not reauthenticate plotted observations."
+  ]
 }

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-08",
+  "method": "Manual reconstruction from surviving manifests, prompts, responses, evaluations and configuration; no model API calls, candidate execution, or new replay.",
+  "raw_records_modified": false,
+  "historical_inventories_modified": false,
+  "original_provenance_recovered": false,
+  "metadata_changes": [
+    {
+      "path": "validation.json",
+      "before_sha256": "e43b587f46bbf12de4e6814f5a7385acc6c90acc5b74b78b4e61ae4d7f28e4ab",
+      "after_sha256": "3e45ff2f1f67eacb0fb4cb933c2bc6dbfc6cc48c9c6cd5752cc9bff4e7465949",
+      "preserved_before": "review/original_metadata/validation.json",
+      "reason": "Replace unsupported live-training/passed classification with requires_review and explicit counting units. Preserve supplied checks separately."
+    },
+    {
+      "path": "chart_registry.json",
+      "before_sha256": "a4cee8a8576485d7db9b93d66895f10f986594aefa941fbd6fa1d2cf5a976fb7",
+      "after_sha256": "f9fdc83245684cbf832e373befb4586f4d460a2826f8c29150d672fc95a711ca",
+      "preserved_before": "review/original_metadata/chart_registry.json",
+      "reason": "Use consistent unresolved-origin scope; qualify unsupported security flags."
+    },
+    {
+      "path": "docground_replay/docground_reuse_audit.json",
+      "before_sha256": "b6dd7030b27a91cfe20577ce32f1bfefb9390418bf07470426dd245660cc96af",
+      "after_sha256": "1905f0dd3f341dec024a895f2ae9bf8ab7468901ad22220af7e7541897db1eb8",
+      "preserved_before": "review/original_metadata/docground_replay/docground_reuse_audit.json",
+      "reason": "Correct functional wording; identify current config hash basis; mark conflicting historical network counts unknown while retaining supplied values; explain response-byte hashes."
+    },
+    {
+      "path": "dataset_provenance.json",
+      "before": "missing",
+      "after_sha256": "373441f41dcc7376ae5e5593cf177e123cf8787c84218dd06f089a924cf94bef",
+      "reason": "Reconstruct provenance from surviving records, explicitly distinguish current reconstruction from unavailable original bytes."
+    }
+  ],
+  "unresolved": [
+    "Original 2308-byte provenance and inventory-matching validation/replay were not recovered.",
+    "Historical origin (fixture versus live) remains unresolved.",
+    "Two B101 source attributions remain unsupported.",
+    "No independent functional replay exists for this cohort.",
+    "Actual historical replay network calls and historical configuration use remain unverified."
+  ],
+  "preserved_outcomes": [
+    "116 attempts, 108 selected slots, eight retries",
+    "Four unavailable selected outputs retained in coverage denominators",
+    "35 complete grounding/constraint pairs: 13 rescues and 3 regressions",
+    "28.57 percentage points pooled and 28.33 equal-task are different estimators"
+  ],
+  "current_inventory_policy": "Separate current_inventory.json hashes the corrected package. Historical inventory hashes are not rewritten.",
+  "loss_context": "On 2026-10-08 the researcher clarified that accidental edits/deletions occurred before Git was initialized. Later Git commits preserve the damaged package, not an original recovery source."
+}

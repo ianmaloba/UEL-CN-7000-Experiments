@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "dataset_type": "supplied_recorded_evaluations_origin_unresolved",
+  "review_date": "2026-10-08",
+  "document_status": "reconstructed_from_surviving_records_not_recovered_original",
+  "original_recovered": false,
+  "independently_authenticated_live_execution": false,
+  "original_inventory_entry": {
+    "path": "dataset_provenance.json",
+    "bytes": 2308,
+    "sha256": "f3b21d3e292f8929bc7e682f8b677280d9a74706cc580e9d72188a564a27aceb"
+  },
+  "recovery_search": {
+    "result": "No exact original found in project filename search or 33658 local Git objects, including unreachable objects.",
+    "first_published_archive_commit": "a98558a50995e4e0782333301a2695c5c26df651",
+    "published_base_commit": "6461fb17ac3d381bfeb6b4132dbd8f337569645e"
+  },
+  "origin_assessment": "Supplied records contain conflicting fixture and live-training labels. Neither historical origin nor model-weight training can be authenticated from this package. Current classification does not resolve that uncertainty.",
+  "cohort": {
+    "attempts": 116,
+    "selected_slots": 108,
+    "selection": "Highest attempt number per provider, model, task, condition and replicate; all earlier attempts retained.",
+    "retried_slots": 8,
+    "complete_selected_outputs": 104,
+    "unavailable_selected_outputs": {
+      "incomplete_response": 3,
+      "transport_or_parse_error": 1
+    }
+  },
+  "prompt_hash_convention": "run_manifest.prompt_sha256 hashes UTF-8 prompt text. The writer appends exactly one LF byte (0x0a) to prompt_selected.txt; remove exactly that final LF before checking. Do not strip other whitespace.",
+  "evaluation_status": "Functional outcomes remain supplied historical labels; no new candidate execution or model generation was performed for this correction.",
+  "security_status": "Two supplied B101 assert_used findings have no assert nodes in their saved candidates. Source attribution is unsupported; retain original labels for traceability but do not treat them as verified vulnerabilities or replace them with passes.",
+  "replay_status": "The supplied audit reports 35 static replays and zero functional replays. Its historical network call total conflicts with its records; actual historical calls remain unknown.",
+  "config_snapshot": {
+    "path": "config/campaign_snapshot.json",
+    "sha256": "dabb089cd25eb80132de34923b670962060b3b8752c22f2d29ada27bf29aa460",
+    "hash_basis": "current_preserved_file_bytes",
+    "matches_original_inventory": true,
+    "historical_use_authenticated": false
+  },
+  "estimator_definitions": {
+    "pooled_paired_delta_pp": {
+      "value": 28.571428571428573,
+      "weighting": "35 complete pairs equally"
+    },
+    "equal_task_delta_pp": {
+      "value": 28.333333333333332,
+      "weighting": "Six task means equally"
+    }
+  },
+  "preservation": {
+    "raw_records": "Unmodified",
+    "historical_inventories": [
+      "manifest.json",
+      "source_inventory.json"
+    ],
+    "supplied_metadata_copies": "review/original_metadata/",
+    "current_integrity_inventory": "current_inventory.json",
+    "correction_record": "review/corrections.json",
+    "independent_static_review": "review/record_reconciliation.json"
+  },
+  "user_reported_loss_context": "On 2026-10-08 the researcher clarified that accidental edits/deletions occurred before Git was initialized. Later Git commits preserve the damaged package, not an original recovery source.",
+  "reconstruction_basis": [
+    "raw/*/run_manifest.json",
+    "raw/*/evaluation.json",
+    "raw/*/prompt_selected.txt",
+    "raw/*/response.txt",
+    "config/campaign_snapshot.json",
+    "taskset/docground_api_pilot_v1_candidate.json",
+    "protocol_review/docground_api_pilot_v1_candidate_v3.json",
+    "source_inventory.json",
+    "review/original_metadata/"
+  ],
+  "recorded_experiment": {
+    "protocol_versions": [
+      "docground-api-pilot-v1"
+    ],
+    "taskset_ids": [
+      "docground-api-pilot-candidate-v1"
+    ],
+    "providers": [
+      "deepseek",
+      "glm",
+      "mistral",
+      "xai"
+    ],
+    "model_ids": [
+      "codestral-2508",
+      "deepseek-flash",
+      "glm-4.5",
+      "glm-4.5-air",
+      "grok-4.20-0309-non-reasoning",
+      "grok-4.20-0309-reasoning"
+    ],
+    "task_ids": [
+      "api-numpy-norm",
+      "api-numpy-reshape",
+      "api-pandas-groupby",
+      "api-pandas-merge",
+      "api-requests-get-json",
+      "api-requests-post-json"
+    ],
+    "conditions": [
+      "baseline",
+      "shifted_baseline",
+      "shifted_docground"
+    ],
+    "recorded_created_at_range": [
+      "2026-10-02T09:00:00Z",
+      "2026-10-02T09:09:37.608988Z"
+    ],
+    "settings_observed_in_manifests": {
+      "replicate": [
+        1
+      ],
+      "temperature": [
+        0.0
+      ],
+      "top_p": [
+        1.0
+      ],
+      "max_tokens": [
+        512
+      ],
+      "seed": [
+        null
+      ],
+      "reasoning_effort": [
+        null,
+        "medium"
+      ],
+      "generation_route": [
+        "chat_completions"
+      ],
+      "evaluator_version": [
+        "baseline-evaluator-1.1"
+      ],
+      "evaluator_image": [
+        "uel-cn7000/docground-api-eval:py3.14.7-v1"
+      ],
+      "docground_version": [
+        "0.2.0",
+        null
+      ]
+    },
+    "recorded_conditions": {
+      "baseline": {
+        "slots": 36,
+        "generation": {
+          "complete": 33,
+          "incomplete_response": 2,
+          "transport_or_parse_error": 1
+        },
+        "functional": {
+          "fail": 2,
+          "pass": 31,
+          "not_run": 3
+        }
+      },
+      "shifted_baseline": {
+        "slots": 36,
+        "generation": {
+          "complete": 36
+        },
+        "functional": {
+          "fail": 14,
+          "pass": 22
+        }
+      },
+      "shifted_docground": {
+        "slots": 36,
+        "generation": {
+          "complete": 35,
+          "incomplete_response": 1
+        },
+        "functional": {
+          "pass": 31,
+          "fail": 4,
+          "not_run": 1
+        }
+      }
+    },
+    "scope_note": "Values above are transcribed from surviving records. The configuration includes a larger catalogue; the observed six-model cohort is the reconstructed analysis scope.",
+    "provider_model_pairs": [
+      {
+        "provider": "deepseek",
+        "model_id": "deepseek-flash"
+      },
+      {
+        "provider": "glm",
+        "model_id": "glm-4.5"
+      },
+      {
+        "provider": "glm",
+        "model_id": "glm-4.5-air"
+      },
+      {
+        "provider": "mistral",
+        "model_id": "codestral-2508"
+      },
+      {
+        "provider": "xai",
+        "model_id": "grok-4.20-0309-non-reasoning"
+      },
+      {
+        "provider": "xai",
+        "model_id": "grok-4.20-0309-reasoning"
+      }
+    ]
+  },
+  "supporting_file_hashes": {
+    "config/campaign_snapshot.json": "dabb089cd25eb80132de34923b670962060b3b8752c22f2d29ada27bf29aa460",
+    "taskset/docground_api_pilot_v1_candidate.json": "12b177fa0f9595ae301b9e48603610e4c0c7cf82ca004ad9c55ca86c791af606",
+    "protocol_review/docground_api_pilot_v1_candidate_v3.json": "f71000aae4d20608b4e98f6c85c6ed7c9e57136f65cb9992f6db9d020a80b61d"
+  },
+  "grounding_provenance": {
+    "grounded_attempts": 37,
+    "docground_versions": [
+      "0.2.0"
+    ],
+    "prompt_decisions": [
+      "approve_suggestion"
+    ],
+    "review_sha256_values": [
+      "f71000aae4d20608b4e98f6c85c6ed7c9e57136f65cb9992f6db9d020a80b61d"
+    ],
+    "documentation_snapshot_sha256_values": [
+      "a4a62cc00da5784d0bf49533eb4e98b0295d41cd8d04696d1fe2a4b967c89640"
+    ],
+    "basis": "Values recorded in all grounded attempt manifests. The separate saved protocol review records approval; no new approval or execution is implied."
+  }
+}
